@@ -107,7 +107,7 @@
     "react-dnd": "^10.0.2",
     "react-dnd-html5-backend": "^10.0.2",
     "react-dom": "17.x",
-    "react-particles-js": "^2.7.1",
+    "react-particles-js": "^3.4.1",
     "redux-beacon": "^2.1.0",
     "redux-beacon-electron": "^1.0.1",
     "semantic-release": "^17.3.7",
