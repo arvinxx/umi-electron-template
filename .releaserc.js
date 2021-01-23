@@ -6,7 +6,6 @@ module.exports = {
       {
         // 自定义配置，如果不填则是默认的 conventional-changelog-angular
         config: 'conventional-changelog-gitmoji-config',
-        releaseRules: [{ type: 'style', release: 'patch' }],
       },
     ],
     [
@@ -20,26 +19,26 @@ module.exports = {
       '@semantic-release/changelog', //此处会调用上一个插件生成的新增日志，然后合并到原有日志中
       {
         changelogFile: 'CHANGELOG.md',
-        changelogTitle: '# Power Yuque 更新日志',
+        changelogTitle: '# Umi Electron Template 更新日志',
       },
     ],
     '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
-    [
-      '@semantic-release/exec',
-      {
-        prepareCmd: 'yarn zip',
-      },
-    ],
+    // [
+    //   '@semantic-release/exec',
+    //   {
+    //     prepareCmd: 'yarn zip',
+    //   },
+    // ],
     [
       '@semantic-release/github',
-      {
-        assets: [
-          {
-            path: 'dist-zip/power-yuque.zip',
-            label: 'power-yuque.${nextRelease.gitTag}.zip',
-          },
-        ],
-      },
+      // {
+      //   assets: [
+      //     {
+      //       path: 'dist-zip/power-yuque.zip',
+      //       label: 'power-yuque.${nextRelease.gitTag}.zip',
+      //     },
+      //   ],
+      // },
     ], // 推送代码回到GitHub
     [
       '@semantic-release/git', //发布release
@@ -51,7 +50,7 @@ module.exports = {
           'package.json',
         ],
         message:
-          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/power-yuque/releases/tag/${nextRelease.gitTag}',
+          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/umi-electron-template/releases/tag/${nextRelease.gitTag}',
       },
     ],
   ],
