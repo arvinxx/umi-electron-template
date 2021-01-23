@@ -2174,101 +2174,6 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@sentry/apm@5.20.1":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/apm/download/@sentry/apm-5.20.1.tgz#2126407ec8ecc6f78f42a8a8de99b90dec982036"
-  integrity sha1-ISZAfsjsxvePQqio3pm5DeyYIDY=
-  dependencies:
-    "@sentry/browser" "5.20.1"
-    "@sentry/hub" "5.20.1"
-    "@sentry/minimal" "5.20.1"
-    "@sentry/types" "5.20.1"
-    "@sentry/utils" "5.20.1"
-    tslib "^1.9.3"
-
-"@sentry/browser@5.20.1", "@sentry/browser@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/browser/download/@sentry/browser-5.20.1.tgz?cache=0&sync_timestamp=1611240216888&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sentry%2Fbrowser%2Fdownload%2F%40sentry%2Fbrowser-5.20.1.tgz#be59522d0914d58309e1367d997d4b3cd5385d7e"
-  integrity sha1-vllSLQkU1YMJ4TZ9mX1LPNU4XX4=
-  dependencies:
-    "@sentry/core" "5.20.1"
-    "@sentry/types" "5.20.1"
-    "@sentry/utils" "5.20.1"
-    tslib "^1.9.3"
-
-"@sentry/core@5.20.1", "@sentry/core@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/core/download/@sentry/core-5.20.1.tgz?cache=0&sync_timestamp=1611240217415&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sentry%2Fcore%2Fdownload%2F%40sentry%2Fcore-5.20.1.tgz#857cc7186931c37ff032a1bcb573600ebacde961"
-  integrity sha1-hXzHGGkxw3/wMqG8tXNgDrrN6WE=
-  dependencies:
-    "@sentry/hub" "5.20.1"
-    "@sentry/minimal" "5.20.1"
-    "@sentry/types" "5.20.1"
-    "@sentry/utils" "5.20.1"
-    tslib "^1.9.3"
-
-"@sentry/electron@^1.0.0":
-  version "1.5.2"
-  resolved "https://registry.npm.taobao.org/@sentry/electron/download/@sentry/electron-1.5.2.tgz#bb43190e33e1fff9a3810f401a8422afdc810d37"
-  integrity sha1-u0MZDjPh//mjgQ9AGoQir9yBDTc=
-  dependencies:
-    "@sentry/browser" "~5.20.0"
-    "@sentry/core" "~5.20.0"
-    "@sentry/minimal" "~5.20.0"
-    "@sentry/node" "~5.20.0"
-    "@sentry/types" "~5.20.0"
-    "@sentry/utils" "~5.20.0"
-    electron-fetch "^1.4.0"
-    form-data "2.5.1"
-    tslib "^1.9.3"
-    util.promisify "1.0.1"
-
-"@sentry/hub@5.20.1":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/hub/download/@sentry/hub-5.20.1.tgz?cache=0&sync_timestamp=1611239848120&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sentry%2Fhub%2Fdownload%2F%40sentry%2Fhub-5.20.1.tgz#05e83ba972a96e9d7225a64c7d3728aa9fcefc4e"
-  integrity sha1-Beg7qXKpbp1yJaZMfTcoqp/O/E4=
-  dependencies:
-    "@sentry/types" "5.20.1"
-    "@sentry/utils" "5.20.1"
-    tslib "^1.9.3"
-
-"@sentry/minimal@5.20.1", "@sentry/minimal@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/minimal/download/@sentry/minimal-5.20.1.tgz?cache=0&sync_timestamp=1611239854381&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sentry%2Fminimal%2Fdownload%2F%40sentry%2Fminimal-5.20.1.tgz#2e2b63d9cd265b7e2f593f3eab4e9874bd87eeef"
-  integrity sha1-Litj2c0mW34vWT8+q06YdL2H7u8=
-  dependencies:
-    "@sentry/hub" "5.20.1"
-    "@sentry/types" "5.20.1"
-    tslib "^1.9.3"
-
-"@sentry/node@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/node/download/@sentry/node-5.20.1.tgz#c38dd8c1f8f227420abb0c04354177d7296535bf"
-  integrity sha1-w43YwfjyJ0IKuwwENUF31yllNb8=
-  dependencies:
-    "@sentry/apm" "5.20.1"
-    "@sentry/core" "5.20.1"
-    "@sentry/hub" "5.20.1"
-    "@sentry/types" "5.20.1"
-    "@sentry/utils" "5.20.1"
-    cookie "^0.4.1"
-    https-proxy-agent "^5.0.0"
-    lru_map "^0.3.3"
-    tslib "^1.9.3"
-
-"@sentry/types@5.20.1", "@sentry/types@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/types/download/@sentry/types-5.20.1.tgz#ccc4fa4c9d0f94d93014b04e674762d5d5cd30a2"
-  integrity sha1-zMT6TJ0PlNkwFLBOZ0di1dXNMKI=
-
-"@sentry/utils@5.20.1", "@sentry/utils@~5.20.0":
-  version "5.20.1"
-  resolved "https://registry.npm.taobao.org/@sentry/utils/download/@sentry/utils-5.20.1.tgz?cache=0&sync_timestamp=1611240717301&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sentry%2Futils%2Fdownload%2F%40sentry%2Futils-5.20.1.tgz#68cfae0d0e3b321b4649b59f30265024b29eae63"
-  integrity sha1-aM+uDQ47MhtGSbWfMCZQJLKermM=
-  dependencies:
-    "@sentry/types" "5.20.1"
-    tslib "^1.9.3"
-
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.npm.taobao.org/@sindresorhus/is/download/@sindresorhus/is-0.14.0.tgz?cache=0&sync_timestamp=1602542943738&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40sindresorhus%2Fis%2Fdownload%2F%40sindresorhus%2Fis-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -6119,11 +6024,6 @@ cookie@0.4.0:
   resolved "https://registry.npm.taobao.org/cookie/download/cookie-0.4.0.tgz#beb437e7022b3b6d49019d088665303ebe9c14ba"
   integrity sha1-vrQ35wIrO21JAZ0IhmUwPr6cFLo=
 
-cookie@^0.4.1:
-  version "0.4.1"
-  resolved "https://registry.npm.taobao.org/cookie/download/cookie-0.4.1.tgz#afd713fe26ebd21ba95ceb61f9a8116e50a537d1"
-  integrity sha1-r9cT/ibr0hupXOth+agRblClN9E=
-
 copy-concurrently@^1.0.0:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/copy-concurrently/download/copy-concurrently-1.0.5.tgz#92297398cae34937fcafd6ec8139c18051f0b5e0"
@@ -7386,13 +7286,6 @@ electron-devtools-installer@^3.1.1:
     semver "^7.2.1"
     unzip-crx-3 "^0.2.0"
 
-electron-fetch@^1.4.0:
-  version "1.7.3"
-  resolved "https://registry.npm.taobao.org/electron-fetch/download/electron-fetch-1.7.3.tgz#06cf363d7f64073ec00a37e9949ec9d29ce6b08a"
-  integrity sha1-Bs82PX9kBz7ACjfplJ7J0pzmsIo=
-  dependencies:
-    encoding "^0.1.13"
-
 electron-is-accelerator@^0.1.0:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/electron-is-accelerator/download/electron-is-accelerator-0.1.2.tgz#509e510c26a56b55e17f863a4b04e111846ab27b"
@@ -7559,7 +7452,7 @@ encodeurl@^1.0.2, encodeurl@~1.0.2:
   resolved "https://registry.npm.taobao.org/encodeurl/download/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
   integrity sha1-rT/0yG7C0CkyL1oCw6mmBslbP1k=
 
-encoding@^0.1.11, encoding@^0.1.13:
+encoding@^0.1.11:
   version "0.1.13"
   resolved "https://registry.npm.taobao.org/encoding/download/encoding-0.1.13.tgz#56574afdd791f54a8e9b2785c0582a2d26210fa9"
   integrity sha1-VldK/deR9UqOmyeFwFgqLSYhD6k=
@@ -8783,7 +8676,7 @@ fork-ts-checker-webpack-plugin@^4.1.2:
     tapable "^1.0.0"
     worker-rpc "^0.1.0"
 
-form-data@2.5.1, form-data@^2.5.0:
+form-data@^2.5.0:
   version "2.5.1"
   resolved "https://registry.npm.taobao.org/form-data/download/form-data-2.5.1.tgz#f2cbec57b5e59e23716e128fe44d4e5dd23895f4"
   integrity sha1-8svsV7XlniNxbhKP5E1OXdI4lfQ=
@@ -12298,11 +12191,6 @@ lru-queue@^0.1.0:
   integrity sha1-Jzi9nw089PhEkMVzbEhpmsYyzaM=
   dependencies:
     es5-ext "~0.10.2"
-
-lru_map@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.npm.taobao.org/lru_map/download/lru_map-0.3.3.tgz#b5c8351b9464cbd750335a79650a0ec0e56118dd"
-  integrity sha1-tcg1G5Rky9dQM1p5ZQoOwOVhGN0=
 
 lz-string@^1.4.4:
   version "1.4.4"
@@ -18922,7 +18810,7 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0, tslib@^1.9.3:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1609887446826&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
@@ -19513,16 +19401,6 @@ util.promisify@1.0.0:
     define-properties "^1.1.2"
     object.getownpropertydescriptors "^2.0.3"
 
-util.promisify@1.0.1, util.promisify@~1.0.0:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/util.promisify/download/util.promisify-1.0.1.tgz?cache=0&sync_timestamp=1610159866228&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futil.promisify%2Fdownload%2Futil.promisify-1.0.1.tgz#6baf7774b80eeb0f7520d8b81d07982a59abbaee"
-  integrity sha1-a693dLgO6w91INi4HQeYKlmruu4=
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.17.2"
-    has-symbols "^1.0.1"
-    object.getownpropertydescriptors "^2.1.0"
-
 util.promisify@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/util.promisify/download/util.promisify-1.1.1.tgz?cache=0&sync_timestamp=1610159866228&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futil.promisify%2Fdownload%2Futil.promisify-1.1.1.tgz#77832f57ced2c9478174149cae9b96e9918cd54b"
@@ -19533,6 +19411,16 @@ util.promisify@^1.0.0:
     for-each "^0.3.3"
     has-symbols "^1.0.1"
     object.getownpropertydescriptors "^2.1.1"
+
+util.promisify@~1.0.0:
+  version "1.0.1"
+  resolved "https://registry.npm.taobao.org/util.promisify/download/util.promisify-1.0.1.tgz?cache=0&sync_timestamp=1610159866228&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Futil.promisify%2Fdownload%2Futil.promisify-1.0.1.tgz#6baf7774b80eeb0f7520d8b81d07982a59abbaee"
+  integrity sha1-a693dLgO6w91INi4HQeYKlmruu4=
+  dependencies:
+    define-properties "^1.1.3"
+    es-abstract "^1.17.2"
+    has-symbols "^1.0.1"
+    object.getownpropertydescriptors "^2.1.0"
 
 util@0.10.3:
   version "0.10.3"
