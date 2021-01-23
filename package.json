@@ -63,7 +63,7 @@
     "@types/numeral": "0.0.26",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
-    "@types/react-test-renderer": "^16.9.2",
+    "@types/react-test-renderer": "^17.0.0",
     "@types/sinon": "^7.5.2",
     "@umijs/fabric": "^2.5.6",
     "@umijs/hooks": "^1.7.0",
