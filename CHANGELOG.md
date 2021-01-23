@@ -1,5 +1,12 @@
 # Umi Electron Template 更新日志
 
+## [1.1.3](https://github.com/arvinxx/umi-electron-template/compare/v1.1.2...v1.1.3) (2021-01-23)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(ci)**: 测试添加 blockmap 文件 ([395ad0b](https://github.com/arvinxx/umi-electron-template/commit/395ad0b))
+
 ## [1.1.2](https://github.com/arvinxx/umi-electron-template/compare/v1.1.1...v1.1.2) (2021-01-23)
 
 
