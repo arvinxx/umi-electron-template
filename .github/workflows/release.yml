@@ -89,7 +89,7 @@ jobs:
 
   list:
     needs: build
-    name: List build result
+    name: List Artifact
     runs-on: ubuntu-latest
     steps:
       - name: Download artifact

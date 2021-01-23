@@ -35,7 +35,7 @@ export default {
    * mac 配置项
    */
   mac: {
-    category: 'public.app-category.productivity',
+    category: 'public.app-category.developer-tools',
     target: ['dmg'],
     artifactName: '${name}_setup_${version}.${ext}',
     hardenedRuntime: true,
@@ -76,6 +76,17 @@ export default {
     entitlementsInherit: 'build/entitlements.mas.inherit.plist',
     asarUnpack: [],
   },
+
+  /**
+   * linux 配置项
+   */
+  linux: {
+    artifactName: '${name}_setup_${version}.${ext}',
+    icon: 'build/icon.png',
+    synopsis: 'umi electron template',
+    category: 'Development',
+  },
+
   /**
    * 构建配置项
    */
