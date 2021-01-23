@@ -34,3 +34,4 @@ release
 .env*
 static/dictionary.mdx
 coverage
+/.eslintcache

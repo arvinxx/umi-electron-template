@@ -1,0 +1,8 @@
+{
+  "include": ["mock/**/*", "src", "config", "types", "tests"],
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "noEmit": true
+  }
+}
