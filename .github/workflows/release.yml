@@ -86,6 +86,7 @@ jobs:
           path: |
             release/umi*.dmg
             release/umi*.exe
+            release/umi*.AppImage
 
   list:
     needs: build
