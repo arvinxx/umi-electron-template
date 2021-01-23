@@ -87,7 +87,7 @@
     "electron-is": "^3.0.0",
     "electron-log": "^3.0.9",
     "electron-notarize": "^0.2.1",
-    "electron-rebuild": "^1.8.6",
+    "electron-rebuild": "^2.3.4",
     "electron-store": "^6.0.1",
     "electron-updater": "^4.2.0",
     "electron-webpack": "^2.8.2",
