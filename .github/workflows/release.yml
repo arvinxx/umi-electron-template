@@ -64,5 +64,19 @@ jobs:
         with:
           name: release
           path: |
-            - release/umi*.dmg
-            - release/umi*.exe
+            release/umi*.dmg
+            release/umi*.exe
+
+  list:
+    needs: build
+    name: List build result
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: release
+          path: release
+
+      - name: List artifact
+        run: ls -al release
