@@ -84,8 +84,8 @@ jobs:
         with:
           name: release
           path: |
-            release/umi*.dmg
-            release/umi*.exe
+            release/umi*.dmg*
+            release/umi*.exe*
             release/umi*.AppImage
 
   list:
