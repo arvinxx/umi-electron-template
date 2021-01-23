@@ -64,5 +64,5 @@ jobs:
         with:
           name: release
           path: |
-          release/*.dmg
-          release/*.exe
+            - release/umi*.dmg
+            - release/umi*.exe
