@@ -83,5 +83,4 @@ jobs:
         with:
           name: release
           path: |
-          release/?*.*
-          !release/bundled
+          release/*.dmg
