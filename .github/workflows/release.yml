@@ -19,8 +19,18 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
       - name: Install
-        uses: bahmutov/npm-install@v1
+        run: yarn
 
       - name: Lint
         run: yarn lint && yarn tsc
@@ -48,16 +58,27 @@ jobs:
         with:
           node-version: '14'
 
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
       - name: Install
-        uses: bahmutov/npm-install@v1
+        run: yarn
 
       - name: Tricky version
         if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
         run: |
           npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
 
+
       - name: Build
-        run: yarn build
+        run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -80,3 +101,30 @@ jobs:
 
       - name: List artifact
         run: ls -al release
+
+  publish:
+    if: "! contains(github.event.head_commit.message, '[skip ci]')"
+    needs: build
+    name: Semantic release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v2
+
+      - name: Download artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: release
+          path: release
+
+      - name: List artifact
+        run: ls -al release
+
+      - name: Semantic Release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/changelog@5.0.1
+            @semantic-release/git@9.0.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

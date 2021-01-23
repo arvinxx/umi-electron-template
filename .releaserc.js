@@ -23,23 +23,14 @@ module.exports = {
       },
     ],
     '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
-    // [
-    //   '@semantic-release/exec',
-    //   {
-    //     prepareCmd: 'yarn zip',
-    //   },
-    // ],
+    // 在 github 发布 Release 版本
     [
       '@semantic-release/github',
-      // {
-      //   assets: [
-      //     {
-      //       path: 'dist-zip/power-yuque.zip',
-      //       label: 'power-yuque.${nextRelease.gitTag}.zip',
-      //     },
-      //   ],
-      // },
-    ], // 推送代码回到GitHub
+      {
+        assets: ['release/*.*'],
+      },
+    ],
+    // 推送代码回 git
     [
       '@semantic-release/git', //发布release
       {
