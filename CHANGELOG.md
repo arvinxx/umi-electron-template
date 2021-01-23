@@ -1,5 +1,12 @@
 # Umi Electron Template 更新日志
 
+## [1.1.1](https://github.com/arvinxx/umi-electron-template/compare/v1.1.0...v1.1.1) (2021-01-23)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(ci)**: 修复 linux 发包错误 ([964afe2](https://github.com/arvinxx/umi-electron-template/commit/964afe2))
+
 # [1.1.0](https://github.com/arvinxx/umi-electron-template/compare/v1.0.0...v1.1.0) (2021-01-23)
 
 
