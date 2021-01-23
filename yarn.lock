@@ -7629,13 +7629,21 @@ electron-log@^3.0.9:
   resolved "https://registry.npm.taobao.org/electron-log/download/electron-log-3.0.9.tgz#53ff1fcdb2f3e4a73ea7096d2f7204121109ec6f"
   integrity sha1-U/8fzbLz5Kc+pwltL3IEEhEJ7G8=
 
-electron-notarize@^0.2.0, electron-notarize@^0.2.1:
+electron-notarize@^0.2.0:
   version "0.2.1"
   resolved "https://registry.npm.taobao.org/electron-notarize/download/electron-notarize-0.2.1.tgz#759e8006decae19134f82996ed910db26d9192cc"
   integrity sha1-dZ6ABt7K4ZE0+CmW7ZENsm2Rksw=
   dependencies:
     debug "^4.1.1"
     fs-extra "^8.1.0"
+
+electron-notarize@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/electron-notarize/-/electron-notarize-1.0.0.tgz#bc925b1ccc3f79e58e029e8c4706572b01a9fd8f"
+  integrity sha512-dsib1IAquMn0onCrNMJ6gtEIZn/azG8hZMCYOuZIMVMUeRMgBYHK1s5TK9P8xAcrAjh/2aN5WYHzgVSWX314og==
+  dependencies:
+    debug "^4.1.1"
+    fs-extra "^9.0.1"
 
 electron-publish@22.9.1:
   version "22.9.1"
