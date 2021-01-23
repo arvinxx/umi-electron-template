@@ -2868,10 +2868,10 @@
   resolved "https://registry.npm.taobao.org/@types/normalize-package-data/download/@types/normalize-package-data-2.4.0.tgz?cache=0&sync_timestamp=1605054866275&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnormalize-package-data%2Fdownload%2F%40types%2Fnormalize-package-data-2.4.0.tgz#e486d0d97396d79beedd0a6e33f4534ff6b4973e"
   integrity sha1-5IbQ2XOW15vu3QpuM/RTT/a0lz4=
 
-"@types/numeral@0.0.26":
-  version "0.0.26"
-  resolved "https://registry.npm.taobao.org/@types/numeral/download/@types/numeral-0.0.26.tgz#cfab9842ef9349ce714b06722940ca7ebf8a6298"
-  integrity sha1-z6uYQu+TSc5xSwZyKUDKfr+KYpg=
+"@types/numeral@0.0.30":
+  version "0.0.30"
+  resolved "https://registry.yarnpkg.com/@types/numeral/-/numeral-0.0.30.tgz#887c51ceedcd544302a9a6c42a374bac12c0eee2"
+  integrity sha512-3ulaJGbiwUZBAdinX1XV0xeoSI5E6ugtKFwg7Yp7j4SQ/qZ6PmLVJazEPDFZgJ56qA7oSUa2kKVPfg4gjbDkMA==
 
 "@types/parse-json@^4.0.0":
   version "4.0.0"
