@@ -2748,12 +2748,13 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^24.0.22":
-  version "24.9.1"
-  resolved "https://registry.npm.taobao.org/@types/jest/download/@types/jest-24.9.1.tgz?cache=0&sync_timestamp=1610007761795&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fjest%2Fdownload%2F%40types%2Fjest-24.9.1.tgz#02baf9573c78f1b9974a5f36778b366aa77bd534"
-  integrity sha1-Arr5Vzx48bmXSl82d4s2aqd71TQ=
+"@types/jest@^26.0.20":
+  version "26.0.20"
+  resolved "https://registry.yarnpkg.com/@types/jest/-/jest-26.0.20.tgz#cd2f2702ecf69e86b586e1f5223a60e454056307"
+  integrity sha512-9zi2Y+5USJRxd0FsahERhBwlcvFh6D2GLQnY2FH2BzK8J9s9omvNHIbvABwIluXa0fD8XVKMLTO0aOEuUfACAA==
   dependencies:
-    jest-diff "^24.3.0"
+    jest-diff "^26.0.0"
+    pretty-format "^26.0.0"
 
 "@types/json-schema@^7.0.3", "@types/json-schema@^7.0.4", "@types/json-schema@^7.0.5", "@types/json-schema@^7.0.6":
   version "7.0.7"
@@ -11084,7 +11085,7 @@ jest-config@^25.5.4:
     pretty-format "^25.5.0"
     realpath-native "^2.0.0"
 
-jest-diff@^24.3.0, jest-diff@^24.9.0:
+jest-diff@^24.9.0:
   version "24.9.0"
   resolved "https://registry.npm.taobao.org/jest-diff/download/jest-diff-24.9.0.tgz?cache=0&sync_timestamp=1607352694135&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-diff%2Fdownload%2Fjest-diff-24.9.0.tgz#931b7d0d5778a1baf7452cb816e325e3724055da"
   integrity sha1-kxt9DVd4obr3RSy4FuMl43JAVdo=
@@ -11104,7 +11105,7 @@ jest-diff@^25.5.0:
     jest-get-type "^25.2.6"
     pretty-format "^25.5.0"
 
-jest-diff@^26.6.2:
+jest-diff@^26.0.0, jest-diff@^26.6.2:
   version "26.6.2"
   resolved "https://registry.npm.taobao.org/jest-diff/download/jest-diff-26.6.2.tgz?cache=0&sync_timestamp=1607352694135&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fjest-diff%2Fdownload%2Fjest-diff-26.6.2.tgz#1aa7468b52c3a68d7d5c5fdcdfcd5e49bd164394"
   integrity sha1-GqdGi1LDpo19XF/c381eSb0WQ5Q=
@@ -15803,7 +15804,7 @@ pretty-format@^25.1.0, pretty-format@^25.5.0:
     ansi-styles "^4.0.0"
     react-is "^16.12.0"
 
-pretty-format@^26.6.2:
+pretty-format@^26.0.0, pretty-format@^26.6.2:
   version "26.6.2"
   resolved "https://registry.npm.taobao.org/pretty-format/download/pretty-format-26.6.2.tgz#e35c2705f14cb7fe2fe94fa078345b444120fc93"
   integrity sha1-41wnBfFMt/4v6U+geDRbREEg/JM=

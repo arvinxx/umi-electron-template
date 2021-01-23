@@ -57,7 +57,7 @@
     "@testing-library/react": "^9.4.0",
     "@types/classnames": "^2.2.11",
     "@types/diff": "^4.0.2",
-    "@types/jest": "^24.0.22",
+    "@types/jest": "^26.0.20",
     "@types/mixpanel-browser": "^2.23.2",
     "@types/node": "^12.0.12",
     "@types/numeral": "0.0.26",
