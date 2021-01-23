@@ -36,6 +36,7 @@ export default {
    */
   mac: {
     category: 'public.app-category.productivity',
+    target: ['dmg'],
     artifactName: '${name}_setup_${version}.${ext}',
     hardenedRuntime: true,
     gatekeeperAssess: false,

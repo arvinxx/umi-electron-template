@@ -9,6 +9,7 @@ jobs:
     name: Code quality check
     runs-on: ubuntu-latest
     outputs:
+      # 将 semantic 输出的值作为下一环节的输入
       semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
     steps:
       - uses: actions/checkout@v2
@@ -18,20 +19,10 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Cache multiple paths
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
-            **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+      - name: Install
+        uses: bahmutov/npm-install@v1
 
-      - name: install
-        run: yarn
-
-      - name: lint
+      - name: Lint
         run: yarn lint && yarn tsc
 
       - name: Semantic Release with dryRun
@@ -48,7 +39,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest]
+        os: [macos-latest, windows-latest]
     steps:
       - uses: actions/checkout@v2
 
@@ -57,18 +48,8 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Cache multiple paths
-        uses: actions/cache@v2
-        with:
-          path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
-            **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: install
-        run: yarn
+      - name: Install
+        uses: bahmutov/npm-install@v1
 
       - name: Tricky version
         if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
@@ -82,4 +63,6 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: release
-          path: release/*.dmg
+          path: |
+          release/*.dmg
+          release/*.exe
