@@ -49,7 +49,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
 
@@ -75,7 +75,6 @@ jobs:
         if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
         run: |
           npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
-
 
       - name: Build
         run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
@@ -108,8 +107,7 @@ jobs:
     name: Semantic release
     runs-on: ubuntu-latest
     steps:
-      - name: Check out code
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
       - name: Download artifact
         uses: actions/download-artifact@v2
@@ -120,11 +118,25 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - name: Semantic Release
-        uses: cycjimmy/semantic-release-action@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
         with:
-          extra_plugins: |
-            @semantic-release/changelog@5.0.1
-            @semantic-release/git@9.0.0
+          node-version: '14'
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        run: yarn
+
+      - name: Release
+        run: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
