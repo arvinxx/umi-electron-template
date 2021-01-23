@@ -2091,18 +2091,6 @@
   resolved "https://registry.npm.taobao.org/@semantic-release/error/download/@semantic-release/error-2.2.0.tgz#ee9d5a09c9969eade1ec864776aeda5c5cddbbf0"
   integrity sha1-7p1aCcmWnq3h7IZHdq7aXFzdu/A=
 
-"@semantic-release/exec@^5.0.0":
-  version "5.0.0"
-  resolved "https://registry.npm.taobao.org/@semantic-release/exec/download/@semantic-release/exec-5.0.0.tgz#69c253107a755dabf7c262d417269d099f714356"
-  integrity sha1-acJTEHp1Xav3wmLUFyadCZ9xQ1Y=
-  dependencies:
-    "@semantic-release/error" "^2.1.0"
-    aggregate-error "^3.0.0"
-    debug "^4.0.0"
-    execa "^4.0.0"
-    lodash "^4.17.4"
-    parse-json "^5.0.0"
-
 "@semantic-release/git@^9.0.0":
   version "9.0.0"
   resolved "https://registry.npm.taobao.org/@semantic-release/git/download/@semantic-release/git-9.0.0.tgz#304c4883c87d095b1faaae93300f1f1e0466e9a5"
@@ -2158,7 +2146,7 @@
     semver "^7.1.2"
     tempy "^1.0.0"
 
-"@semantic-release/release-notes-generator@^9.0.0", "@semantic-release/release-notes-generator@^9.0.1":
+"@semantic-release/release-notes-generator@^9.0.0":
   version "9.0.1"
   resolved "https://registry.npm.taobao.org/@semantic-release/release-notes-generator/download/@semantic-release/release-notes-generator-9.0.1.tgz#732d285d103064f2a64f08a32031551ebb4f918b"
   integrity sha1-cy0oXRAwZPKmTwijIDFVHrtPkYs=
