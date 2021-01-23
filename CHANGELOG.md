@@ -1,5 +1,22 @@
 # Umi Electron Template 更新日志
 
+# [1.2.0](https://github.com/arvinxx/umi-electron-template/compare/v1.1.3...v1.2.0) (2021-01-23)
+
+
+### ♻ Code Refactoring | 重构
+
+* **(类型)**: 优化类型定义文件 ([48acbf4](https://github.com/arvinxx/umi-electron-template/commit/48acbf4))
+
+
+### ✨ Features | 新特性
+
+* **(ci)**: 添加测试 ci ([fb2b3c6](https://github.com/arvinxx/umi-electron-template/commit/fb2b3c6))
+
+
+### 🎫 Chores
+
+* **(deps)**: 清理无用依赖 ([bb9b96e](https://github.com/arvinxx/umi-electron-template/commit/bb9b96e))
+
 ## [1.1.3](https://github.com/arvinxx/umi-electron-template/compare/v1.1.2...v1.1.3) (2021-01-23)
 
 
