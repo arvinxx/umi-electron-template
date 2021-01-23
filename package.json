@@ -11,7 +11,7 @@
     "render:dev": "umi dev",
     "electron:dev": "umi dev electron",
     "---------": "",
-    "build": "umi build",
+    "build": "umi build electron",
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",

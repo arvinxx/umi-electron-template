@@ -12,6 +12,7 @@ jobs:
       semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
     steps:
       - uses: actions/checkout@v2
+
       - name: Setup Node.js environment
         uses: actions/setup-node@v2.1.2
         with:
@@ -40,3 +41,47 @@ jobs:
           dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  build:
+    needs: check
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: install
+        run: yarn
+
+      - name: Tricky version
+        if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
+        run: |
+          npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
+
+      - name: Build
+        run: yarn build
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: release
+          path: |
+          release/?*.*
+          !release/bundled
