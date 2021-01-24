@@ -46,7 +46,7 @@ jobs:
   status:
     needs: check
     runs-on: ubuntu-latest
-    name: List Release Status
+    name: Release Status
     steps:
       - name: Release Status
         run: echo "🚦New Verison Release Status -> ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
