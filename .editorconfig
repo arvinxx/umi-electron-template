@@ -12,5 +12,8 @@ insert_final_newline = true
 [*.md]
 trim_trailing_whitespace = false
 
+[license.txt]
+charset = GB2312
+
 [Makefile]
 indent_style = tab

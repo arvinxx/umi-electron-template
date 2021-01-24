@@ -27,7 +27,7 @@ jobs:
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
-        run: yarn && cat build/license.txt
+        run: yarn
 
       - name: lint
         run: yarn lint && yarn tsc
