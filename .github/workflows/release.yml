@@ -43,8 +43,13 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: List Release Status
-        run: echo "Release Status:: ${{ steps.semantic.outputs.new_release_published }}"
+  status:
+    needs: check
+    runs-on: ubuntu-latest
+    name: List Release Status
+    steps:
+      - name: Release Status
+        run: echo "Release Status:: ${{ needs.check.outputs.semantic.new_release_published }}"
 
   build:
     needs: check
