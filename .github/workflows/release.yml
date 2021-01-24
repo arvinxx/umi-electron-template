@@ -44,9 +44,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build:
-    if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
     needs: check
     name: Build
+    if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
