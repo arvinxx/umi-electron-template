@@ -1,6 +1,6 @@
 {
   "name": "umi-electron-template",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "author": "Arvin Xu<arvinx@foxmail.com>",
   "main": "main.js",
   "description": "a umi electron template",
