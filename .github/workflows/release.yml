@@ -44,7 +44,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: List Release Status
-        run: echo "${{ toJSON(steps.semantic.outputs) }}"
+        run: echo "Release Status:: ${{ steps.semantic.outputs.new_release_published }}"
 
   build:
     needs: check
