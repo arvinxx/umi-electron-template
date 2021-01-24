@@ -43,6 +43,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: List Release Status
+        run: echo "${{ needs.check.outputs.semantic }}"
+
   build:
     needs: check
     name: Build
@@ -73,7 +76,6 @@ jobs:
         run: yarn
 
       - name: Tricky version
-        if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
         run: |
           npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
 
