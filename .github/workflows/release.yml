@@ -46,7 +46,7 @@ jobs:
   build:
     needs: check
     name: Build
-    if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
+    if: needs.check.outputs.semantic.new_release_published == 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
