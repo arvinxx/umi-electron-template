@@ -49,7 +49,7 @@ jobs:
     name: List Release Status
     steps:
       - name: Release Status
-        run: echo "Release Status: ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
+        run: echo "Release Status ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
 
   build:
     needs: check
