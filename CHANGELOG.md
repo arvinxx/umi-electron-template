@@ -1,5 +1,12 @@
 # Umi Electron Template 更新日志
 
+## [1.2.3](https://github.com/arvinxx/umi-electron-template/compare/v1.2.2...v1.2.3) (2021-01-24)
+
+
+### 🐛 Bug Fixes | 修复
+
+* **(license)**: 修复 license 编码问题 ([bacd731](https://github.com/arvinxx/umi-electron-template/commit/bacd731))
+
 ## [1.2.2](https://github.com/arvinxx/umi-electron-template/compare/v1.2.1...v1.2.2) (2021-01-24)
 
 
