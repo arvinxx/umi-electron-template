@@ -22,24 +22,18 @@ module.exports = {
         changelogTitle: '# Umi Electron Template 更新日志',
       },
     ],
-    '@semantic-release/npm', //如果是npm包会自动更新版本号并发布
     // 在 github 发布 Release 版本
     [
       '@semantic-release/github',
       {
-        assets: ['release/*.*'],
+        assets: ['release'],
       },
     ],
     // 推送代码回 git
     [
-      '@semantic-release/git', //发布release
+      '@semantic-release/git',
       {
-        assets: [
-          // 这里的 assets 配置的是要重新 push 回去的东西
-          // 如果不列的话会将全部内容都合并到 release 中
-          'CHANGELOG.md',
-          'package.json',
-        ],
+        assets: ['CHANGELOG.md', 'package.json'],
         message:
           ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/umi-electron-template/releases/tag/${nextRelease.gitTag}',
       },
