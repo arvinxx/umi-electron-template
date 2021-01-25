@@ -2455,10 +2455,10 @@
   resolved "https://registry.npm.taobao.org/@types/debug/download/@types/debug-4.1.5.tgz?cache=0&sync_timestamp=1605052849582&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fdebug%2Fdownload%2F%40types%2Fdebug-4.1.5.tgz#b14efa8852b7768d898906613c23f688713e02cd"
   integrity sha1-sU76iFK3do2JiQZhPCP2iHE+As0=
 
-"@types/diff@^4.0.2":
-  version "4.0.2"
-  resolved "https://registry.npm.taobao.org/@types/diff/download/@types/diff-4.0.2.tgz#2e9bb89f9acc3ab0108f0f3dc4dbdcf2fff8a99c"
-  integrity sha1-Lpu4n5rMOrAQjw89xNvc8v/4qZw=
+"@types/diff@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@types/diff/-/diff-5.0.0.tgz#eb71e94feae62548282c4889308a3dfb57e36020"
+  integrity sha512-jrm2K65CokCCX4NmowtA+MfXyuprZC13jbRuwprs6/04z/EcFg/MCwYdsHn+zgV4CQBiATiI7AEq7y1sZCtWKA==
 
 "@types/ejs@3.0.5":
   version "3.0.5"
