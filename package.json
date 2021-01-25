@@ -64,7 +64,7 @@
     "@umijs/hooks": "^1.7.0",
     "@umijs/preset-react": "1.x",
     "@umijs/test": "^3.3.7",
-    "antd": "^4.10.3",
+    "antd": "^4.11.1",
     "awesome-typescript-loader": "^5.2.1",
     "classnames": "^2.2.6",
     "commitlint-config-gitmoji": "^2.1.2",
