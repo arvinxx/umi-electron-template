@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@ant-design/icons": "^4.0.2",
-    "@ant-design/pro-layout": "^6.5.0",
+    "@ant-design/pro-layout": "^6.13.0",
     "@commitlint/cli": "^11.0.0",
     "@jest-runner/electron": "^3.0.0",
     "@semantic-release/changelog": "^5.0.1",

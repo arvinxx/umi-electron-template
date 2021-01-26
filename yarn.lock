@@ -44,14 +44,14 @@
     insert-css "^2.0.0"
     rc-util "^5.0.1"
 
-"@ant-design/pro-layout@^6.5.0":
-  version "6.12.0"
-  resolved "https://registry.npm.taobao.org/@ant-design/pro-layout/download/@ant-design/pro-layout-6.12.0.tgz#e887af16b1f0e8c2636a94bb3b872be717ca0af4"
-  integrity sha1-6IevFrHw6MJjapS7O4cr5xfKCvQ=
+"@ant-design/pro-layout@^6.13.0":
+  version "6.13.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.13.0.tgz#365322e556a9347eb7b986fe4e2c08610190cebd"
+  integrity sha512-1z9zJRR+NexJSIPBZD1n0WofGtzf9a3nhj3SoeXj36micBv06mfx9j/pR3owpQFB0cSF3MbzyynfL9lqpQBzBw==
   dependencies:
     "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.4.3"
-    "@ant-design/pro-utils" "1.11.1"
+    "@ant-design/pro-provider" "1.4.4"
+    "@ant-design/pro-utils" "1.11.2"
     "@umijs/route-utils" "^1.0.33"
     classnames "^2.2.6"
     omit.js "^2.0.2"
@@ -65,20 +65,20 @@
     use-url-search-params "^2.3.13"
     warning "^4.0.3"
 
-"@ant-design/pro-provider@1.4.3":
-  version "1.4.3"
-  resolved "https://registry.npm.taobao.org/@ant-design/pro-provider/download/@ant-design/pro-provider-1.4.3.tgz#1d71792efa2d806365200abc9856ab23f3235386"
-  integrity sha1-HXF5LvotgGNlIAq8mFarI/MjU4Y=
+"@ant-design/pro-provider@1.4.4":
+  version "1.4.4"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.4.tgz#0e8d27810c767f17d23f3edd7ff4468f8dbd3649"
+  integrity sha512-7/FFLYLOkekVOBRGZHfpJ/PADe49q01sqnpMpIgGe+uMTQX3q2Xk+BGyqw2uCNs0mQYdTSpG2k0l6KvxpKu2qQ==
   dependencies:
     rc-util "^5.0.1"
 
-"@ant-design/pro-utils@1.11.1":
-  version "1.11.1"
-  resolved "https://registry.npm.taobao.org/@ant-design/pro-utils/download/@ant-design/pro-utils-1.11.1.tgz#e3c0edb8a430013ad3a25bfd818cb3d42ae5bc5c"
-  integrity sha1-48DtuKQwATrTolv9gYyz1CrlvFw=
+"@ant-design/pro-utils@1.11.2":
+  version "1.11.2"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.11.2.tgz#ad88226211948b056d69ad35775f19e1e02c006f"
+  integrity sha512-G+kv5fqEzVLBEQB7yRpIuuU/udCPiPOD+Dc1zHisJsVyh4hoVh8soOmlTMD1JJFgtxOAjwxkPXFfbe3GO5HdQQ==
   dependencies:
     "@ant-design/icons" "^4.3.0"
-    "@ant-design/pro-provider" "1.4.3"
+    "@ant-design/pro-provider" "1.4.4"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     moment "^2.27.0"
