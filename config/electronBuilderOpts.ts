@@ -29,6 +29,7 @@ export default {
     oneClick: false,
     perMachine: true,
     allowToChangeInstallationDirectory: true,
+    license: 'build/license.txt',
   },
 
   /**
