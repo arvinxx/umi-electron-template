@@ -41,7 +41,8 @@ jobs:
         with:
           dry_run: true
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   status:
     needs: check
     runs-on: ubuntu-latest
