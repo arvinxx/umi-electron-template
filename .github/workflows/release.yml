@@ -42,14 +42,6 @@ jobs:
           dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  status:
-    needs: check
-    runs-on: ubuntu-latest
-    name: Release Status
-    steps:
-      - name: Release Status
-        run: echo "🚦New Verison Release Status -> ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
   build:
     needs: check
     name: Build
@@ -95,6 +87,13 @@ jobs:
             release/umi*.exe*
             release/umi*.AppImage
 
+  status:
+    needs: check
+    runs-on: ubuntu-latest
+    name: Release Status
+    steps:
+      - name: Release Status
+        run: echo "🚦New Verison Release Status -> ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
   list:
     needs: build
     name: List Artifact
