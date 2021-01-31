@@ -1525,12 +1525,12 @@
   resolved "https://registry.npm.taobao.org/@formatjs/intl-utils/download/@formatjs/intl-utils-2.3.0.tgz#2dc8c57044de0340eb53a7ba602e59abf80dc799"
   integrity sha1-LcjFcETeA0DrU6e6YC5Zq/gNx5k=
 
-"@gitmoji/commit-types@1.1.5", "@gitmoji/commit-types@^1.0.0":
+"@gitmoji/commit-types@1.1.5":
   version "1.1.5"
   resolved "https://registry.yarnpkg.com/@gitmoji/commit-types/-/commit-types-1.1.5.tgz#8ca89aeea4e253a3818ac63206b4eb4f2352c4ff"
   integrity sha512-8D3FZMRY+gtYpTcHG1SOGmm9CFqxNh6rI9xDoCydxHxnWgqInbdF3nk9gibW5gXA58Hf2cVcJaLEcGOKLRAtmw==
 
-"@gitmoji/parser-opts@1.2.5", "@gitmoji/parser-opts@^1.2.1":
+"@gitmoji/parser-opts@1.2.5":
   version "1.2.5"
   resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.2.5.tgz#d7adac21a76ed929a497ab8654686d1be244bfa3"
   integrity sha512-Imxx7OjuZH374H7wNMBEwJ9i1U/0xGEPxjcyYfX47fKzdWZ57UNmiYEC4HoAV8sDpGi4AG0uU4o4NgOiQP1sEg==
@@ -6182,14 +6182,14 @@ conventional-changelog-angular@^5.0.0:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.1.1.tgz?cache=0&sync_timestamp=1611004010404&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fconventional-changelog-gitmoji-config%2Fdownload%2Fconventional-changelog-gitmoji-config-1.1.1.tgz#ff8e253215ca14622186ad5cdd575f66dc200f31"
-  integrity sha1-/44lMhXKFGIhhq1c3VdfZtwgDzE=
+conventional-changelog-gitmoji-config@^1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.4.0.tgz#aeaae17aca37ca04b771e19eaed305fb25311c5c"
+  integrity sha512-37PnHFjFkaE3SHIEng8cDULhFM9MAShQ2hGS4ObTil+f++jD7yRKJQj+tb6JN3oPGJx3wjYXGhDDeX8UKfxgJA==
   dependencies:
-    "@gitmoji/commit-types" "^1.0.0"
-    "@gitmoji/parser-opts" "^1.2.1"
-    q "^1.5.1"
+    "@gitmoji/commit-types" "1.1.5"
+    "@gitmoji/parser-opts" "1.2.5"
+    cosmiconfig "^7.0.0"
 
 conventional-changelog-writer@^4.0.0:
   version "4.1.0"
