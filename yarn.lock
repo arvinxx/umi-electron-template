@@ -32,7 +32,7 @@
   resolved "https://registry.npm.taobao.org/@ant-design/icons-svg/download/@ant-design/icons-svg-4.1.0.tgz#480b025f4b20ef7fe8f47d4a4846e4fee84ea06c"
   integrity sha1-SAsCX0sg73/o9H1KSEbk/uhOoGw=
 
-"@ant-design/icons@^4.0.0", "@ant-design/icons@^4.0.2", "@ant-design/icons@^4.1.0", "@ant-design/icons@^4.3.0":
+"@ant-design/icons@^4.0.0", "@ant-design/icons@^4.0.2", "@ant-design/icons@^4.1.0", "@ant-design/icons@^4.3.0", "@ant-design/icons@^4.4.0":
   version "4.4.0"
   resolved "https://registry.npm.taobao.org/@ant-design/icons/download/@ant-design/icons-4.4.0.tgz?cache=0&sync_timestamp=1611038966907&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ant-design%2Ficons%2Fdownload%2F%40ant-design%2Ficons-4.4.0.tgz#d4e4ba5910454e1d3f67a802d2aad9ee75a51dea"
   integrity sha1-1OS6WRBFTh0/Z6gC0qrZ7nWlHeo=
@@ -4231,13 +4231,13 @@ antd-mobile@^2.3.1:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@^4.1.2, antd@^4.1.3, antd@^4.10.3:
-  version "4.10.3"
-  resolved "https://registry.npm.taobao.org/antd/download/antd-4.10.3.tgz?cache=0&sync_timestamp=1610951499101&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fantd%2Fdownload%2Fantd-4.10.3.tgz#54da18519470f6c68c348d29e646836321f8ddc0"
-  integrity sha1-VNoYUZRw9saMNI0p5kaDYyH43cA=
+antd@^4.1.2, antd@^4.1.3, antd@^4.11.2:
+  version "4.11.2"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-4.11.2.tgz#28c20409e2d186d8915cdc6eacf1cfb2b82d9b5b"
+  integrity sha512-cdjPRlmamETae6c2uvQHRXDN5/T7I/zPiByaeolbq/FRG14JYv9hyUaydXI7n4s6rynPQ2Q6bFdCQ+/r9xZYbA==
   dependencies:
     "@ant-design/colors" "^5.0.0"
-    "@ant-design/icons" "^4.3.0"
+    "@ant-design/icons" "^4.4.0"
     "@ant-design/react-slick" "~0.28.1"
     "@babel/runtime" "^7.11.2"
     array-tree-filter "^2.1.0"
@@ -4251,8 +4251,8 @@ antd@^4.1.2, antd@^4.1.3, antd@^4.10.3:
     rc-dialog "~8.5.1"
     rc-drawer "~4.2.0"
     rc-dropdown "~3.2.0"
-    rc-field-form "~1.17.3"
-    rc-image "~5.0.2"
+    rc-field-form "~1.18.0"
+    rc-image "~5.1.1"
     rc-input-number "~6.1.0"
     rc-mentions "~1.5.0"
     rc-menu "~8.10.0"
@@ -4273,6 +4273,7 @@ antd@^4.1.2, antd@^4.1.3, antd@^4.10.3:
     rc-tooltip "~5.0.0"
     rc-tree "~4.1.0"
     rc-tree-select "~4.3.0"
+    rc-trigger "^5.2.1"
     rc-upload "~3.3.4"
     rc-util "^5.7.0"
     scroll-into-view-if-needed "^2.2.25"
@@ -16056,7 +16057,7 @@ rc-collapse@~3.1.0:
     rc-util "^5.2.1"
     shallowequal "^1.1.0"
 
-rc-dialog@~8.5.1:
+rc-dialog@~8.5.0, rc-dialog@~8.5.1:
   version "8.5.1"
   resolved "https://registry.npm.taobao.org/rc-dialog/download/rc-dialog-8.5.1.tgz?cache=0&sync_timestamp=1609987695887&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-dialog%2Fdownload%2Frc-dialog-8.5.1.tgz#df316dd93e1685d7df1f5e4164ee35cba4a9af88"
   integrity sha1-3zFt2T4WhdffH15BZO41y6Spr4g=
@@ -16084,10 +16085,10 @@ rc-dropdown@^3.1.3, rc-dropdown@~3.2.0:
     classnames "^2.2.6"
     rc-trigger "^5.0.4"
 
-rc-field-form@~1.17.3:
-  version "1.17.4"
-  resolved "https://registry.npm.taobao.org/rc-field-form/download/rc-field-form-1.17.4.tgz?cache=0&sync_timestamp=1610955574135&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-field-form%2Fdownload%2Frc-field-form-1.17.4.tgz#6e2bea66bfb636ba5bf297f29bafc5314a32cb6d"
-  integrity sha1-bivqZr+2Nrpb8pfym6/FMUoyy20=
+rc-field-form@~1.18.0:
+  version "1.18.1"
+  resolved "https://registry.yarnpkg.com/rc-field-form/-/rc-field-form-1.18.1.tgz#41027816c80d1acf6f51db085d34c2c35213a701"
+  integrity sha512-/YRnelnHLxygl/ROGhFqfCT+uAZ5xLvu3qjtlETOneb7fXKk7tqp+RGfYqZ4uNViXlsfxox3qqMMTVet6wYfEA==
   dependencies:
     "@babel/runtime" "^7.8.4"
     async-validator "^3.0.3"
@@ -16100,14 +16101,14 @@ rc-gesture@~0.0.18, rc-gesture@~0.0.22:
   dependencies:
     babel-runtime "6.x"
 
-rc-image@~5.0.2:
-  version "5.0.2"
-  resolved "https://registry.npm.taobao.org/rc-image/download/rc-image-5.0.2.tgz#5b00b3201ef4bb9ef8f18a6ffe60724011f3cba3"
-  integrity sha1-WwCzIB70u5748Ypv/mByQBHzy6M=
+rc-image@~5.1.1:
+  version "5.1.4"
+  resolved "https://registry.yarnpkg.com/rc-image/-/rc-image-5.1.4.tgz#e251101159db80c3e33276aaa4669a991c7486c0"
+  integrity sha512-hilxwwEAYJXocY6i+lEdEibvHVOLgN43EQFfjKFiiruRNiUQzGWcdCseyaeTZgInTDrf+QWZP6MujlZjtEbpkA==
   dependencies:
     "@babel/runtime" "^7.11.2"
     classnames "^2.2.6"
-    rc-dialog "~8.5.1"
+    rc-dialog "~8.5.0"
     rc-util "^5.0.6"
 
 rc-input-number@~6.1.0:
@@ -16383,7 +16384,7 @@ rc-trigger@^2.2.2:
     rc-util "^4.4.0"
     react-lifecycles-compat "^3.0.4"
 
-rc-trigger@^5.0.0, rc-trigger@^5.0.4, rc-trigger@^5.1.2:
+rc-trigger@^5.0.0, rc-trigger@^5.0.4, rc-trigger@^5.1.2, rc-trigger@^5.2.1:
   version "5.2.1"
   resolved "https://registry.npm.taobao.org/rc-trigger/download/rc-trigger-5.2.1.tgz?cache=0&sync_timestamp=1610619183432&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Frc-trigger%2Fdownload%2Frc-trigger-5.2.1.tgz#54686220b884ed1e0750c4f2411fbb34d4928c99"
   integrity sha1-VGhiILiE7R4HUMTyQR+7NNSSjJk=
