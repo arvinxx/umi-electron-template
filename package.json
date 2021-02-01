@@ -34,7 +34,7 @@
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "clean": "rm -rf dist release .eslintcache src/.umi",
+    "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "---------     ": "",
     "postinstall": "umi generate tmp && electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
