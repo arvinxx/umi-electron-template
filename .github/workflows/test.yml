@@ -30,4 +30,4 @@ jobs:
         run: yarn
 
       - name: lint
-        run: yarn lint && yarn tsc
+        run: yarn lint

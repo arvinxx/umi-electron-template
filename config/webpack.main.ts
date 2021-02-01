@@ -11,7 +11,6 @@ module.exports = (config) => {
     '@/common': path.resolve(__dirname, '../src/common'),
     '@': path.resolve(__dirname, '../src/main'),
   };
-  console.log(config.resolve.alias);
 
   config.module.rules[3].use[0].options = {
     transpileOnly: isDev,

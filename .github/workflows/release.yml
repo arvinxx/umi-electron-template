@@ -33,7 +33,7 @@ jobs:
         run: yarn
 
       - name: Lint
-        run: yarn lint && yarn tsc
+        run: yarn lint
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2

@@ -9,9 +9,10 @@
   "scripts": {
     "start": "yarn electron:dev",
     "render:dev": "umi dev",
-    "electron:dev": "umi dev electron",
+    "electron:dev": "PORT=7777 umi dev electron",
     "---------": "",
     "build": "umi build electron",
+    "build:local": "umi build electron --dir",
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",
@@ -23,14 +24,17 @@
     "---------  ": "",
     "release": "semantic-release",
     "---------   ": "",
-    "lint": "npm run lint-eslint",
-    "tsc": "tsc -p tsconfig-check.json",
+    "lint": "yarn lint-eslint && yarn tsc",
+    "tsc": "yarn tsc:renderer && yarn tsc:main",
+    "tsc:renderer": "tsc -p src/renderer/tsconfig-check.json",
+    "tsc:main": "tsc -p src/main/tsconfig-check.json",
     "lint-eslint": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty src",
     "lint-staged": "lint-staged",
     "lint-styles": "stylelint",
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "clean": "rm -rf dist release .eslintcache src/.umi",
     "---------     ": "",
     "postinstall": "umi generate tmp && electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps"
@@ -40,7 +44,8 @@
       "prettier --write"
     ],
     "*.ts?(x)": [
-      "prettier --parser=typescript --write"
+      "prettier --parser=typescript --write",
+      "yarn lint:fix"
     ]
   },
   "dependencies": {

@@ -10,6 +10,8 @@ const generate = new OverrideGenerator();
 
 generate.generateFiles();
 
+// @ts-ignore
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const themeVariables = lessToJs(
   fs.readFileSync(path.join(__dirname, './override.less'), 'utf8'),
 );
