@@ -3,9 +3,6 @@
 
 # dependencies
 **/node_modules
-# roadhog-api-doc ignore
-/src/utils/request-temp.js
-_roadhog-api-doc
 
 # production
 /dist
@@ -35,3 +32,4 @@ release
 static/dictionary.mdx
 coverage
 /.eslintcache
+/src/renderer/theme/override.less
