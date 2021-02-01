@@ -1,9 +1,17 @@
-const path = require('path');
-const fs = require('fs');
-const lessToJs = require('less-vars-to-js');
+import OverrideGenerator from './generate';
+
+import path from 'path';
+
+import fs from 'fs';
+
+import lessToJs from 'less-vars-to-js';
+
+const generate = new OverrideGenerator();
+
+generate.generateFiles();
 
 const themeVariables = lessToJs(
-  fs.readFileSync(path.join(__dirname, 'token', './override.less'), 'utf8'),
+  fs.readFileSync(path.join(__dirname, './override.less'), 'utf8'),
 );
 
 export default themeVariables;
