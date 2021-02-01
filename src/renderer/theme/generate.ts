@@ -72,9 +72,7 @@ class OverrideGenerator {
     let fileContent = `/**
  * AUTO GENERATED OVERRIDE FILES!
  * Please add this file to .gitignore
- */
-
- `;
+ */\n`;
 
     fileMaps.forEach((key) => {
       // 如果在输出列表里, 那么进行输出

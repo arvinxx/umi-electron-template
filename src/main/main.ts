@@ -1,40 +1,10 @@
-import { app, BrowserWindow, protocol } from 'electron';
-import createProtocol from 'umi-plugin-electron-builder/lib/createProtocol';
-import installExtension, {
-  // REACT_DEVELOPER_TOOLS,
-  REDUX_DEVTOOLS,
-} from 'electron-devtools-installer';
+import { app } from 'electron';
+import { windowCreator } from '@/utils';
 
-const isDevelopment = process.env.NODE_ENV === 'development';
-let mainWindow: BrowserWindow;
+let mainWindow: Main.BrowserWindow;
 
-protocol.registerSchemesAsPrivileged([
-  { scheme: 'app', privileges: { secure: true, standard: true } },
-]);
-
-function createWindow() {
-  mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
-    webPreferences: {
-      nodeIntegration: true,
-    },
-    title: 'Umi Electron Template',
-  });
-  if (isDevelopment) {
-    mainWindow.loadURL('http://localhost:8000');
-  } else {
-    createProtocol('app');
-    mainWindow.loadURL('app://./index.html');
-  }
-}
-
-app.on('ready', async () => {
-  if (isDevelopment) {
-    // await installExtension(REACT_DEVELOPER_TOOLS);
-    await installExtension(REDUX_DEVTOOLS);
-  }
-  createWindow();
+app.whenReady().then(() => {
+  mainWindow = windowCreator({ url: 'home' });
 });
 
 app.on('window-all-closed', () => {
@@ -45,6 +15,6 @@ app.on('window-all-closed', () => {
 
 app.on('activate', () => {
   if (mainWindow === null) {
-    createWindow();
+    mainWindow = windowCreator({ url: 'home', title: 'Umi Electron Template' });
   }
 });

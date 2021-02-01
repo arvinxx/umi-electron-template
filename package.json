@@ -104,6 +104,10 @@
     "umi-plugin-tailwindcss": "^2.1.3"
   },
   "electronWebpack": {
+    "main": {
+      "sourceDirectory": "src/main",
+      "webpackConfig": "config/webpack.main.ts"
+    },
     "renderer": null
   }
 }

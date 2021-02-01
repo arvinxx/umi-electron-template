@@ -14,4 +14,6 @@ const themeVariables = lessToJs(
   fs.readFileSync(path.join(__dirname, './override.less'), 'utf8'),
 );
 
-export default themeVariables;
+export default {
+  'primary-color': '#233ad2',
+};
