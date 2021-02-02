@@ -76,8 +76,23 @@ jobs:
         run: |
           npx npe version ${{ needs.check.outputs.version }}
 
-      - name: Build
+      # 这一步用于导入签名
+      # 有了签名可以保证 electron 在需要授权时使用的是同一个环境
+      - name: Add key to single keychain
+        if: runner.os == 'macOS'
+        # developer-id-app-certs.p12 文件是需要通过
+        run: security import ./build/developer-id-app-certs.p12 -P ${{ secrets.APPLE_APP_CERTS_PASSWORD }}
+
+      - name: Check macOS security identities
+        if: runner.os == 'macOS'
+        run: security find-identity -v
+
+      - name: Build artifact
         run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
+        env:
+          # 针对 macOS 提供 APPLE_ID 和 APPLE_ID_PASSWORD 进行 DMG 公证
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
