@@ -33,7 +33,12 @@ module.exports = {
     [
       '@semantic-release/git',
       {
-        assets: ['CHANGELOG.md', 'package.json'],
+        // assets: [
+        //   // 这里的 assets 配置的是要重新 push 回去的东西
+        //   // 如果不列的话会将全部内容都合并到 release 中
+        //   'CHANGELOG.md',
+        //   'package.json',
+        // ],
         message:
           ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/umi-electron-template/releases/tag/${nextRelease.gitTag}',
       },
