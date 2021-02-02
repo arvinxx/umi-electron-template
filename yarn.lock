@@ -2506,10 +2506,10 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
-"@testing-library/react@^11.2.3":
-  version "11.2.3"
-  resolved "https://registry.npm.taobao.org/@testing-library/react/download/@testing-library/react-11.2.3.tgz?cache=0&sync_timestamp=1610057366415&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40testing-library%2Freact%2Fdownload%2F%40testing-library%2Freact-11.2.3.tgz#9971ede1c8465a231d7982eeca3c39fc362d5443"
-  integrity sha1-mXHt4chGWiMdeYLuyjw5/DYtVEM=
+"@testing-library/react@^11.2.4":
+  version "11.2.4"
+  resolved "https://registry.yarnpkg.com/@testing-library/react/-/react-11.2.4.tgz#85e39be292973c49d638df20dcab5a7e73cda2f1"
+  integrity sha512-0j4A3eHc89g6ymLhvDzwIwTCCKf0voO387ACvJvH46YrBUFt1E66PvxSXH/u/kDVhLs8dtSPFCM06Bjo4sUojQ==
   dependencies:
     "@babel/runtime" "^7.12.5"
     "@testing-library/dom" "^7.28.1"
