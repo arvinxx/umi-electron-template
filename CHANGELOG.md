@@ -1,5 +1,18 @@
 # Umi Electron Template 更新日志
 
+# [1.4.0](https://github.com/arvinxx/umi-electron-template/compare/v1.3.3...v1.4.0) (2021-02-02)
+
+
+### ✨ Features
+
+* **杂项**: 优化导入签名公证的方法 ([4128e93](https://github.com/arvinxx/umi-electron-template/commit/4128e93))
+* **杂项**: 添加证书签名与公证 ([eae8ee8](https://github.com/arvinxx/umi-electron-template/commit/eae8ee8))
+
+
+### 🐛 Bug Fixes
+
+* **杂项**: 修复开发与打包页面路由错误的问题 ([2de2df5](https://github.com/arvinxx/umi-electron-template/commit/2de2df5))
+
 ## [1.3.3](https://github.com/arvinxx/umi-electron-template/compare/v1.3.2...v1.3.3) (2021-02-02)
 
 
