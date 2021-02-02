@@ -1,5 +1,88 @@
 # Umi Electron Template 更新日志
 
+# [1.3.0](https://github.com/arvinxx/umi-electron-template/compare/v1.2.3...v1.3.0) (2021-02-02)
+
+
+### ♻ Code Refactoring
+
+* **杂项**: 重构 main 端方法 ([38f8cf2](https://github.com/arvinxx/umi-electron-template/commit/38f8cf2))
+
+
+### ✨ Features
+
+* **style**: 集成 tailwindcss 框架 ([3bfe813](https://github.com/arvinxx/umi-electron-template/commit/3bfe813))
+* **杂项**: 添加切换暗色模式按钮 ([a97d0b7](https://github.com/arvinxx/umi-electron-template/commit/a97d0b7))
+* **杂项**: 补充必要的工具函数 ([0f96ec1](https://github.com/arvinxx/umi-electron-template/commit/0f96ec1))
+
+
+### 🎫 Chores
+
+* **ci**: 优化输出配置 ([cd038ae](https://github.com/arvinxx/umi-electron-template/commit/cd038ae))
+* **ci**: 优化输出配置 ([511e14b](https://github.com/arvinxx/umi-electron-template/commit/511e14b))
+* **ci**: 优化输出配置 ([a009962](https://github.com/arvinxx/umi-electron-template/commit/a009962))
+* **ci**: 优化输出配置 ([aece210](https://github.com/arvinxx/umi-electron-template/commit/aece210))
+* **ci**: 优化输出配置 ([0ad779b](https://github.com/arvinxx/umi-electron-template/commit/0ad779b))
+* **ci**: 优化输出配置 ([33bbf83](https://github.com/arvinxx/umi-electron-template/commit/33bbf83))
+* **ci**: 优化输出配置 ([9daea46](https://github.com/arvinxx/umi-electron-template/commit/9daea46))
+* **ci**: 优化输出配置 ([e56c3d9](https://github.com/arvinxx/umi-electron-template/commit/e56c3d9))
+* **ci**: 优化输出配置 ([214f493](https://github.com/arvinxx/umi-electron-template/commit/214f493))
+* **ci**: 优化输出配置 ([a6a7002](https://github.com/arvinxx/umi-electron-template/commit/a6a7002))
+* **ci**: 优化输出配置 ([ad747a5](https://github.com/arvinxx/umi-electron-template/commit/ad747a5))
+* **ci**: 添加发版状态说明 ci ([56ffdb9](https://github.com/arvinxx/umi-electron-template/commit/56ffdb9))
+* **ci**: 调整发版状态文本 ([28bb47f](https://github.com/arvinxx/umi-electron-template/commit/28bb47f))
+* **deps**: 清理模块 ([a442890](https://github.com/arvinxx/umi-electron-template/commit/a442890))
+* **devtools**: 优化 devtools ([39b0e52](https://github.com/arvinxx/umi-electron-template/commit/39b0e52))
+* **杂项**: 更新配置文件 ([d8ac1fe](https://github.com/arvinxx/umi-electron-template/commit/d8ac1fe))
+* **杂项**: 测试 license 输出 ([1251cae](https://github.com/arvinxx/umi-electron-template/commit/1251cae))
+* **杂项**: 目录架构调整成 main 和 renderer 类型 ([e4d119a](https://github.com/arvinxx/umi-electron-template/commit/e4d119a))
+* **杂项**: 补充类型定义 ([390cc27](https://github.com/arvinxx/umi-electron-template/commit/390cc27))
+* **自动发布**: 优化发版配置 ([9c038b2](https://github.com/arvinxx/umi-electron-template/commit/9c038b2))
+* **自动发布**: 优化发版配置 ([a2ab483](https://github.com/arvinxx/umi-electron-template/commit/a2ab483))
+* **自动发布**: 优化发版配置 ([6f29baa](https://github.com/arvinxx/umi-electron-template/commit/6f29baa))
+* **自动发布**: 优化发版配置 ([f7cf423](https://github.com/arvinxx/umi-electron-template/commit/f7cf423))
+* **自动发布**: 优化发版配置 ([a859500](https://github.com/arvinxx/umi-electron-template/commit/a859500))
+* **自动发布**: 优化发版配置 ([58463a9](https://github.com/arvinxx/umi-electron-template/commit/58463a9))
+* **自动发布**: 优化发版配置 ([a78b7d7](https://github.com/arvinxx/umi-electron-template/commit/a78b7d7))
+* **自动发布**: 优化发版配置 ([b04d0da](https://github.com/arvinxx/umi-electron-template/commit/b04d0da))
+
+
+### 🐛 Bug Fixes
+
+* **license**: 修复 license 编码问题 ([947ee78](https://github.com/arvinxx/umi-electron-template/commit/947ee78))
+
+
+### 👷 Build System
+
+* **deps-dev**: bump @ant-design/pro-layout from 6.12.0 to 6.13.0 ([fd81712](https://github.com/arvinxx/umi-electron-template/commit/fd81712))
+* **deps-dev**: bump @types/diff from 4.0.2 to 5.0.0 ([3dc1369](https://github.com/arvinxx/umi-electron-template/commit/3dc1369))
+* **deps-dev**: bump antd from 4.10.3 to 4.11.2 ([508c716](https://github.com/arvinxx/umi-electron-template/commit/508c716))
+* **deps-dev**: bump commitlint-config-gitmoji from 2.1.2 to 2.2.1 ([7a23b89](https://github.com/arvinxx/umi-electron-template/commit/7a23b89))
+* **deps-dev**: bump conventional-changelog-gitmoji-config ([86d0235](https://github.com/arvinxx/umi-electron-template/commit/86d0235))
+* **deps-dev**: bump cross-env from 5.2.1 to 7.0.3 ([c6d09c8](https://github.com/arvinxx/umi-electron-template/commit/c6d09c8))
+* **deps-dev**: bump diff from 4.0.2 to 5.0.0 ([9c8903a](https://github.com/arvinxx/umi-electron-template/commit/9c8903a))
+* **deps-dev**: bump eslint from 7.18.0 to 7.19.0 ([894b614](https://github.com/arvinxx/umi-electron-template/commit/894b614))
+* **deps-dev**: bump jest from 25.5.4 to 26.6.3 ([36fd298](https://github.com/arvinxx/umi-electron-template/commit/36fd298))
+* **deps-dev**: bump ts-jest from 26.4.4 to 26.5.0 ([65b9714](https://github.com/arvinxx/umi-electron-template/commit/65b9714))
+
+
+### 💄 Styles
+
+* **杂项**: 添加 token ([c0c3663](https://github.com/arvinxx/umi-electron-template/commit/c0c3663))
+
+
+### 📝 Documentation
+
+* **杂项**: 更新说明文档 ([4a63ab9](https://github.com/arvinxx/umi-electron-template/commit/4a63ab9))
+
+
+### 🔧 Continuous Integration
+
+* **杂项**: 修复 lint 方法 ([ba70f73](https://github.com/arvinxx/umi-electron-template/commit/ba70f73))
+* **杂项**: 修复 lint 方法 ([754654e](https://github.com/arvinxx/umi-electron-template/commit/754654e))
+* **杂项**: 尝试修复 release ci ([64c277d](https://github.com/arvinxx/umi-electron-template/commit/64c277d))
+* **杂项**: 尝试修复 release ci ([70ec67f](https://github.com/arvinxx/umi-electron-template/commit/70ec67f))
+* **杂项**: 尝试修复 release ci 版本号 ([0b37cf8](https://github.com/arvinxx/umi-electron-template/commit/0b37cf8))
+
 ## [1.2.3](https://github.com/arvinxx/umi-electron-template/compare/v1.2.2...v1.2.3) (2021-01-24)
 
 
