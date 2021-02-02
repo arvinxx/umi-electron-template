@@ -1,6 +1,6 @@
 import { BrowserWindow } from 'electron';
 import { loadUrl } from '@/utils/protocol';
-import { dev } from 'electron-is';
+// import { dev } from 'electron-is';
 import { loadDevTools } from '@/utils/devTools';
 
 interface WindowCreatorOpts {
@@ -24,7 +24,7 @@ export const windowCreator = (opts: WindowCreatorOpts) => {
     webPreferences: {
       nodeIntegration: true,
       // enableRemoteModule: dev(),
-      devTools: dev(),
+      // devTools: dev(),
     },
   });
 
