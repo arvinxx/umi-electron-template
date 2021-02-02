@@ -13,8 +13,9 @@
     "noImplicitReturns": true,
     "inlineSources": true,
     "allowSyntheticDefaultImports": true,
+    /**  开启装饰器 **/
+    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "newLine": "lf",
     "skipLibCheck": true,
     "noEmitOnError": true
   },
