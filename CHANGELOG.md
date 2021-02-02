@@ -1,5 +1,12 @@
 # Umi Electron Template 更新日志
 
+## [1.3.3](https://github.com/arvinxx/umi-electron-template/compare/v1.3.2...v1.3.3) (2021-02-02)
+
+
+### 🐛 Bug Fixes
+
+* **杂项**: 修复 release ci 版本号不升级的 bug ([f7da0c3](https://github.com/arvinxx/umi-electron-template/commit/f7da0c3))
+
 ## [1.3.2](https://github.com/arvinxx/umi-electron-template/compare/v1.3.1...v1.3.2) (2021-02-02)
 
 
