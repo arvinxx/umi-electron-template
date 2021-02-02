@@ -16,6 +16,7 @@
 - main 与 renderer 双目录架构
 - 集成 tailwindcss
 - 集成切换暗色模式
+- 集成 macOS app 签名与公证
 - 基于 Gitmoji Commit Workflow, 集成自动化版本管理与发布
 
 ## License
