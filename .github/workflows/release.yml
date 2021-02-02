@@ -45,7 +45,7 @@ jobs:
   build:
     needs: check
     name: Build
-    if: needs.check.outputs.semantic.new_release_published == 'true'
+    if: needs.check.outputs.semantic == 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -73,7 +73,7 @@ jobs:
 
       - name: Tricky version
         run: |
-          npx npe version ${{ fromJSON(needs.check.outputs.semantic).new_release_version }}
+          npx npe version ${{ needs.check.outputs.semantic }}
 
       - name: Build
         run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
@@ -93,7 +93,7 @@ jobs:
     name: Release Status
     steps:
       - name: Release Status
-        run: echo "🚦New Verison Release Status -> ${{ needs.check.outputs.semantic.new_release_published }}"
+        run: echo "🚦New Verison Release Status -> ${{ needs.check.outputs.semantic }}"
   list:
     needs: build
     name: List Artifact
