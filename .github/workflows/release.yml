@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
-      semantic: ${{ toJSON(steps.semantic.outputs) }} # ! MUST BE STRING
+      semantic: ${{ steps.semantic.outputs.new_release_published }} # ! MUST BE STRING
     steps:
       - uses: actions/checkout@v2
 
@@ -45,7 +45,7 @@ jobs:
   build:
     needs: check
     name: Build
-    if: fromJSON(needs.check.outputs.semantic).new_release_published == 'true'
+    if: needs.check.outputs.semantic.new_release_published == 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -93,7 +93,7 @@ jobs:
     name: Release Status
     steps:
       - name: Release Status
-        run: echo "🚦New Verison Release Status -> ${{ fromJSON(needs.check.outputs.semantic).new_release_published }}"
+        run: echo "🚦New Verison Release Status -> ${{ needs.check.outputs.semantic.new_release_published }}"
   list:
     needs: build
     name: List Artifact
