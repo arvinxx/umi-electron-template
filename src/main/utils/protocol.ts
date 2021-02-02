@@ -15,7 +15,7 @@ export const loadUrl = (windows: Main.BrowserWindow, name: Main.WindowName) => {
   const { PORT = 8000 } = process.env;
 
   if (dev()) {
-    windows.loadURL(`http://localhost:${PORT}/#/${name}`);
+    windows.loadURL(`http://localhost:${PORT}/${name}.html`);
   } else {
     createProtocol('app');
     windows.loadURL(`app://./${name}.html`);

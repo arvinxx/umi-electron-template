@@ -22,6 +22,12 @@ export default defineConfig({
       component: '@/renderer/pages/index',
     },
   ],
+  /**
+   * electron 默认情况下应该其实就是 mpa 环境
+   * 因此直接开启 mpa 参数即变成多页应用
+   * 需要注意的是在 dev 时越需要加 .html 后缀
+   */
+  mpa: {},
   fastRefresh: {},
   electronBuilder: {
     outputDir: 'release',
