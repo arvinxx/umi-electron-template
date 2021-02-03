@@ -1,5 +1,30 @@
 # Umi Electron Template 更新日志
 
+# [1.6.0](https://github.com/arvinxx/umi-electron-template/compare/v1.5.0...v1.6.0) (2021-02-03)
+
+
+### ✨ 新特性
+
+* **杂项**: 构建 sqlite3 数据库能力 ([be96459](https://github.com/arvinxx/umi-electron-template/commit/be96459))
+
+
+### 🎫 杂项
+
+* **deps**: 回退 sqlite3 版本 ([3ad14e0](https://github.com/arvinxx/umi-electron-template/commit/3ad14e0))
+* **日志**: 更改日志语言为中文 ([15a2155](https://github.com/arvinxx/umi-electron-template/commit/15a2155))
+
+
+### 👷 构建系统
+
+* **deps-dev**: bump @testing-library/react from 11.2.3 to 11.2.5 ([53e2fe6](https://github.com/arvinxx/umi-electron-template/commit/53e2fe6))
+* **deps-dev**: bump electron from 11.2.1 to 11.2.2 ([d7efe64](https://github.com/arvinxx/umi-electron-template/commit/d7efe64))
+
+
+### 📝 文档
+
+* **说明文档**: 更新 README.md ([4000f69](https://github.com/arvinxx/umi-electron-template/commit/4000f69))
+* **说明文档**: 更新模板特性 ([67b9256](https://github.com/arvinxx/umi-electron-template/commit/67b9256))
+
 # [1.5.0](https://github.com/arvinxx/umi-electron-template/compare/v1.4.0...v1.5.0) (2021-02-03)
 
 
