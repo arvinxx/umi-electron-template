@@ -11,14 +11,30 @@
 
 ## 特性
 
-- 基于 [umi-plugin-electron-builder](https://github.com/BySlin/umi-plugin-electron-builder) 构建 享受 umi 生态全量开发能力
-- 集成 React Dev Tools 与 Redux Dev Tools
-- main 与 renderer 双目录架构
-- 集成 macOS app 签名与公证
-- 基于 Gitmoji Commit Workflow, 集成自动化版本管理与发布
-- 集成 sqlite3 与 TypeORM
-- 集成 tailwindcss
-- 集成切换暗色模式
+### 架构
+
+- 基于 [umi-plugin-electron-builder][umi-plugin-electron-builder] 构建，享受 umi 生态全量开发能力；
+- 采用 [electron-builder][electron-builder] 打包构建工具；
+- 使用 Main 与 Renderer 双目录架构；
+
+### 内置功能
+
+- **样式框架**: 集成 tailwindcss；
+- **数据持久化**: 集成 sqlite3 与 TypeORM 作为本地数据库；
+- **签名公证**: 集成 macOS app 签名与公证，包含在 CI/CD 流程中；
+
+### 开发体验
+
+- 集成 [react-devtools][react-devtools] 与 [Redux Dev Tools][redux-devtools]；
+- 基于 [Gitmoji Commit Workflow][gitmoji-commit-workflow], 集成自动化版本管理与发布；
+
+<!-- url -->
+
+[umi-plugin-electron-builder]: https://github.com/BySlin/umi-plugin-electron-builder
+[react-devtools]: https://www.npmjs.com/package/react-devtools
+[electron-builder]: https://www.electron.build/
+[redux-devtools]: https://github.com/reduxjs/redux-devtools
+[gitmoji-commit-workflow]: https://github.com/arvinxx/gitmoji-commit-workflow/
 
 ## License
 
