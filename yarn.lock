@@ -44,14 +44,14 @@
     insert-css "^2.0.0"
     rc-util "^5.0.1"
 
-"@ant-design/pro-layout@^6.13.0":
-  version "6.13.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.13.0.tgz#365322e556a9347eb7b986fe4e2c08610190cebd"
-  integrity sha512-1z9zJRR+NexJSIPBZD1n0WofGtzf9a3nhj3SoeXj36micBv06mfx9j/pR3owpQFB0cSF3MbzyynfL9lqpQBzBw==
+"@ant-design/pro-layout@^6.14.0":
+  version "6.14.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.14.0.tgz#56b45c43f68dc56b8dcae53f618080924eb234c3"
+  integrity sha512-w0nAN4OITMaJ14m1JcfFsU+GCYMqUIG7JgkfZUiLZIyieGVPuZ86C5XABgAftacxukIttEufLSl+4fYNnyaDnw==
   dependencies:
     "@ant-design/icons" "^4.0.0"
     "@ant-design/pro-provider" "1.4.4"
-    "@ant-design/pro-utils" "1.11.2"
+    "@ant-design/pro-utils" "1.11.3"
     "@umijs/route-utils" "^1.0.33"
     classnames "^2.2.6"
     omit.js "^2.0.2"
@@ -72,10 +72,10 @@
   dependencies:
     rc-util "^5.0.1"
 
-"@ant-design/pro-utils@1.11.2":
-  version "1.11.2"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.11.2.tgz#ad88226211948b056d69ad35775f19e1e02c006f"
-  integrity sha512-G+kv5fqEzVLBEQB7yRpIuuU/udCPiPOD+Dc1zHisJsVyh4hoVh8soOmlTMD1JJFgtxOAjwxkPXFfbe3GO5HdQQ==
+"@ant-design/pro-utils@1.11.3":
+  version "1.11.3"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.11.3.tgz#6e2ddd3b7d98eb39e3ddfc4f898222a4f1138349"
+  integrity sha512-TTqwP8S2x21l492hcHowPc46ubCNVeSgP841SjCy5rrfFiOBuOleaB4b69DrkoIew4g4HVXwskaFWOsGjzWDkA==
   dependencies:
     "@ant-design/icons" "^4.3.0"
     "@ant-design/pro-provider" "1.4.4"
