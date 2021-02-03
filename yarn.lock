@@ -7741,10 +7741,10 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.0.3, electron@^11.2.1:
-  version "11.2.1"
-  resolved "https://registry.npm.taobao.org/electron/download/electron-11.2.1.tgz#8641dd1a62911a1144e0c73c34fd9f37ccc65c2b"
-  integrity sha1-hkHdGmKRGhFE4Mc8NP2fN8zGXCs=
+electron@^11.0.3, electron@^11.2.2:
+  version "11.2.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-11.2.2.tgz#c2e53eb56bd21ae1dc01bc781f2f6bcbe0c18033"
+  integrity sha512-+OitkBrnCFwOF5LXAeNnfIJDKhdBm77jboc16WCIpDsCyT+JpGsKK4y6o30nRZq3zC+wZggUm5w6Ujw5n76CGg==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
