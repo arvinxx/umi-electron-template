@@ -14,10 +14,11 @@
 - 基于 [umi-plugin-electron-builder](https://github.com/BySlin/umi-plugin-electron-builder) 构建 享受 umi 生态全量开发能力
 - 集成 React Dev Tools 与 Redux Dev Tools
 - main 与 renderer 双目录架构
-- 集成 tailwindcss
-- 集成切换暗色模式
 - 集成 macOS app 签名与公证
 - 基于 Gitmoji Commit Workflow, 集成自动化版本管理与发布
+- 集成 sqlite3 与 TypeORM
+- 集成 tailwindcss
+- 集成切换暗色模式
 
 ## License
 
