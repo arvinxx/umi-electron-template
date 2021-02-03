@@ -17,9 +17,18 @@ export default defineConfig({
   theme,
   routes: [
     {
-      path: '/home',
-      wrappers: ['@/renderer/layouts/BaseLayout'],
-      component: '@/renderer/pages/index',
+      path: '/',
+      component: '@/renderer/layouts/BaseLayout',
+      routes: [
+        {
+          path: '/home',
+          component: '@/renderer/pages/home',
+        },
+        {
+          path: '/database',
+          component: '@/renderer/pages/database',
+        },
+      ],
     },
   ],
   /**
@@ -37,12 +46,13 @@ export default defineConfig({
   fastRefresh: {},
   electronBuilder: {
     routerMode: isDev ? 'hash' : 'browser',
-
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
+    externals: ['sqlite3', 'sequelize', 'typeorm', 'reflect-metadata'],
   },
   alias: {
     '@/hooks': resolve(__dirname, '../src/renderer/hooks'),
+    '@/utils': resolve(__dirname, '../src/renderer/utils'),
     '@/common': resolve(__dirname, '../src/common'),
     theme: resolve(__dirname, '../src/renderer/theme'), // less 全局样式文件
   },

@@ -1,7 +1,5 @@
 import { BrowserWindow } from 'electron';
-import { loadUrl } from '@/utils/protocol';
-// import { dev } from 'electron-is';
-import { loadDevTools } from '@/utils/devTools';
+import { loadUrl, loadDevTools } from '@/utils';
 
 interface WindowCreatorOpts {
   url: Main.WindowName;
@@ -9,6 +7,10 @@ interface WindowCreatorOpts {
   width?: number;
   height?: number;
   devTools?: boolean;
+  /**
+   * 允许 renderer 进行使用 remote 模块
+   */
+  remote?: boolean;
 }
 
 /**
@@ -16,14 +18,14 @@ interface WindowCreatorOpts {
  * @param opts { WindowCreatorOpts }
  */
 export const windowCreator = (opts: WindowCreatorOpts) => {
-  const { url, title, width, height, devTools } = opts;
+  const { url, title, width, height, devTools, remote } = opts;
   const windows = new BrowserWindow({
     width,
     height,
     title,
     webPreferences: {
       nodeIntegration: true,
-      // enableRemoteModule: dev(),
+      enableRemoteModule: remote,
       // devTools: dev(),
     },
   });

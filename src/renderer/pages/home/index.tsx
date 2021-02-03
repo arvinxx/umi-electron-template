@@ -1,11 +1,15 @@
 import type { FC } from 'react';
 import React from 'react';
 import { Button, Space } from 'antd';
-import { shell } from 'electron';
+
+import { routeTo } from '@/utils';
+import { useShell } from '@/hooks';
 
 import styles from './index.less';
 
 const Home: FC = () => {
+  const { openUrl } = useShell();
+
   return (
     <div className={styles.container}>
       <div>
@@ -23,19 +27,20 @@ const Home: FC = () => {
         <span className={styles.link}>空谷的 Electron 笔记</span>
       </div>
       <Space>
-        <a target={'_blank'} href="https://www.yuque.com/arvinxx-fe/electron">
-          <Button>在 Electron 打开</Button>
-        </a>
-
         <Button
           onClick={() => {
-            shell
-              .openExternal('https://www.yuque.com/arvinxx-fe/electron')
-              .then();
+            openUrl('https://www.yuque.com/arvinxx-fe/electron');
+          }}
+        >
+          打开笔记
+        </Button>
+        <Button
+          onClick={() => {
+            routeTo('/database');
           }}
           type={'primary'}
         >
-          在浏览器中打开
+          查看数据页面
         </Button>
       </Space>
     </div>

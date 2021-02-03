@@ -19,11 +19,13 @@ export class DatabaseManger {
   }
 
   public async init(entities: any[]): Promise<void> {
+    console.log('start init database...');
     this.connection = await createConnection({
       type: 'sqlite',
-      database: path.join(this.storagePath, 'db.sqlite'),
+      database: path.join(this.storagePath, 'database', 'db.sqlite'),
       entities,
     });
+    console.log('init success!');
 
     if (this.connection.isConnected) {
       await this.connection.synchronize();
