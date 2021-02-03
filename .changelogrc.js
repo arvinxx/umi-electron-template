@@ -9,5 +9,5 @@ module.exports = {
     types: '类型',
     readme: '说明文档',
   },
-  language: 'zh-CN',
+  titleLanguage: 'zh-CN',
 };
