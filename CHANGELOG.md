@@ -1,5 +1,29 @@
 # Umi Electron Template 更新日志
 
+# [1.5.0](https://github.com/arvinxx/umi-electron-template/compare/v1.4.0...v1.5.0) (2021-02-03)
+
+
+### ✨ Features
+
+* **杂项**: 添加数据持久化模型 ([4041874](https://github.com/arvinxx/umi-electron-template/commit/4041874))
+
+
+### 🎫 Chores
+
+* **日志**: 更改日志语言为中文 ([6491edd](https://github.com/arvinxx/umi-electron-template/commit/6491edd))
+
+
+### 🐛 Bug Fixes
+
+* **杂项**: 修复数据库错误 ([0dd05cd](https://github.com/arvinxx/umi-electron-template/commit/0dd05cd))
+
+
+### 📝 Documentation
+
+* **日志**: 更新日志 ([b590848](https://github.com/arvinxx/umi-electron-template/commit/b590848))
+* **日志**: 更新日志 ([ddc4e29](https://github.com/arvinxx/umi-electron-template/commit/ddc4e29))
+* **说明文档**: 更新 README.md ([ae16342](https://github.com/arvinxx/umi-electron-template/commit/ae16342))
+
 # [1.4.0](https://github.com/arvinxx/umi-electron-template/compare/v1.3.3...v1.4.0) (2021-02-02)
 
 ### ✨ Features
