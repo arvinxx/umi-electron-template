@@ -1,4 +1,4 @@
 export * from './protocol';
-export * from './windows';
+export { default as WindowManger, WindowOpts } from './windowManger';
 export * from './devTools';
 export * from './DatabaseManger';
