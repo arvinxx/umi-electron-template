@@ -1,5 +1,12 @@
 # Umi Electron Template 更新日志
 
+## [1.7.1](https://github.com/arvinxx/umi-electron-template/compare/v1.7.0...v1.7.1) (2021-02-04)
+
+
+### 🐛 修复
+
+* **build**: 修复构建后报模块无法找到的错误 ([69da161](https://github.com/arvinxx/umi-electron-template/commit/69da161))
+
 # [1.7.0](https://github.com/arvinxx/umi-electron-template/compare/v1.6.0...v1.7.0) (2021-02-04)
 
 
