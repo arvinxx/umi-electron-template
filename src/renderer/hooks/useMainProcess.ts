@@ -1,4 +1,4 @@
-import { shell } from 'electron';
+import { shell } from '@/bridge';
 
 /**
  * 打开外部链接
