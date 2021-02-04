@@ -19,14 +19,14 @@
 
 ### 内置功能
 
-- **样式框架**: 集成 tailwindcss；
-- **数据持久化**: 集成 sqlite3 与 TypeORM 作为本地数据库；
+- **样式框架**: 集成 TailwindCSS；
+- **数据持久化**: 集成 sqlite3 作为本地数据库， TypeORM 作为 ORM；
 - **签名公证**: 集成 macOS app 签名与公证，包含在 CI/CD 流程中；
 
 ### 开发体验
 
 - 集成 [react-devtools][react-devtools] 与 [Redux Dev Tools][redux-devtools]；
-- 基于 [Gitmoji Commit Workflow][gitmoji-commit-workflow], 集成自动化版本管理与发布；
+- 基于 [Gitmoji Commit Workflow][gitmoji-commit-workflow], 实现自动化版本管理与发布；
 
 <!-- url -->
 
