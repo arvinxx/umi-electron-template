@@ -67,7 +67,7 @@
     "@types/classnames": "^2.2.11",
     "@types/diff": "^5.0.0",
     "@types/jest": "^26.0.20",
-    "@types/node": "^14.14.22",
+    "@types/node": "^14.14.25",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
     "@types/react-test-renderer": "^17.0.0",
