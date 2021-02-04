@@ -2,6 +2,8 @@ module.exports = {
   scopeDisplayName: {
     '*': '杂项',
     script: '脚本',
+    deps: '依赖',
+    'deps-dev': '依赖',
     scripts: '脚本',
     changelog: '日志',
     config: '配置',
