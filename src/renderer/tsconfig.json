@@ -5,6 +5,8 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
+      "@/common": ["../common"],
+      "@/common/*": ["../common/*"],
       "@/*": ["*"],
       "@@/*": ["../.umi/*"]
     }
