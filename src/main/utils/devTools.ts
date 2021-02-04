@@ -1,5 +1,6 @@
 import { app } from 'electron';
 import { dev } from 'electron-is';
+import { logger } from './logger';
 
 /**
  *  加载插件和开发者工具窗口
@@ -30,10 +31,10 @@ export const loadDevTools = () => {
 
     try {
       installExtension(extensions).then((name: string) => {
-        console.log(`Added Extension:  ${name}`);
+        logger.trace(`Added Extension:  ${name}`);
       });
     } catch (e) {
-      console.log('An error occurred: ', e);
+      logger.error('An error occurred: ', e);
     }
   });
 };

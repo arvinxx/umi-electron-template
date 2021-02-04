@@ -2,7 +2,9 @@ import { app } from 'electron';
 import type { Connection } from 'typeorm';
 import { createConnection } from 'typeorm';
 import path from 'path';
+import { getLogger } from './logger';
 
+const logger = getLogger('database');
 /**
  * 数据管理方法
  */
@@ -19,13 +21,20 @@ export class DatabaseManger {
   }
 
   public async init(entities: any[]): Promise<void> {
-    console.log('start init database...');
-    this.connection = await createConnection({
+    logger.trace('开始连接数据库...');
+    await createConnection({
       type: 'sqlite',
       database: path.join(this.storagePath, 'database', 'db.sqlite'),
       entities,
-    });
-    console.log('init success!');
+    })
+      .then((connection) => {
+        this.connection = connection;
+        logger.trace('数据库初始化成功!');
+      })
+      .catch((err) => {
+        logger.error('数据库初始化失败,错误信息:');
+        logger.error(err);
+      });
 
     if (this.connection.isConnected) {
       await this.connection.synchronize();
