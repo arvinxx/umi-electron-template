@@ -1,5 +1,39 @@
 # Umi Electron Template 更新日志
 
+# [1.7.0](https://github.com/arvinxx/umi-electron-template/compare/v1.6.0...v1.7.0) (2021-02-04)
+
+
+### ♻ 重构
+
+* **杂项**: 重构 renderer 与 main 桥接部分 ([2428002](https://github.com/arvinxx/umi-electron-template/commit/2428002))
+* **杂项**: 重构 renderer 与 main 桥接部分 ([5df427f](https://github.com/arvinxx/umi-electron-template/commit/5df427f))
+* **杂项**: 重构 window 实现 ([88e498b](https://github.com/arvinxx/umi-electron-template/commit/88e498b))
+
+
+### ✨ 新特性
+
+* **杂项**: 为 renderer 添加日志记录能力 ([6db971f](https://github.com/arvinxx/umi-electron-template/commit/6db971f))
+* **杂项**: 添加产品级日志能力 ([e8c7e8c](https://github.com/arvinxx/umi-electron-template/commit/e8c7e8c))
+
+
+### 🎫 杂项
+
+* **依赖**: 添加日志相关依赖 ([b4d21b1](https://github.com/arvinxx/umi-electron-template/commit/b4d21b1))
+* **日志**: 补充日志配置项 ([0cd60ff](https://github.com/arvinxx/umi-electron-template/commit/0cd60ff))
+
+
+### 👷 构建系统
+
+* **依赖**: bump @ant-design/pro-layout from 6.13.0 to 6.14.0 ([0b69eac](https://github.com/arvinxx/umi-electron-template/commit/0b69eac))
+* **依赖**: bump @types/react from 17.0.0 to 17.0.1 ([c751f1f](https://github.com/arvinxx/umi-electron-template/commit/c751f1f))
+* **依赖**: bump ahooks from 2.9.4 to 2.9.6 ([61e553b](https://github.com/arvinxx/umi-electron-template/commit/61e553b))
+* **依赖**: bump antd from 4.11.2 to 4.12.1 ([852acb5](https://github.com/arvinxx/umi-electron-template/commit/852acb5))
+
+
+### 📝 文档
+
+* **说明文档**: 优化说明文档 ([97e0f2f](https://github.com/arvinxx/umi-electron-template/commit/97e0f2f))
+
 # [1.6.0](https://github.com/arvinxx/umi-electron-template/compare/v1.5.0...v1.6.0) (2021-02-03)
 
 
