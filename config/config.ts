@@ -1,9 +1,17 @@
 import { defineConfig } from 'umi';
 import ElectronBuilderOpts from './electronBuilderOpts';
 import { resolve } from 'path';
+import { readJSONSync } from 'fs-extra';
+
 import theme from '../src/renderer/theme/theme';
 
 const isDev = process.env.NODE_ENV === 'development';
+
+// 必须将作为node的依赖，例如 sqlite3、typeORM 等 external 掉
+// 否则无法使用
+const pkg = readJSONSync(resolve(__dirname, '../package.json'));
+const deps = pkg.dependencies;
+const externals = Object.keys(deps);
 
 export default defineConfig({
   nodeModulesTransform: {
@@ -33,8 +41,8 @@ export default defineConfig({
   ],
   /**
    * electron 默认情况下应该其实就是 mpa 环境
-   * 因此直接开启 mpa 参数即变成多页应用
-   * 需要注意的是在 dev 时越需要加 .html 后缀
+   * 但是直接使用 umi 的 mpa 方法会丢失全局 Layout
+   * 因此使用 exportStatic 间接实现 mpa
    */
   exportStatic: isDev
     ? undefined
@@ -42,14 +50,12 @@ export default defineConfig({
         htmlSuffix: true,
         dynamicRoot: true,
       },
-
   fastRefresh: {},
   electronBuilder: {
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
-    // 必须将 sqlite3 external 否则无法使用
-    externals: ['sqlite3', 'typeorm', 'reflect-metadata'],
+    externals,
   },
   alias: {
     '@/hooks': resolve(__dirname, '../src/renderer/hooks'),

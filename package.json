@@ -9,13 +9,14 @@
   "scripts": {
     "start": "yarn electron:dev",
     "render:dev": "umi dev",
-    "electron:dev": "PORT=7777 umi dev electron",
+    "electron:dev": "cross-env PORT=7777 umi dev electron",
     "---------": "",
     "build": "umi build electron",
     "build:local": "umi build electron --dir",
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",
+    "rebuild": "electron-builder install-app-deps",
     "--------- ": "",
     "devtools": "react-devtools",
     "---------    ": "",
@@ -34,10 +35,10 @@
     "lint-staged:js": "eslint --cache --ext .js,.jsx,.ts,.tsx --format=pretty",
     "lint:fix": "eslint --fix --cache --ext .js,.jsx,.ts,.tsx --format=pretty ",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "---------     ": "",
-    "postinstall": "umi generate tmp && electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "clean": "rm -rf dist release .eslintcache ./src/.umi",
+    "postinstall": "umi generate tmp && yarn rebuild && electron-builder install-app-deps",
+    "postuninstall": "yarn rebuild && electron-builder install-app-deps"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [

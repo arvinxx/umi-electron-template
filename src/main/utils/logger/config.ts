@@ -38,7 +38,7 @@ const config: Configuration = {
     main: { appenders: ['app', 'console'], level },
     renderer: { appenders: ['app', 'console'], level },
     // 数据库日志
-    database: { appenders: ['database'], level },
+    database: { appenders: ['database', 'console'], level },
   },
 };
 
