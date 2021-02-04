@@ -48,10 +48,12 @@ export default defineConfig({
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
-    externals: ['sqlite3', 'sequelize', 'typeorm', 'reflect-metadata'],
+    // 必须将 sqlite3 external 否则无法使用
+    externals: ['sqlite3', 'typeorm', 'reflect-metadata'],
   },
   alias: {
     '@/hooks': resolve(__dirname, '../src/renderer/hooks'),
+    '@/bridge': resolve(__dirname, '../src/renderer/bridge'),
     '@/utils': resolve(__dirname, '../src/renderer/utils'),
     '@/common': resolve(__dirname, '../src/common'),
     theme: resolve(__dirname, '../src/renderer/theme'), // less 全局样式文件
