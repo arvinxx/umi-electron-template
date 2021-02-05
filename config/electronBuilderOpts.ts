@@ -37,7 +37,7 @@ export default {
    */
   mac: {
     category: 'public.app-category.developer-tools',
-    target: ['dmg'],
+    target: ['dmg', 'zip'],
     artifactName: '${name}_setup_${version}.${ext}',
     hardenedRuntime: true,
     gatekeeperAssess: false,
