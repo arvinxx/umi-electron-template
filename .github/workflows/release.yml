@@ -40,14 +40,14 @@ jobs:
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-cache
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Dependency cache
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
             **/node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-deps
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
         run: yarn
@@ -71,7 +71,7 @@ jobs:
         with:
           path: |
             **/node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-deps
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -97,7 +97,7 @@ jobs:
         with:
           path: |
             **/node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-deps
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
@@ -182,7 +182,7 @@ jobs:
         with:
           path: |
             **/node_modules
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-deps
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Release
         run: yarn release
