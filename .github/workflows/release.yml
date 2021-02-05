@@ -105,7 +105,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
+        os: [macos-11.0, windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
 
@@ -130,10 +130,7 @@ jobs:
 
       - name: Build artifact on macOS
         if: runner.os == 'macOS'
-        # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
-        # 目前由于 electron-builder 存在 bug https://github.com/electron-userland/electron-builder/issues/4299
-        # 所以需要手动完成 zip 包的制作
-        run: yarn build --publish never && yarn build:mac-zip
+        run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
         env:
           # 导入证书环境 有了签名可以保证 electron 在需要授权时使用的是同一个身份 id
           # Ref https://www.electron.build/code-signing
@@ -142,6 +139,13 @@ jobs:
           # 针对 macOS 提供 APPLE_ID 和 APPLE_ID_PASSWORD 进行 DMG 公证
           APPLE_ID: ${{ secrets.APPLE_ID }}
           APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
+
+      # 目前由于 electron-builder 在 10.15 版本打 zip 包存在 bug
+      # 详见 https://github.com/electron-userland/electron-builder/issues/4299
+      # 所以需要手动完成 zip 包的制作
+      - name: Build zip artifact on macOS
+        if: runner.os == 'macOS'
+        run: yarn build:mac-zip
 
       - name: Build artifact on other Platform
         if: runner.os != 'macOS'
