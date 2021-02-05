@@ -39,8 +39,8 @@
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "postinstall:umi-temp": "umi generate tmp",
     "postinstall:rebuild": "electron-builder install-app-deps",
-    "postinstall": "yarn postinstall:umi-temp && yarn postinstall:rebuild",
-    "postuninstall": "yarn postinstall:rebuild"
+    "postinstall": "yarn postinstall:umi-temp && yarn postinstall:rebuild && electron-builder install-app-deps",
+    "postuninstall": "yarn postinstall:rebuild && electron-builder install-app-deps"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -116,6 +116,7 @@
     "semantic-release": "^17.3.7",
     "sinon": "^9.0.0",
     "ts-jest": "^26.5.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.2",
     "umi": "^3.3.7",
     "umi-plugin-electron-builder": "^1.0.1",
