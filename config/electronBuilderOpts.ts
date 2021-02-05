@@ -23,7 +23,7 @@ export default {
    */
   win: {
     artifactName: '${name}_setup_${version}.${ext}',
-    target: 'nsis',
+    target: ['nsis'],
   },
   nsis: {
     oneClick: false,
@@ -87,6 +87,11 @@ export default {
     synopsis: 'umi electron template',
     category: 'Development',
   },
+
+  /**
+   * Publish 配置
+   */
+  publish: ['github'],
 
   /**
    * 构建配置项

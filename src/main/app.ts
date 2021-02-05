@@ -1,19 +1,29 @@
-import { getLogger } from '@/utils';
-import container, { loadAsync } from '@/ioc';
+import { dev } from 'electron-is';
+import { HomeWindow } from '@/views';
+import { createLogProxy } from '@/common';
+import { AppUpdater, getLogger } from '@/utils';
+import container, { loadContainerAsync } from '@/ioc';
 
 import { UserService } from './services';
 import { Logger } from './services';
-import { HomeWindow } from '@/views';
 
 const logger = getLogger('main');
 
 const { logSystemInfo } = Logger;
 
+const beforeInit = async () => {
+  if (!dev()) {
+    console.error = createLogProxy('error', getLogger('error'))(console.error);
+  }
+
+  await loadContainerAsync();
+};
+
 /**
  * 初始化 App 声明周期
  */
 export const initApp = async () => {
-  await loadAsync();
+  await beforeInit();
 
   logSystemInfo();
 
@@ -31,6 +41,8 @@ export const initApp = async () => {
   logger.info('初始化视图');
   const home = container.get(HomeWindow);
   home.show();
+
+  container.get(AppUpdater);
 
   logger.info('app 初始化完毕!');
   logger.divider('🎉');

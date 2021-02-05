@@ -1,15 +1,6 @@
 import { app } from 'electron';
 import { initApp } from './app';
-import { dev, windows } from 'electron-is';
-
-import { createLogProxy } from '@/common';
-import { getLogger } from '@/utils';
-
-const logger = getLogger('main');
-
-if (!dev()) {
-  console.error = createLogProxy('error', logger)(console.error);
-}
+import { windows } from 'electron-is';
 
 app.whenReady().then(initApp);
 

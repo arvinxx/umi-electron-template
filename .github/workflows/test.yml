@@ -3,7 +3,7 @@ on: [push, pull_request]
 
 jobs:
   test:
-    name: Test
+    name: Code quality check
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -16,15 +16,22 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Cache multiple paths
-        uses: actions/cache@v2
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Yarn cache
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Dependency cache
+        uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
         run: yarn

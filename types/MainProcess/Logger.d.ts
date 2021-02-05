@@ -6,7 +6,7 @@ declare namespace Main {
   /**
    * 日志范围
    */
-  type LogScope = 'database' | 'app' | 'renderer' | 'main';
+  type LogScope = 'database' | 'app' | 'renderer' | 'main' | 'error';
   type LogLevel = 'info' | 'error' | 'trace' | 'warning' | 'debug';
 
   type GetLogger = (scope?: LogScope) => Logger;

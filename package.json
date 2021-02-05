@@ -1,9 +1,9 @@
 {
   "name": "umi-electron-template",
-  "version": "1.7.2",
+  "version": "1.8.0-beta.4",
   "author": "Arvin Xu<arvinx@foxmail.com>",
   "main": "main.js",
-  "description": "a umi electron template",
+  "description": "umi electron template",
   "private": true,
   "repository": "https://github.com/arvinxx/umi-electron-template.git",
   "scripts": {
@@ -16,7 +16,7 @@
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",
-    "rebuild": "electron-builder install-app-deps",
+    "build:mac-zip": "ts-node scripts/buildMacZip.ts",
     "--------- ": "",
     "devtools": "react-devtools",
     "---------    ": "",
@@ -37,8 +37,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "---------     ": "",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
-    "postinstall": "umi generate tmp && yarn rebuild && electron-builder install-app-deps",
-    "postuninstall": "yarn rebuild && electron-builder install-app-deps"
+    "postinstall": "umi generate tmp && electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -50,6 +50,7 @@
     ]
   },
   "dependencies": {
+    "electron-updater": "^4.3.5",
     "inversify": "^5.0.5",
     "log4js": "^6.3.0",
     "os-name": "^4.0.0",
@@ -59,7 +60,6 @@
     "typeorm": "^0.2.30"
   },
   "devDependencies": {
-    "inversify-binding-decorators": "^4.0.0",
     "@ant-design/icons": "^4.0.2",
     "@ant-design/pro-layout": "^6.14.0",
     "@commitlint/cli": "^11.0.0",
@@ -70,6 +70,7 @@
     "@types/classnames": "^2.2.11",
     "@types/diff": "^5.0.0",
     "@types/jest": "^26.0.20",
+    "@types/js-yaml": "^4.0.0",
     "@types/node": "^14.14.25",
     "@types/react": "^17.0.1",
     "@types/react-dom": "^17.0.0",
@@ -100,8 +101,10 @@
     "electron-webpack-ts": "^4.0.1",
     "eslint": "^7.19.0",
     "husky": "^4.3.8",
+    "inversify-binding-decorators": "^4.0.0",
     "jest": "^26.6.3",
     "jest-sinon": "^1.0.4",
+    "js-yaml": "^4.0.0",
     "less-vars-to-js": "^1.3.0",
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.0",
@@ -111,6 +114,7 @@
     "semantic-release": "^17.3.7",
     "sinon": "^9.0.0",
     "ts-jest": "^26.5.0",
+    "ts-node": "^9.1.1",
     "typescript": "^4.1.2",
     "umi": "^3.3.7",
     "umi-plugin-electron-builder": "^1.0.1",

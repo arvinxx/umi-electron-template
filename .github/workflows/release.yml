@@ -3,10 +3,61 @@ on:
   push:
     branches:
       - master
+      - beta
 
 jobs:
-  check:
+  precheck:
+    continue-on-error: true # 如果这个这个 job 挂了继续往下走
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        # 这个 action 可以 cancel 掉先前运行的 action
+        # 使得运行的脚本始终是最新的 commit
+        # https://github.com/marketplace/actions/skip-duplicate-actions
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          skip_after_successful_duplicate: 'true'
+          paths_ignore: '["**/README.md", "**/docs/**"]'
+
+  test:
     name: Code quality check
+    needs: precheck
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Yarn cache
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Dependency cache
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: |
+            **/node_modules
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        run: yarn
+
+      - name: lint
+        run: yarn lint
+
+  check:
+    needs: test
+    name: Release check
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
@@ -15,26 +66,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: '14'
-
-      - name: Cache multiple paths
-        uses: actions/cache@v2
+      - name: Dependency cache
+        uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
-
-      - name: Lint
-        run: yarn lint
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -43,6 +80,7 @@ jobs:
           dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     needs: check
     name: Build
@@ -54,27 +92,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: '14'
-
-      - name: Cache multiple paths
-        uses: actions/cache@v2
+      - name: Dependency cache
+        uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
-        run: |
-          npx npe version ${{ needs.check.outputs.version }}
+        run: npx npe version ${{ needs.check.outputs.version }}
 
       - name: Build artifact on macOS
         if: runner.os == 'macOS'
@@ -88,6 +114,13 @@ jobs:
           APPLE_ID: ${{ secrets.APPLE_ID }}
           APPLE_ID_PASSWORD: ${{ secrets.APPLE_ID_PASSWORD }}
 
+      # 目前由于 electron-builder 在 10.15 版本打 zip 包存在 bug
+      # 详见 https://github.com/electron-userland/electron-builder/issues/4299
+      # 所以需要手动完成 zip 包的制作
+      - name: Build zip artifact on macOS
+        if: runner.os == 'macOS'
+        run: yarn build:mac-zip
+
       - name: Build artifact on other Platform
         if: runner.os != 'macOS'
         run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
@@ -97,7 +130,9 @@ jobs:
         with:
           name: release
           path: |
+            release/latest*
             release/umi*.dmg*
+            release/umi*.zip*
             release/umi*.exe*
             release/umi*.AppImage
 
@@ -110,6 +145,7 @@ jobs:
         run: echo "🚦New Verison Release Status -> ${{ needs.check.outputs.is_new_version }}"
       - name: Release Version
         run: echo "🚦New Verison Release Version -> ${{ needs.check.outputs.version }}"
+
   list:
     needs: build
     name: List Artifact
@@ -123,6 +159,7 @@ jobs:
 
       - name: List artifact
         run: ls -al release
+
   publish:
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
     needs: build
@@ -140,23 +177,12 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: '14'
-
-      - name: Cache multiple paths
-        uses: actions/cache@v2
+      - name: Dependency cache
+        uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
+          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Release
         run: yarn release

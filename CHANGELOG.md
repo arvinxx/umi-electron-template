@@ -1,5 +1,84 @@
 # Umi Electron Template 更新日志
 
+# [1.8.0-beta.4](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2021-02-05)
+
+
+### 🎫 杂项
+
+* 重新生成 yarn.lock 文件 ([d16f139](https://github.com/arvinxx/umi-electron-template/commit/d16f139))
+* 重新生成 yarn.lock 文件 ([610ed7c](https://github.com/arvinxx/umi-electron-template/commit/610ed7c))
+
+
+### 🐛 修复
+
+* 调整 publish 配置 ([ba4311e](https://github.com/arvinxx/umi-electron-template/commit/ba4311e))
+
+
+### 🔧 持续集成
+
+* 优化缓存设置 ([7f9d088](https://github.com/arvinxx/umi-electron-template/commit/7f9d088))
+
+# [1.8.0-beta.3](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2021-02-05)
+
+
+### 🎫 杂项
+
+* 取消 registry 设置 ([53017ae](https://github.com/arvinxx/umi-electron-template/commit/53017ae))
+
+
+### 🐛 修复
+
+* 修复 macOS 生成的压缩包 ([9509a2d](https://github.com/arvinxx/umi-electron-template/commit/9509a2d))
+
+
+### 📝 文档
+
+* 更新文档 ([d16bd18](https://github.com/arvinxx/umi-electron-template/commit/d16bd18))
+
+# [1.8.0-beta.2](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.1...v1.8.0-beta.2) (2021-02-05)
+
+
+### 🎫 杂项
+
+* 修复 macOS 环境 ([bb15f9d](https://github.com/arvinxx/umi-electron-template/commit/bb15f9d))
+* 修复没有引入 ts-node 的错误 ([de23bb2](https://github.com/arvinxx/umi-electron-template/commit/de23bb2))
+* 修正 ci 脚本 ([9fc9d14](https://github.com/arvinxx/umi-electron-template/commit/9fc9d14))
+* 重新生成 yarn.lock 文件 ([4a32125](https://github.com/arvinxx/umi-electron-template/commit/4a32125))
+* **ci**: 优化构建流程 ([595908d](https://github.com/arvinxx/umi-electron-template/commit/595908d))
+* **ci**: 补充缓存生成 ([66c5f2b](https://github.com/arvinxx/umi-electron-template/commit/66c5f2b))
+
+
+### 🐛 修复
+
+* 修正 mac 平台下 zip 包无法打开的问题 ([1b270b4](https://github.com/arvinxx/umi-electron-template/commit/1b270b4))
+
+
+### 🔧 持续集成
+
+* 优化 ci 流程 ([3b30986](https://github.com/arvinxx/umi-electron-template/commit/3b30986))
+* 优化 ci 配置 ([c5181ba](https://github.com/arvinxx/umi-electron-template/commit/c5181ba))
+* 修复 macOS CI 环境 Bug ([0619224](https://github.com/arvinxx/umi-electron-template/commit/0619224))
+* 修复测试 ci 配置 ([8799639](https://github.com/arvinxx/umi-electron-template/commit/8799639))
+* 修复测试 ci 配置 ([8c439cd](https://github.com/arvinxx/umi-electron-template/commit/8c439cd))
+
+# [1.8.0-beta.1](https://github.com/arvinxx/umi-electron-template/compare/v1.7.2...v1.8.0-beta.1) (2021-02-05)
+
+
+### ✨ 新特性
+
+* **杂项**: 测试 electron updater ([d38d781](https://github.com/arvinxx/umi-electron-template/commit/d38d781))
+* **杂项**: 测试添加自动更新能力 ([506e46e](https://github.com/arvinxx/umi-electron-template/commit/506e46e))
+
+
+### 🐛 修复
+
+* **杂项**: 优化错误日志的生成地址 ([afea89d](https://github.com/arvinxx/umi-electron-template/commit/afea89d))
+
+
+### 🔧 持续集成
+
+* **杂项**: 优化发版 ci 流程 ([93835bd](https://github.com/arvinxx/umi-electron-template/commit/93835bd))
+
 ## [1.7.2](https://github.com/arvinxx/umi-electron-template/compare/v1.7.1...v1.7.2) (2021-02-05)
 
 
