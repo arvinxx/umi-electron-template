@@ -33,7 +33,6 @@ jobs:
 
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
-        id: yarn-cache
         with:
           path: |
             ~/.npm
@@ -43,12 +42,7 @@ jobs:
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
-
-      - name: Generate temp
-        if: steps.yarn-cache.outputs.cache-hit == 'true'
-        run: yarn postinstall
 
       - name: lint
         run: yarn lint

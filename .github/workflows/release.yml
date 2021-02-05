@@ -34,7 +34,6 @@ jobs:
 
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
-        id: yarn-cache
         with:
           path: |
             ~/.npm
@@ -45,12 +44,7 @@ jobs:
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
-
-      - name: Generate temp
-        if: steps.yarn-cache.outputs.cache-hit == 'true'
-        run: yarn postinstall
 
       - name: lint
         run: yarn lint
@@ -66,8 +60,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Cache multiple paths
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -88,12 +90,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Cache multiple paths
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
-        run: |
-          npx npe version ${{ needs.check.outputs.version }}
+        run: npx npe version ${{ needs.check.outputs.version }}
 
       - name: Build artifact on macOS
         if: runner.os == 'macOS'
@@ -170,8 +179,16 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Cache multiple paths
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Release
         run: yarn release
