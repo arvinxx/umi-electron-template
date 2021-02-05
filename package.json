@@ -3,7 +3,7 @@
   "version": "1.8.0-beta.2",
   "author": "Arvin Xu<arvinx@foxmail.com>",
   "main": "main.js",
-  "description": "a umi electron template",
+  "description": "umi electron template",
   "private": true,
   "repository": "https://github.com/arvinxx/umi-electron-template.git",
   "scripts": {
