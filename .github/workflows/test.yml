@@ -85,9 +85,8 @@ jobs:
             .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
+      - name: Generate Temp
+        run: yarn postinstall
 
       - name: lint
         run: yarn lint
