@@ -35,6 +35,7 @@ jobs:
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
+            ${{ yarn cache dir }}
             ~/.npm
             ~/cache
             !~/cache/exclude
