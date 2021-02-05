@@ -44,7 +44,7 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: npm-${{ runner.os }}-${{ matrix.arch }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
         run: yarn
