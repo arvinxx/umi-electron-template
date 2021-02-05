@@ -58,6 +58,9 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
+      - name: Generate temp
+        run: yarn postinstall
+
       - name: lint
         run: yarn lint
 
