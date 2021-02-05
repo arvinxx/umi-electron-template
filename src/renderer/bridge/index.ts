@@ -1,6 +1,6 @@
 import { remote, shell as _shell } from 'electron';
 
-export const database: Main.DataBase = remote.getGlobal('database');
+export const database: Main.Repository = remote.getGlobal('repository');
 
 export const logger: Main.Logger = remote.getGlobal('logger');
 

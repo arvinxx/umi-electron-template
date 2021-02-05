@@ -9,13 +9,17 @@ interface LogInfo {
   message: string;
   key: Main.LogScope;
 }
+
 interface WithLogParams {
   before?: LogInfo | Function;
   after?: LogInfo | Function;
 }
 
 export class Logger {
-  static initApp = () => {
+  /**
+   * 记录系统日志
+   */
+  static logSystemInfo = () => {
     if (isDev) return;
 
     const logger = getLogger('main');

@@ -1,26 +1,24 @@
-import { DatabaseManger } from '@/utils';
-import { UserModel } from '@/models';
+import { provide } from 'inversify-binding-decorators';
+import { inject } from 'inversify';
+import { Repository } from 'typeorm';
 
-export class UserService extends DatabaseManger {
-  constructor() {
-    super([UserModel]);
-  }
+import type { User } from '@/entities';
+import TYPES from '@/ioc/types';
+
+@provide(UserService)
+export class UserService {
+  @inject(TYPES.UserRepository) private model!: Repository<User>;
 
   /**
    * 创建对象
    * @param name
    * @param surname
    */
-  public async insert(name: string, surname: string): Promise<UserModel> {
-    const patientRepository = this.connection.getRepository(UserModel);
-    const user: UserModel = { name, surname };
-
-    return patientRepository.save(user);
+  public insert(name: string, surname: string): Promise<User> {
+    return this.model.save({ name, surname });
   }
 
-  public async fetchAll(): Promise<UserModel[]> {
-    const patientRepository = this.connection.getRepository(UserModel);
-
-    return patientRepository.find();
+  public async finAll(): Promise<User[]> {
+    return this.model.find();
   }
 }

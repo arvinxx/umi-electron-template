@@ -1,7 +1,17 @@
-declare namespace Main {
-  import type { UserService } from '../../src/main/services/User';
+import type { UserService } from '../../src/main/services';
 
-  interface DataBase {
-    user: UserService;
+declare global {
+  namespace Main {
+    interface Repository {
+      user: UserService;
+    }
+  }
+
+  namespace NodeJS {
+    interface Global {
+      repository: {
+        user: UserService;
+      };
+    }
   }
 }

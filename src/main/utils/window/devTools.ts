@@ -1,6 +1,6 @@
 import { app } from 'electron';
 import { dev } from 'electron-is';
-import { logger } from './logger';
+import { logger } from '@/utils';
 
 /**
  *  加载插件和开发者工具窗口

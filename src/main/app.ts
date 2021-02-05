@@ -1,35 +1,37 @@
 import { getLogger } from '@/utils';
-import { initDBService } from '@/services';
+import container, { loadAsync } from '@/ioc';
 
-import { HomeWindow } from './views/windows';
+import { UserService } from './services';
 import { Logger } from './services';
+import { HomeWindow } from '@/views';
 
 const logger = getLogger('main');
 
-const { initApp: init, withLog } = Logger;
+const { logSystemInfo } = Logger;
 
 /**
- * 初始化 App 方法
+ * 初始化 App 声明周期
  */
-export const initApp = () => {
-  init();
+export const initApp = async () => {
+  await loadAsync();
 
-  withLog({
-    before: () => logger.info('初始化数据库服务...'),
-    after: () => logger.info('初始化完成!'),
-  })(initDBService);
+  logSystemInfo();
 
-  withLog({
-    before: () => {
-      logger.divider();
-      logger.info('初始化视图');
-    },
-    after: () => {
-      logger.info('app 初始化完毕!');
-      logger.divider('🎉');
-    },
-  })(() => {
-    const home = new HomeWindow();
-    home.windows.center();
-  });
+  logger.info('挂载数据仓库服务...');
+  const user = container.get(UserService);
+
+  global.repository = {
+    user,
+  };
+
+  logger.info('挂载完成!');
+
+  logger.divider();
+
+  logger.info('初始化视图');
+  const home = container.get(HomeWindow);
+  home.show();
+
+  logger.info('app 初始化完毕!');
+  logger.divider('🎉');
 };
