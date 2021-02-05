@@ -40,7 +40,6 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-            .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
@@ -68,7 +67,6 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-            .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Semantic Release with dryRun
@@ -98,7 +96,6 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-            .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
@@ -187,7 +184,6 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-            .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Release
