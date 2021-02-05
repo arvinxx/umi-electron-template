@@ -6,8 +6,8 @@ on:
       - beta
 
 jobs:
-  test:
-    name: Test
+  install:
+    name: Install Dependencies
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -32,6 +32,31 @@ jobs:
 
       - name: Install
         run: yarn
+
+  test:
+    name: Code quality check
+    needs: install
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: lint
         run: yarn lint
@@ -96,9 +121,6 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Install
-        run: yarn
-
       - name: Tricky version
         run: |
           npx npe version ${{ needs.check.outputs.version }}
@@ -139,6 +161,7 @@ jobs:
         run: echo "🚦New Verison Release Status -> ${{ needs.check.outputs.is_new_version }}"
       - name: Release Version
         run: echo "🚦New Verison Release Version -> ${{ needs.check.outputs.version }}"
+
   list:
     needs: build
     name: List Artifact
@@ -152,6 +175,7 @@ jobs:
 
       - name: List artifact
         run: ls -al release
+
   publish:
     if: "! contains(github.event.head_commit.message, '[skip ci]')"
     needs: build
@@ -183,9 +207,6 @@ jobs:
             !~/cache/exclude
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
 
       - name: Release
         run: yarn release
