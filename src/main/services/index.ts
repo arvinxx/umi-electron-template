@@ -15,3 +15,4 @@ export const initDBService = () => {
     user: new UserService(),
   };
 };
+export { Logger } from './Logger';

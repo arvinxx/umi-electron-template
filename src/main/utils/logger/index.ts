@@ -6,7 +6,7 @@ import config from './config';
 declare module 'log4js' {
   // 为 Logger 补充自定义方法
   export interface Logger {
-    divider: (symbol?: string, length?: number) => void;
+    divider(symbol?: string, length?: number): void;
   }
 }
 

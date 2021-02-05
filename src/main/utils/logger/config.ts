@@ -31,6 +31,11 @@ const config: Configuration = {
       pattern: '.yyyy-MM-dd', // 日志切割后文件名后缀格式
       layout,
     },
+    error: {
+      type: 'file',
+      filename: join(logDir, 'error', 'log.log'),
+      pattern: '.yyyy-MM-dd', // 日志切割后文件名后缀格式
+    },
   },
   categories: {
     default: { appenders: ['app', 'console'], level },
@@ -39,6 +44,8 @@ const config: Configuration = {
     renderer: { appenders: ['app', 'console'], level },
     // 数据库日志
     database: { appenders: ['database', 'console'], level },
+    // 错误日志，输出 error 及以上级别的日志
+    error: { appenders: ['error'], level: 'error' },
   },
 };
 
