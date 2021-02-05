@@ -22,19 +22,20 @@ const config: Configuration = {
     app: {
       type: 'file',
       filename: join(logDir, 'app', 'log.log'),
-      pattern: '.yyyy-MM-dd', // 日志切割后文件名后缀格式
+      // 日志切割后文件名后缀格式
+      pattern: 'yyyy-MM-dd.log',
     },
     // 数据库日志
     database: {
       type: 'file',
       filename: join(logDir, 'database', 'log.log'),
-      pattern: '.yyyy-MM-dd', // 日志切割后文件名后缀格式
+      pattern: 'yyyy-MM-dd.log',
       layout,
     },
     error: {
       type: 'file',
       filename: join(logDir, 'error', 'log.log'),
-      pattern: '.yyyy-MM-dd', // 日志切割后文件名后缀格式
+      pattern: 'yyyy-MM-dd.log',
     },
   },
   categories: {
