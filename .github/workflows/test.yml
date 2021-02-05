@@ -27,10 +27,30 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
 
   test:
@@ -43,11 +63,31 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
 
-      - name: Generate temp
-        run: yarn postinstall
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        id: yarn-cache
+        with:
+          path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn
 
       - name: lint
         run: yarn lint
