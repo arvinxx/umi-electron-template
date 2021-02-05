@@ -1,5 +1,23 @@
 # Umi Electron Template 更新日志
 
+# [1.8.0-beta.4](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2021-02-05)
+
+
+### 🎫 杂项
+
+* 重新生成 yarn.lock 文件 ([d16f139](https://github.com/arvinxx/umi-electron-template/commit/d16f139))
+* 重新生成 yarn.lock 文件 ([610ed7c](https://github.com/arvinxx/umi-electron-template/commit/610ed7c))
+
+
+### 🐛 修复
+
+* 调整 publish 配置 ([ba4311e](https://github.com/arvinxx/umi-electron-template/commit/ba4311e))
+
+
+### 🔧 持续集成
+
+* 优化缓存设置 ([7f9d088](https://github.com/arvinxx/umi-electron-template/commit/7f9d088))
+
 # [1.8.0-beta.3](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2021-02-05)
 
 
