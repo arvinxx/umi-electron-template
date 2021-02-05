@@ -32,6 +32,8 @@ jobs:
           node-version: '14'
 
       - uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
 
       - name: lint
         run: yarn lint

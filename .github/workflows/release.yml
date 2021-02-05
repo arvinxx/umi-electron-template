@@ -32,6 +32,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
 
       - name: lint
         run: yarn lint
@@ -47,6 +49,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -67,6 +71,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
 
       - name: Tricky version
         run: |
@@ -148,6 +154,8 @@ jobs:
         run: ls -al release
 
       - uses: bahmutov/npm-install@v1
+        with:
+          useLockFile: false
 
       - name: Release
         run: yarn release
