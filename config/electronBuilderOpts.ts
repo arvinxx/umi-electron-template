@@ -23,7 +23,7 @@ export default {
    */
   win: {
     artifactName: '${name}_setup_${version}.${ext}',
-    target: ['nsis', 'zip'],
+    target: ['nsis'],
   },
   nsis: {
     oneClick: false,
