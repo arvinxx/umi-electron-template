@@ -35,16 +35,18 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Cache multiple paths
+      - name: Yarn cache
+        uses: pat-s/always-upload-cache@v2.1.3
+        with:
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-cache
+
+      - name: Dependency cache
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ matrix.arch }}-${{ hashFiles('yarn.lock') }}
+          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}-deps
 
       - name: Install
         run: yarn
