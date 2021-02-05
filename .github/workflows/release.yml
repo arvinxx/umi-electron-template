@@ -6,6 +6,20 @@ on:
       - beta
 
 jobs:
+  precheck:
+    # continue-on-error: true # Uncomment once integration is finished
+    runs-on: ubuntu-latest
+    # Map a step output to a job output
+    outputs:
+      should_skip: ${{ steps.skip_check.outputs.should_skip }}
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          # All of these options are optional, so you can remove them if you are happy with the defaults
+          skip_after_successful_duplicate: 'true'
+          paths_ignore: '["**/README.md", "**/docs/**"]'
+
   install:
     name: Install Dependencies
     runs-on: ${{ matrix.os }}
@@ -58,8 +72,8 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Generate temp
-        run: yarn postinstall:umi-temp
+      - name: Install
+        run: yarn
 
       - name: lint
         run: yarn lint
