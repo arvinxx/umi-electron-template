@@ -37,10 +37,8 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "---------     ": "",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
-    "postinstall:umi-temp": "umi generate tmp",
-    "postinstall:rebuild": "electron-builder install-app-deps",
-    "postinstall": "yarn postinstall:umi-temp && yarn postinstall:rebuild && electron-builder install-app-deps",
-    "postuninstall": "yarn postinstall:rebuild && electron-builder install-app-deps"
+    "postinstall": "umi generate tmp && electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
