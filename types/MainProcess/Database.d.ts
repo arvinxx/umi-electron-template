@@ -1,17 +1,17 @@
-import type { UserService } from '../../src/main/services';
+declare namespace Main {
+  import type { UserService } from '../../src/main/services';
 
-declare global {
-  namespace Main {
-    interface Repository {
-      user: UserService;
-    }
+  interface Repository {
+    user: UserService;
   }
+}
 
-  namespace NodeJS {
-    interface Global {
-      repository: {
-        user: UserService;
-      };
-    }
+declare namespace NodeJS {
+  import type { UserService } from '../../src/main/services';
+
+  interface Global {
+    repository: {
+      user: UserService;
+    };
   }
 }
