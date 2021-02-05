@@ -1,5 +1,22 @@
 # Umi Electron Template 更新日志
 
+# [1.8.0-beta.3](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.2...v1.8.0-beta.3) (2021-02-05)
+
+
+### 🎫 杂项
+
+* 取消 registry 设置 ([53017ae](https://github.com/arvinxx/umi-electron-template/commit/53017ae))
+
+
+### 🐛 修复
+
+* 修复 macOS 生成的压缩包 ([9509a2d](https://github.com/arvinxx/umi-electron-template/commit/9509a2d))
+
+
+### 📝 文档
+
+* 更新文档 ([d16bd18](https://github.com/arvinxx/umi-electron-template/commit/d16bd18))
+
 # [1.8.0-beta.2](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.1...v1.8.0-beta.2) (2021-02-05)
 
 
