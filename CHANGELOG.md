@@ -1,5 +1,23 @@
 # Umi Electron Template 更新日志
 
+# [1.8.0-beta.1](https://github.com/arvinxx/umi-electron-template/compare/v1.7.2...v1.8.0-beta.1) (2021-02-05)
+
+
+### ✨ 新特性
+
+* **杂项**: 测试 electron updater ([d38d781](https://github.com/arvinxx/umi-electron-template/commit/d38d781))
+* **杂项**: 测试添加自动更新能力 ([506e46e](https://github.com/arvinxx/umi-electron-template/commit/506e46e))
+
+
+### 🐛 修复
+
+* **杂项**: 优化错误日志的生成地址 ([afea89d](https://github.com/arvinxx/umi-electron-template/commit/afea89d))
+
+
+### 🔧 持续集成
+
+* **杂项**: 优化发版 ci 流程 ([93835bd](https://github.com/arvinxx/umi-electron-template/commit/93835bd))
+
 ## [1.7.2](https://github.com/arvinxx/umi-electron-template/compare/v1.7.1...v1.7.2) (2021-02-05)
 
 
