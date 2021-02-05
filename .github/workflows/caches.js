@@ -1,7 +1,7 @@
 module.exports = {
   yarn: {
     path: [
-      `${HOME}/.npm`,
+      `${process.env.HOME}/.npm`,
       '~/.npm',
       '~/cache',
       !'~/cache/exclude',
