@@ -11,7 +11,7 @@ const dir = join(__dirname, '../release');
 
 const appPath = `${dir}/mac/${productName}.app`;
 
-const zipFileName = `${appName}_setup_${version}.zip`;
+const zipFileName = `${appName}_setup_${version}_mac.zip`;
 
 const zipFilePath = `${dir}/${zipFileName}`;
 const appBuilder = join(
