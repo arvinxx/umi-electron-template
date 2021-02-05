@@ -59,7 +59,7 @@ jobs:
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Generate temp
-        run: yarn postinstall
+        run: yarn postinstall:umi-temp
 
       - name: lint
         run: yarn lint

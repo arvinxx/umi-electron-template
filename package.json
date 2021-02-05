@@ -17,7 +17,6 @@
     "electron:build:mac": "umi build electron --mac",
     "electron:build:linux": "umi build electron --linux",
     "build:mac-zip": "ts-node scripts/buildMacZip.ts",
-    "rebuild": "electron-builder install-app-deps",
     "--------- ": "",
     "devtools": "react-devtools",
     "---------    ": "",
@@ -38,8 +37,10 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "---------     ": "",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
-    "postinstall": "umi generate tmp && yarn rebuild && electron-builder install-app-deps",
-    "postuninstall": "yarn rebuild && electron-builder install-app-deps"
+    "postinstall:umi-temp": "umi generate tmp",
+    "postinstall:rebuild": "electron-builder install-app-deps",
+    "postinstall": "yarn postinstall:umi-temp && yarn rebuild",
+    "postuninstall": "yarn rebuild"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
