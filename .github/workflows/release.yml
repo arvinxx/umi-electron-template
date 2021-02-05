@@ -6,8 +6,39 @@ on:
       - beta
 
 jobs:
+  test:
+    name: Test
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.2
+        with:
+          node-version: '14'
+
+      - name: Cache multiple paths
+        uses: actions/cache@v2
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        run: yarn
+
+      - name: lint
+        run: yarn lint
+
   check:
-    name: Code quality check
+    needs: test
+    name: Release check
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
@@ -31,12 +62,6 @@ jobs:
             **/node_modules
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Install
-        run: yarn
-
-      - name: Lint
-        run: yarn lint
-
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
@@ -44,6 +69,7 @@ jobs:
           dry_run: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   build:
     needs: check
     name: Build
