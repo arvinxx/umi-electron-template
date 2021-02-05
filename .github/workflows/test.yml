@@ -16,46 +16,8 @@ jobs:
           skip_after_successful_duplicate: 'true'
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
-  install:
-    needs: precheck
-    if: needs.pre_job.outputs.should_skip != 'true'
-    name: Install Dependencies
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: '14'
-
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Cache multiple paths
-        uses: actions/cache@v2
-        id: yarn-cache
-        with:
-          path: |
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
-            **/node_modules
-            .umi
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
-        run: yarn
-
   test:
     name: Code quality check
-    needs: install
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -68,22 +30,21 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - name: Cache multiple paths
-        uses: actions/cache@v2
+        uses: ktmud/cached-dependencies@v1
         id: yarn-cache
         with:
-          path: |
-            ${{ steps.yarn-cache-dir-path.outputs.dir }}
-            ~/.npm
-            ~/cache
-            !~/cache/exclude
-            **/node_modules
-            .umi
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          run: cache-restore yarn
+
+      - run: echo "${{ steps.yarn-cache.outputs.cache-hit }}"
+
+      - name: Install
+        uses: ktmud/cached-dependencies@v1
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        with:
+          run: |
+            yarn
+            cache-save yarn
 
       - name: Generate Temp
         run: yarn postinstall
