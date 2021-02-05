@@ -77,7 +77,7 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: npm-${{ runner.os }}--${{ hashFiles('yarn.lock') }}
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -111,7 +111,7 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: npm-${{ runner.os }}--${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
@@ -204,7 +204,7 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          key: npm-${{ runner.os }}--${{ hashFiles('yarn.lock') }}
 
       - name: Release
         run: yarn release
