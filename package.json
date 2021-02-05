@@ -39,8 +39,8 @@
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "postinstall:umi-temp": "umi generate tmp",
     "postinstall:rebuild": "electron-builder install-app-deps",
-    "postinstall": "yarn postinstall:umi-temp && yarn rebuild",
-    "postuninstall": "yarn rebuild"
+    "postinstall": "yarn postinstall:umi-temp && yarn postinstall:rebuild",
+    "postuninstall": "yarn postinstall:rebuild"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
