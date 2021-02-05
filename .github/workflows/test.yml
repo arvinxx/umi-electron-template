@@ -17,6 +17,7 @@ jobs:
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
   test:
+    needs: precheck
     name: Code quality check
     runs-on: ${{ matrix.os }}
     strategy:
@@ -32,17 +33,9 @@ jobs:
 
       - name: Cache multiple paths
         uses: ktmud/cached-dependencies@v1
-        id: yarn-cache
-        with:
-          run: cache-restore yarn
-
-      - run: echo "${{ steps.yarn-cache.outputs.cache-hit }}"
-
-      - name: Install
-        uses: ktmud/cached-dependencies@v1
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
         with:
           run: |
+            cache-restore yarn
             yarn
             cache-save yarn
 
