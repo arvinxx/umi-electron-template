@@ -23,7 +23,8 @@ export default {
    */
   win: {
     artifactName: '${name}_setup_${version}.${ext}',
-    target: 'nsis',
+    target: ['nsis', 'zip'],
+    publish: ['github'],
   },
   nsis: {
     oneClick: false,
@@ -44,6 +45,7 @@ export default {
     darkModeSupport: true,
     entitlements: 'build/entitlements.mac.plist',
     entitlementsInherit: 'build/entitlements.mac.plist',
+    publish: ['github'],
   },
   dmg: {
     icon: 'build/volume.icns',

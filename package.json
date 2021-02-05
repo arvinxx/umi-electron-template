@@ -50,14 +50,14 @@
     ]
   },
   "dependencies": {
+    "electron-updater": "^4.3.5",
     "inversify": "^5.0.5",
     "log4js": "^6.3.0",
     "os-name": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.16",
     "sqlite3": "5.0.0",
-    "typeorm": "^0.2.30",
-    "update-electron-app": "^2.0.1"
+    "typeorm": "^0.2.30"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.0.2",

@@ -98,7 +98,9 @@ jobs:
         with:
           name: release
           path: |
+            release/latest*
             release/umi*.dmg*
+            release/umi*.zip*
             release/umi*.exe*
             release/umi*.AppImage
 
