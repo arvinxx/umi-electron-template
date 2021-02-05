@@ -1,15 +1,21 @@
+import { dev } from 'electron-is';
+import { HomeWindow } from '@/views';
+import { createLogProxy } from '@/common';
 import { AppUpdater, getLogger } from '@/utils';
 import container, { loadContainerAsync } from '@/ioc';
 
 import { UserService } from './services';
 import { Logger } from './services';
-import { HomeWindow } from '@/views';
 
 const logger = getLogger('main');
 
 const { logSystemInfo } = Logger;
 
 const beforeInit = async () => {
+  if (!dev()) {
+    console.error = createLogProxy('error', getLogger('error'))(console.error);
+  }
+
   await loadContainerAsync();
 };
 
