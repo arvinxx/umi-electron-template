@@ -22,26 +22,9 @@ jobs:
           skip_after_successful_duplicate: 'true'
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
-  install:
-    name: Install Dependencies
-    needs: precheck
-    if: needs.pre_job.outputs.should_skip != 'true'
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
-
-      - name: Install
-        run: yarn
-
   test:
     name: Code quality check
-    needs: install
+    needs: precheck
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -49,10 +32,24 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment and Cache
-        uses: ./.github/actions/setup-node
+      - name: Cache multiple paths
+        uses: pat-s/always-upload-cache@v2.1.3
+        id: yarn-cache
+        with:
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+            .umi
+          key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        run: yarn
 
       - name: Generate temp
+        if: steps.yarn-cache.outputs.cache-hit == 'true'
         run: yarn postinstall
 
       - name: lint
