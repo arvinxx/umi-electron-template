@@ -16,9 +16,10 @@ jobs:
           skip_after_successful_duplicate: 'true'
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
-  test:
-    name: Code quality check
+  install:
     needs: precheck
+    if: needs.pre_job.outputs.should_skip != 'true'
+    name: Install Dependencies
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -26,14 +27,27 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
-        with:
-          node-version: '14'
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
 
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+      - name: Install
+        run: yarn
+
+  test:
+    name: Code quality check
+    needs: install
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
+
+      - name: Generate temp
+        run: yarn postinstall
 
       - name: lint
         run: yarn lint

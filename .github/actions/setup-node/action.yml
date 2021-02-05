@@ -1,0 +1,24 @@
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup Node.js environment
+      uses: actions/setup-node@v2.1.2
+      with:
+        node-version: '14'
+
+    - name: Get yarn cache directory path
+      id: yarn-cache-dir-path
+      run: echo "::set-output name=dir::$(yarn cache dir)"
+
+    - name: Cache multiple paths
+      # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
+      id: yarn-cache
+      uses: actions/cache@v2
+      with:
+        path: |
+          ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          ~/.npm
+          ~/cache
+          !~/cache/exclude
+          **/node_modules
+        key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}

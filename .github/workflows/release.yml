@@ -22,18 +22,38 @@ jobs:
           skip_after_successful_duplicate: 'true'
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
-  test:
-    name: Code quality check
+  install:
+    name: Install Dependencies
     needs: precheck
+    if: needs.pre_job.outputs.should_skip != 'true'
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
+
+      - name: Install
+        run: yarn
+
+  test:
+    name: Code quality check
+    needs: install
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest, ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
+
+      - name: Generate temp
+        run: yarn postinstall
 
       - name: lint
         run: yarn lint
@@ -48,9 +68,9 @@ jobs:
       version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
       - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -70,9 +90,9 @@ jobs:
         os: [macos-latest, windows-latest, ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
 
       - name: Tricky version
         run: |
@@ -153,9 +173,8 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - uses: bahmutov/npm-install@v1
-        with:
-          useLockFile: false
+      - name: Setup Node.js environment and Cache
+        uses: ./.github/actions/setup-node
 
       - name: Release
         run: yarn release
