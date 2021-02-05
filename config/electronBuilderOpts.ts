@@ -24,7 +24,6 @@ export default {
   win: {
     artifactName: '${name}_setup_${version}.${ext}',
     target: ['nsis', 'zip'],
-    publish: ['github'],
   },
   nsis: {
     oneClick: false,
@@ -38,14 +37,13 @@ export default {
    */
   mac: {
     category: 'public.app-category.developer-tools',
-    target: ['dmg', 'zip'],
+    target: ['dmg'],
     artifactName: '${name}_setup_${version}.${ext}',
     hardenedRuntime: true,
     gatekeeperAssess: false,
     darkModeSupport: true,
     entitlements: 'build/entitlements.mac.plist',
     entitlementsInherit: 'build/entitlements.mac.plist',
-    publish: ['github'],
   },
   dmg: {
     icon: 'build/volume.icns',
@@ -89,6 +87,11 @@ export default {
     synopsis: 'umi electron template',
     category: 'Development',
   },
+
+  /**
+   * Publish 配置
+   */
+  publish: ['github'],
 
   /**
    * 构建配置项

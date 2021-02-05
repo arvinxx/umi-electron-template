@@ -127,7 +127,10 @@ jobs:
 
       - name: Build artifact on macOS
         if: runner.os == 'macOS'
-        run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
+        # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
+        # 目前由于 electron-builder 存在 bug https://github.com/electron-userland/electron-builder/issues/4299
+        # 所以需要手动完成 zip 包的制作
+        run: yarn build --publish never && yarn build:mac-zip
         env:
           # 导入证书环境 有了签名可以保证 electron 在需要授权时使用的是同一个身份 id
           # Ref https://www.electron.build/code-signing
