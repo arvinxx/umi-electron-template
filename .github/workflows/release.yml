@@ -32,10 +32,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
             ~/.npm
             ~/cache
             !~/cache/exclude
@@ -59,10 +64,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
             ~/.npm
             ~/cache
             !~/cache/exclude
@@ -88,10 +98,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
             ~/.npm
             ~/cache
             !~/cache/exclude
@@ -176,10 +191,15 @@ jobs:
       - name: List artifact
         run: ls -al release
 
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
       - name: Cache multiple paths
         uses: pat-s/always-upload-cache@v2.1.3
         with:
           path: |
+            ${{ steps.yarn-cache-dir-path.outputs.dir }}
             ~/.npm
             ~/cache
             !~/cache/exclude
