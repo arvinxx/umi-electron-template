@@ -18,6 +18,7 @@ jobs:
 
   test:
     name: Code quality check
+    needs: precheck
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
