@@ -1,5 +1,34 @@
 # Umi Electron Template 更新日志
 
+## [1.7.2](https://github.com/arvinxx/umi-electron-template/compare/v1.7.1...v1.7.2) (2021-02-05)
+
+
+### ♻ 重构
+
+* **杂项**: 优化日志服务 ([a5379e4](https://github.com/arvinxx/umi-electron-template/commit/a5379e4))
+* **杂项**: 重构成 IOC 模式 ([111f392](https://github.com/arvinxx/umi-electron-template/commit/111f392))
+
+
+### 🎫 杂项
+
+* **杂项**: 修正 lint 错误 ([e4a731c](https://github.com/arvinxx/umi-electron-template/commit/e4a731c))
+
+
+### 🐛 修复
+
+* **杂项**: 修正日志后缀 ([b1c915d](https://github.com/arvinxx/umi-electron-template/commit/b1c915d))
+
+
+### 👷 构建系统
+
+* **依赖**: bump @types/node from 14.14.22 to 14.14.25 ([0e5d6ac](https://github.com/arvinxx/umi-electron-template/commit/0e5d6ac))
+* **依赖**: bump antd from 4.12.1 to 4.12.2 ([0b783dc](https://github.com/arvinxx/umi-electron-template/commit/0b783dc))
+
+
+### 📝 文档
+
+* **说明文档**: 优化说明文档 ([910e216](https://github.com/arvinxx/umi-electron-template/commit/910e216))
+
 ## [1.7.1](https://github.com/arvinxx/umi-electron-template/compare/v1.7.0...v1.7.1) (2021-02-04)
 
 
