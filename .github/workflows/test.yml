@@ -16,21 +16,8 @@ jobs:
           skip_after_successful_duplicate: 'true'
           paths_ignore: '["**/README.md", "**/docs/**"]'
 
-  install:
-    needs: precheck
-    if: needs.pre_job.outputs.should_skip != 'true'
-    name: Install Dependencies
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
-    steps:
-      - uses: actions/checkout@v2
-      - uses: bahmutov/npm-install@v1
-
   test:
     name: Code quality check
-    needs: install
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
@@ -44,9 +31,6 @@ jobs:
           node-version: '14'
 
       - uses: bahmutov/npm-install@v1
-
-      - name: Generate temp
-        run: yarn postinstall
 
       - name: lint
         run: yarn lint
