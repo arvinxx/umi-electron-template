@@ -40,12 +40,15 @@ jobs:
             ~/cache
             !~/cache/exclude
             **/node_modules
-            .umi
           key: npm-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
         if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
+
+      - name: Generate temp
+        if: steps.yarn-cache.outputs.cache-hit == 'true'
+        run: yarn postinstall
 
       - name: lint
         run: yarn lint
