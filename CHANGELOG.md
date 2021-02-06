@@ -1,5 +1,35 @@
 # Umi Electron Template 更新日志
 
+## [1.8.1](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0...v1.8.1) (2021-02-06)
+
+
+### 🎫 杂项
+
+* **自动发布**: v1.8.1-beta.1 [skip ci] ([584bd64](https://github.com/arvinxx/umi-electron-template/commit/584bd64))
+* **自动发布**: v1.8.1-beta.2 [skip ci] ([eca969b](https://github.com/arvinxx/umi-electron-template/commit/eca969b))
+
+
+### 🐛 修复
+
+* 优化发布流程 ([6a2e586](https://github.com/arvinxx/umi-electron-template/commit/6a2e586))
+* 优化流程 ([9b2303d](https://github.com/arvinxx/umi-electron-template/commit/9b2303d))
+
+
+### 🔧 持续集成
+
+* 优化 release 流程 ([6b91bab](https://github.com/arvinxx/umi-electron-template/commit/6b91bab))
+* 优化 Release 流程 ([1b2e3b3](https://github.com/arvinxx/umi-electron-template/commit/1b2e3b3))
+* 优化发布流程 ([227fac1](https://github.com/arvinxx/umi-electron-template/commit/227fac1))
+* 优化发布流程 ([0e45c2d](https://github.com/arvinxx/umi-electron-template/commit/0e45c2d))
+* 优化发布流程 ([2d02df5](https://github.com/arvinxx/umi-electron-template/commit/2d02df5))
+* 优化发布流程 ([f54f2bb](https://github.com/arvinxx/umi-electron-template/commit/f54f2bb))
+* 优化发布流程 ([eb5cdce](https://github.com/arvinxx/umi-electron-template/commit/eb5cdce))
+* 优化缓存流程 ([d0c0943](https://github.com/arvinxx/umi-electron-template/commit/d0c0943))
+* 优化缓存流程 ([93a8445](https://github.com/arvinxx/umi-electron-template/commit/93a8445))
+* 尝试新的 cache 路径 ([5dab8ab](https://github.com/arvinxx/umi-electron-template/commit/5dab8ab))
+* 尝试新的 cache 路径 ([6f2a462](https://github.com/arvinxx/umi-electron-template/commit/6f2a462))
+* 恢复之前的 cache 路径 ([36a8dd9](https://github.com/arvinxx/umi-electron-template/commit/36a8dd9))
+
 ## [1.8.1-beta.2](https://github.com/arvinxx/umi-electron-template/compare/v1.8.1-beta.1...v1.8.1-beta.2) (2021-02-06)
 
 
