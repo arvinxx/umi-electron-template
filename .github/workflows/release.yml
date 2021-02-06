@@ -42,13 +42,6 @@ jobs:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Dependency cache
-        uses: actions/cache@2
-        with:
-          path: |
-            **/node_modules
-          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
       - name: Install
         run: yarn
 
@@ -76,13 +69,6 @@ jobs:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Dependency cache
-        uses: actions/cache@2
-        with:
-          path: |
-            **/node_modules
-          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
       - name: Install
         run: yarn
 
@@ -108,12 +94,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Dependency cache
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Yarn cache
         uses: actions/cache@2
         with:
-          path: |
-            **/node_modules
-          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        run: yarn
 
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
@@ -193,12 +185,18 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - name: Dependency cache
+      - name: Get yarn cache directory path
+        id: yarn-cache-dir-path
+        run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Yarn cache
         uses: actions/cache@2
         with:
-          path: |
-            **/node_modules
-          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+
+      - name: Install
+        run: yarn
 
       - name: Release
         run: yarn release

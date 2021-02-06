@@ -22,12 +22,5 @@ jobs:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: yarn-cache-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
-      - name: Dependency cache
-        uses: actions/cache@2
-        with:
-          path: |
-            **/node_modules
-          key: yarn-deps-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
       - name: Install
         run: yarn
