@@ -1,10 +1,11 @@
-name: Cache CI
+name: Cache
 on: [push]
 
 jobs:
-  install:
-    name: Install and Cache Dependency
+  cache:
+    name: Cache yarn packages
     runs-on: ${{ matrix.os }}
+    continue-on-error: true
     strategy:
       matrix:
         os: [macos-latest, windows-latest, ubuntu-latest]

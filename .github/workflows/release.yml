@@ -50,7 +50,7 @@ jobs:
 
   check:
     needs: precheck
-    name: Release check
+    name: Code quality and Release check
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
