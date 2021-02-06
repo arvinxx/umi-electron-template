@@ -28,7 +28,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest]
+        os: [macos-latest, ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v2
 
@@ -45,12 +45,18 @@ jobs:
       - name: Install
         run: yarn
 
+      - name: Cache dependencies
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ matrix.os }}_deps
+          path: node_modules
+
       - name: lint
         run: yarn lint
 
   check:
     needs: precheck
-    name: Code quality(ubuntu-latest) and Release check
+    name: Release check
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
@@ -59,27 +65,16 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Yarn cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
-
-      - name: lint
-        run: yarn lint
+      - run: npm i -g conventional-changelog-gitmoji-config
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
         with:
           dry_run: true
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -98,14 +93,11 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Yarn cache
-        uses: actions/cache@v2
+      - name: Download dependencies
+        uses: actions/download-artifact@v2
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
+          name: ${{ matrix.os }}_deps
+          path: node_modules
 
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
