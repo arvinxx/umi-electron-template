@@ -23,4 +23,5 @@ jobs:
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
+        if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn
