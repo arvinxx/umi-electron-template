@@ -50,7 +50,7 @@ jobs:
 
   check:
     needs: precheck
-    name: Release check
+    name: Code quality(ubuntu-latest) and Release check
     runs-on: ubuntu-latest
     outputs:
       # 将 semantic 输出的值作为下一环节的输入
@@ -185,20 +185,13 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
-      - name: Yarn cache
-        uses: actions/cache@v2
-        with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
-
-      - name: Install
-        run: yarn
+      - run: yarn add -D conventional-changelog-gitmoji-config
 
       - name: Release
-        run: yarn release
+        uses: cycjimmy/semantic-release-action@v2
+        with:
+          extra_plugins: |
+            @semantic-release/changelog
+            @semantic-release/git
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
