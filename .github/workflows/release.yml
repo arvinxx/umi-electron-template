@@ -92,6 +92,9 @@ jobs:
           path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
           key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
+      - name: Install
+        run: yarn
+
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
 
