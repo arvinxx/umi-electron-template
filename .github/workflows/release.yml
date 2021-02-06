@@ -65,7 +65,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: npm i -g conventional-changelog-gitmoji-config
+      - run: yarn global add conventional-changelog-gitmoji-config
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -177,7 +177,7 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - run: npm i -g conventional-changelog-gitmoji-config
+      - run: yarn global add conventional-changelog-gitmoji-config
 
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
