@@ -185,7 +185,7 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - run: yarn add -D conventional-changelog-gitmoji-config
+      - run: yarn global add conventional-changelog-gitmoji-config
 
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
