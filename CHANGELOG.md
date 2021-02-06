@@ -1,5 +1,88 @@
 # Umi Electron Template 更新日志
 
+# [1.8.0](https://github.com/arvinxx/umi-electron-template/compare/v1.7.2...v1.8.0) (2021-02-06)
+
+
+### ✨ 新特性
+
+* 测试 electron updater ([d38d781](https://github.com/arvinxx/umi-electron-template/commit/d38d781))
+* 测试添加自动更新能力 ([506e46e](https://github.com/arvinxx/umi-electron-template/commit/506e46e))
+
+
+### 🎫 杂项
+
+* 重新生成 yarn.lock 文件 ([6a31798](https://github.com/arvinxx/umi-electron-template/commit/6a31798))
+* **自动发布**: v1.8.0-beta.4 [skip ci] ([2958653](https://github.com/arvinxx/umi-electron-template/commit/2958653))
+* 修正 ci 脚本 ([9fc9d14](https://github.com/arvinxx/umi-electron-template/commit/9fc9d14))
+* 重新生成 yarn.lock 文件 ([d16f139](https://github.com/arvinxx/umi-electron-template/commit/d16f139))
+* 重新生成 yarn.lock 文件 ([610ed7c](https://github.com/arvinxx/umi-electron-template/commit/610ed7c))
+* **ci**: 优化构建流程 ([595908d](https://github.com/arvinxx/umi-electron-template/commit/595908d))
+* **ci**: 补充缓存生成 ([66c5f2b](https://github.com/arvinxx/umi-electron-template/commit/66c5f2b))
+* **自动发布**: v1.8.0-beta.3 [skip ci] ([2361473](https://github.com/arvinxx/umi-electron-template/commit/2361473))
+* 取消 registry 设置 ([53017ae](https://github.com/arvinxx/umi-electron-template/commit/53017ae))
+* **自动发布**: v1.8.0-beta.2 [skip ci] ([d781be1](https://github.com/arvinxx/umi-electron-template/commit/d781be1))
+* 修复 macOS 环境 ([bb15f9d](https://github.com/arvinxx/umi-electron-template/commit/bb15f9d))
+* 修复没有引入 ts-node 的错误 ([de23bb2](https://github.com/arvinxx/umi-electron-template/commit/de23bb2))
+* 重新生成 yarn.lock 文件 ([4a32125](https://github.com/arvinxx/umi-electron-template/commit/4a32125))
+* **自动发布**: v1.8.0-beta.1 [skip ci] ([2a99c10](https://github.com/arvinxx/umi-electron-template/commit/2a99c10))
+
+
+### 🐛 修复
+
+* 优化错误日志的生成地址 ([afea89d](https://github.com/arvinxx/umi-electron-template/commit/afea89d))
+* 修复 macOS 生成的压缩包 ([9509a2d](https://github.com/arvinxx/umi-electron-template/commit/9509a2d))
+* 修正 mac 平台下 zip 包无法打开的问题 ([1b270b4](https://github.com/arvinxx/umi-electron-template/commit/1b270b4))
+* 调整 publish 配置 ([ba4311e](https://github.com/arvinxx/umi-electron-template/commit/ba4311e))
+
+
+### 📝 文档
+
+* 更新文档 ([d16bd18](https://github.com/arvinxx/umi-electron-template/commit/d16bd18))
+
+
+### 🔧 持续集成
+
+* 优化 ci 流程 ([b21fb03](https://github.com/arvinxx/umi-electron-template/commit/b21fb03))
+* 优化 ci 流程 ([2b4705b](https://github.com/arvinxx/umi-electron-template/commit/2b4705b))
+* 优化 ci 流程 ([3b30986](https://github.com/arvinxx/umi-electron-template/commit/3b30986))
+* 优化 ci 缓存配置 ([a6cc26a](https://github.com/arvinxx/umi-electron-template/commit/a6cc26a))
+* 优化 ci 配置 ([c5181ba](https://github.com/arvinxx/umi-electron-template/commit/c5181ba))
+* 优化 Release 流程 ([83f06e2](https://github.com/arvinxx/umi-electron-template/commit/83f06e2))
+* 优化 Release 流程 ([71b441c](https://github.com/arvinxx/umi-electron-template/commit/71b441c))
+* 优化发版 ci 流程 ([93835bd](https://github.com/arvinxx/umi-electron-template/commit/93835bd))
+* 优化缓存 ([956c62b](https://github.com/arvinxx/umi-electron-template/commit/956c62b))
+* 优化缓存 ([7d95f3a](https://github.com/arvinxx/umi-electron-template/commit/7d95f3a))
+* 优化缓存 ([c3101d5](https://github.com/arvinxx/umi-electron-template/commit/c3101d5))
+* 优化缓存策略 ([f8574f3](https://github.com/arvinxx/umi-electron-template/commit/f8574f3))
+* 优化缓存策略 ([ddf2970](https://github.com/arvinxx/umi-electron-template/commit/ddf2970))
+* 优化缓存设置 ([7f9d088](https://github.com/arvinxx/umi-electron-template/commit/7f9d088))
+* 优化缓存速度 ([e244c7b](https://github.com/arvinxx/umi-electron-template/commit/e244c7b))
+* 优化缓存配置 ([e9678a7](https://github.com/arvinxx/umi-electron-template/commit/e9678a7))
+* 修复 lint 错误 ([c8288a0](https://github.com/arvinxx/umi-electron-template/commit/c8288a0))
+* 修复 macOS CI 环境 Bug ([0619224](https://github.com/arvinxx/umi-electron-template/commit/0619224))
+* 修复测试 ci 配置 ([8799639](https://github.com/arvinxx/umi-electron-template/commit/8799639))
+* 修复测试 ci 配置 ([8c439cd](https://github.com/arvinxx/umi-electron-template/commit/8c439cd))
+* 修复配置 ([f7953a3](https://github.com/arvinxx/umi-electron-template/commit/f7953a3))
+* 修复配置 ([7f8b3a3](https://github.com/arvinxx/umi-electron-template/commit/7f8b3a3))
+* 修改缓存路径 ([11e6a91](https://github.com/arvinxx/umi-electron-template/commit/11e6a91))
+* 修改缓存路径 ([225588f](https://github.com/arvinxx/umi-electron-template/commit/225588f))
+* 修改缓存路径 ([e828893](https://github.com/arvinxx/umi-electron-template/commit/e828893))
+* 修改缓存路径 ([566d7ec](https://github.com/arvinxx/umi-electron-template/commit/566d7ec))
+* 修改缓存路径 ([e120ef2](https://github.com/arvinxx/umi-electron-template/commit/e120ef2))
+* 复用 ci 缓存 ([3291373](https://github.com/arvinxx/umi-electron-template/commit/3291373))
+* 尝试优化缓存速度 ([ad03e64](https://github.com/arvinxx/umi-electron-template/commit/ad03e64))
+* 尝试修正 ci 流程 ([2251095](https://github.com/arvinxx/umi-electron-template/commit/2251095))
+* 尝试修正缓存无法命中的问题 ([b946626](https://github.com/arvinxx/umi-electron-template/commit/b946626))
+* 尝试移除 lock 文件 ([631f879](https://github.com/arvinxx/umi-electron-template/commit/631f879))
+* 尝试移除 lock 文件 ([d122c86](https://github.com/arvinxx/umi-electron-template/commit/d122c86))
+* 尝试移除 lock 文件 ([9aeeacc](https://github.com/arvinxx/umi-electron-template/commit/9aeeacc))
+* 测试 cached-dependencies ([9a3ef98](https://github.com/arvinxx/umi-electron-template/commit/9a3ef98))
+* 清理 test ci 流程 ([97d1e64](https://github.com/arvinxx/umi-electron-template/commit/97d1e64))
+* 细化缓存类型 ([afb8a52](https://github.com/arvinxx/umi-electron-template/commit/afb8a52))
+* 细化缓存类型 ([1798a61](https://github.com/arvinxx/umi-electron-template/commit/1798a61))
+* 补充 yarn cache 路径 ([bd4f7c0](https://github.com/arvinxx/umi-electron-template/commit/bd4f7c0))
+* 补充 yarn cache 路径 ([cc0cf63](https://github.com/arvinxx/umi-electron-template/commit/cc0cf63))
+
 # [1.8.0-beta.4](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0-beta.3...v1.8.0-beta.4) (2021-02-05)
 
 
