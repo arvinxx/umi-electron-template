@@ -45,12 +45,6 @@ jobs:
       - name: Install
         run: yarn
 
-      - name: Cache dependencies
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ matrix.os }}_deps
-          path: node_modules
-
       - name: lint
         run: yarn lint
 
@@ -65,8 +59,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - run: yarn global add conventional-changelog-gitmoji-config
-
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
         id: semantic
@@ -75,6 +67,7 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
+            conventional-changelog-gitmoji-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -93,11 +86,11 @@ jobs:
         id: yarn-cache-dir-path
         run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Download dependencies
-        uses: actions/download-artifact@v2
+      - name: Yarn cache
+        uses: actions/cache@v2
         with:
-          name: ${{ matrix.os }}_deps
-          path: node_modules
+          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
+          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Tricky version
         run: npx npe version ${{ needs.check.outputs.version }}
@@ -177,13 +170,12 @@ jobs:
       - name: List artifact
         run: ls -al release
 
-      - run: yarn global add conventional-changelog-gitmoji-config
-
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
         with:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
+            conventional-changelog-gitmoji-config
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
