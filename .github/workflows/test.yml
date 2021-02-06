@@ -23,8 +23,12 @@ jobs:
       - name: Yarn cache
         uses: actions/cache@v2
         with:
-          path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          path: |
+            ~/.npm
+            ~/cache
+            !~/cache/exclude
+            **/node_modules
+          key: yarn-build-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
 
       - name: Install
         run: yarn
