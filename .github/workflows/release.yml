@@ -84,7 +84,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
   build:
-    needs: check
+    needs: [check, test]
     name: Build
     if: needs.check.outputs.is_new_version == 'true'
     runs-on: ${{ matrix.os }}
