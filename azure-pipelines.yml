@@ -4,16 +4,19 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- main
+  - main
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- task: NodeTool@0
-  inputs:
-    versionSpec: '14.x'
-  displayName: 'Setup Node.js'
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '14.x'
+    displayName: 'Setup Node.js'
 
-- script: yarn
-  displayName: 'Install'
+  - script: yarn
+    displayName: 'Install'
+
+  - script: yarn lint
+    displayName: 'Code quality check'
