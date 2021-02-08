@@ -31,4 +31,5 @@ script:
   - yarn lint
 
 after_success:
-  - yarn build
+  - yarn build --publish never
+  - yarn release
