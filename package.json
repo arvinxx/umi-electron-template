@@ -11,7 +11,7 @@
     "render:dev": "cross-env PORT=7777 umi dev",
     "electron:dev": "cross-env PORT=7777 umi dev electron",
     "---------": "",
-    "build": "umi build electron",
+    "build": "umi build electron --publish never",
     "build:local": "umi build electron --dir",
     "electron:build:win": "umi build electron --win",
     "electron:build:mac": "umi build electron --mac",

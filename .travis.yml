@@ -29,7 +29,22 @@ install:
 
 script:
   - yarn lint
-
-after_success:
-  - yarn build --publish never
+  - yarn build
   - yarn release
+
+#
+#jobs:
+#  include:
+#    - stage: test
+#
+#    - stage: Build on macOS
+#      os:
+#        - osx
+#      script:
+#        - yarn build
+#        - yarn build:mac-zip
+#
+#    - stage: Release
+#      os: linux
+#      script:
+#        - yarn release
