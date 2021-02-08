@@ -2,11 +2,33 @@ language: node_js
 node_js:
   - 14
 
+# 暂时只在 beta 测试
+branches:
+  only:
+    - beta
+
+os:
+  - linux
+  - osx
+
+env:
+  global:
+    - ELECTRON_CACHE=$HOME/.cache/electron
+    - ELECTRON_BUILDER_CACHE=$HOME/.cache/electron-builder
+
 cache:
   yarn: true
+  directories:
+    - node_modules
+    - $HOME/.cache/electron
+    - $HOME/.cache/electron-builder
+    - $HOME/.npm/_prebuilds
 
 install:
   - yarn
 
 script:
   - yarn lint
+
+after_success:
+  - yarn build
