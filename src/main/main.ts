@@ -1,11 +1,3 @@
-import { app } from 'electron';
-import { initApp } from './app';
-import { windows } from 'electron-is';
+import { bootstrap } from './bootstrap';
 
-app.whenReady().then(initApp);
-
-app.on('window-all-closed', () => {
-  if (windows()) {
-    app.quit();
-  }
-});
+bootstrap().catch(console.error);

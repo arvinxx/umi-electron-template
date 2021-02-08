@@ -2,7 +2,7 @@ import { provide } from 'inversify-binding-decorators';
 import { inject } from 'inversify';
 import { Repository } from 'typeorm';
 
-import type { User } from '@/entities';
+import type { User } from '@/models';
 import TYPES from '@/ioc/types';
 
 @provide(UserService)

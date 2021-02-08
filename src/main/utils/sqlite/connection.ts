@@ -1,25 +1,34 @@
 import { app } from 'electron';
-import type { EntityTarget } from 'typeorm';
+import type { ConnectionOptions, EntityTarget } from 'typeorm';
 import { createConnection, getConnection } from 'typeorm';
 import path from 'path';
-import { User } from '@/entities';
+import { User } from '@/models';
 import { getLogger } from '@/utils';
+import { isTest } from '@/common';
 
+const entities = [User];
+
+// 数据库存储地址
+const storagePath = app.getPath('userData');
+
+const connectConfig: ConnectionOptions = {
+  type: 'sqlite',
+  entities,
+  database:
+    // 测试下使用内存数据库
+    /* istanbul ignore next */
+    isTest ? ':memory:' : path.join(storagePath, 'database', 'db.sqlite'),
+  synchronize: isTest,
+  dropSchema: isTest,
+};
 /**
  * 获取数据库链接
  */
 export const getDBConnection = async () => {
-  // 数据库存储地址
-  const storagePath = app.getPath('userData');
-
   const logger = getLogger('database');
   try {
     logger.info('连接数据库...');
-    const connection = await createConnection({
-      type: 'sqlite',
-      database: path.join(storagePath, 'database', 'db.sqlite'),
-      entities: [User],
-    });
+    const connection = await createConnection(connectConfig);
     logger.info('连接成功!');
     return connection;
   } catch (err) {

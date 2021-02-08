@@ -2,7 +2,7 @@ import { AsyncContainerModule, Container } from 'inversify';
 import { buildProviderModule } from 'inversify-binding-decorators';
 import type { Repository } from 'typeorm';
 
-import { User } from '@/entities';
+import { User } from '@/models';
 import { getDBConnection, getRepository } from '@/utils';
 import TYPES from './types';
 
