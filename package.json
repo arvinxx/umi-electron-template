@@ -8,7 +8,7 @@
   "repository": "https://github.com/arvinxx/umi-electron-template.git",
   "scripts": {
     "start": "yarn electron:dev",
-    "render:dev": "umi dev",
+    "render:dev": "cross-env PORT=7777 umi dev",
     "electron:dev": "cross-env PORT=7777 umi dev electron",
     "---------": "",
     "build": "umi build electron",
