@@ -5,7 +5,7 @@ node_js:
 # 暂时只在 beta 测试
 branches:
   only:
-    - beta
+    - ci/travis
 
 os:
   - linux
