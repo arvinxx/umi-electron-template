@@ -17,7 +17,8 @@
 
 - 基于 [umi-plugin-electron-builder][umi-plugin-electron-builder] 构建，享受完整 [umi][umi] 开发生态；
 - 采用 [electron-builder][electron-builder] 打包构建工具；
-- 使用 main 与 renderer 双目录架构；
+- 使用 Main 与 Renderer 双目录架构；
+- 基于 [inversify][inversify] 实现 DI/IoC
 
 ### 内置功能
 
@@ -41,6 +42,60 @@
 [tailwindcss]: https://tailwindcss.com/
 [sqlite3]: https://github.com/mapbox/node-sqlite3
 [typeorm]: https://typeorm.io/#/
+[inversify]: https://github.com/inversify/InversifyJS
+
+## 快速上手
+
+### 安装
+
+通过 git 下载这个仓库到本地
+
+然后通过 yarn 下载安装依赖
+
+```bash
+yarn
+```
+
+### 开发
+
+通过以下命令启动渲染进程(默认端口：8051)
+
+```bash
+yarn start
+```
+
+### 构建
+
+```bash
+yarn build
+```
+
+构建文件会输出到 `release` 目录下：
+
+```
+release
+├── builder-effective-config.yaml
+├── bundled
+│   ├── home.html
+│   ├── index.html
+│   ├── main.js
+│   ├── main.js.map
+│   ├── node_modules
+│   ├── package.json
+│   ├── static
+│   ├── umi.css
+│   └── umi.js
+├── latest-mac.yml
+├── mac
+│   └── Umi Electron Template.app
+├── umi-electron-template_setup_1.8.1.dmg
+└── umi-electron-template_setup_1.8.1.dmg.blockmap
+
+```
+
+## 开发指南
+
+详见 [开发指南](./docs/guide.md)
 
 ## License
 
