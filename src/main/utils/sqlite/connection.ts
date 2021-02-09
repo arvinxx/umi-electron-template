@@ -30,6 +30,11 @@ export const getDBConnection = async () => {
     logger.info('连接数据库...');
     const connection = await createConnection(connectConfig);
     logger.info('连接成功!');
+
+    // 对数据库做一次同步 相当于初始化各种表
+    // 否则会报 QueryFailedError: SQLITE_ERROR: no such table: User 错误
+    await connection.synchronize();
+
     return connection;
   } catch (err) {
     logger.error('数据库初始化失败,错误信息:');
