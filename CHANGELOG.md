@@ -1,5 +1,37 @@
 # Umi Electron Template 更新日志
 
+## [1.8.2](https://github.com/arvinxx/umi-electron-template/compare/v1.8.1...v1.8.2) (2021-02-09)
+
+
+### ♻ 重构
+
+* 重构开发框架 ([c218ccd](https://github.com/arvinxx/umi-electron-template/commit/c218ccd))
+
+
+### 🎫 杂项
+
+* **脚本**: 修改开发脚本 ([6087cbe](https://github.com/arvinxx/umi-electron-template/commit/6087cbe))
+
+
+### 🐛 修复
+
+* 修复数据库链接问题 ([4d90e2f](https://github.com/arvinxx/umi-electron-template/commit/4d90e2f))
+
+
+### 👷 构建系统
+
+* **依赖**: bump electron from 11.2.2 to 11.2.3 ([4f1b48b](https://github.com/arvinxx/umi-electron-template/commit/4f1b48b))
+
+
+### 📝 文档
+
+* **说明文档**: 补充说明文档 ([89268e3](https://github.com/arvinxx/umi-electron-template/commit/89268e3))
+
+
+### 🔧 持续集成
+
+* 修复测试脚本 ([4e58260](https://github.com/arvinxx/umi-electron-template/commit/4e58260))
+
 ## [1.8.1](https://github.com/arvinxx/umi-electron-template/compare/v1.8.0...v1.8.1) (2021-02-06)
 
 
