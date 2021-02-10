@@ -57,7 +57,7 @@
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.16",
     "sqlite3": "5.0.0",
-    "typeorm": "^0.2.30"
+    "typeorm": "^0.2.31"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.5.0",
