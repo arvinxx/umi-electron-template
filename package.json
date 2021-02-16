@@ -56,7 +56,7 @@
     "os-name": "^4.0.0",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.16",
-    "sqlite3": "5.0.0",
+    "sqlite3": "5.0.2",
     "typeorm": "^0.2.31"
   },
   "devDependencies": {
