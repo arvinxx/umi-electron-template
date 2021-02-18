@@ -1,13 +1,13 @@
 {
   "extends": "../../tsconfig.json",
-  "include": [".", "../../types"],
+  "include": ["./**/*.ts", "../../types"],
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
       "@/common": ["../common"],
       "@/common/*": ["../common/*"],
       "@/*": ["./*"],
-      "@@/*": [".umi/*"]
+      "@@/*": [".umi/*", "../.umi/*"]
     }
   }
 }
