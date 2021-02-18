@@ -38,7 +38,8 @@
     "---------     ": "",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "postinstall": "umi generate tmp && electron-builder install-app-deps",
-    "postuninstall": "electron-builder install-app-deps"
+    "postuninstall": "electron-builder install-app-deps",
+    "rebuild-deps": "electron-builder install-app-deps"
   },
   "lint-staged": {
     "*.{js,jsx,less,md,json}": [
@@ -119,12 +120,5 @@
     "umi": "^3.3.7",
     "umi-plugin-electron-builder": "^1.0.15",
     "umi-plugin-tailwindcss": "^2.1.3"
-  },
-  "electronWebpack": {
-    "main": {
-      "sourceDirectory": "src/main",
-      "webpackConfig": "config/webpack.main.ts"
-    },
-    "renderer": null
   }
 }
