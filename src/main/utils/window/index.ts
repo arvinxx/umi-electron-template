@@ -34,7 +34,7 @@ export const createWindow = (opts: WindowOpts) => {
       // 上下文隔离环境
       // https://www.electronjs.org/docs/tutorial/context-isolation
       // contextIsolation: true,
-      // devTools: dev(),
+      // devTools: isDev,
     },
   });
 

@@ -4,9 +4,8 @@ import { resolve } from 'path';
 import { readJSONSync } from 'fs-extra';
 import { srcPath, isDev } from './utils';
 
-import theme from '../theme/theme';
-
 const mainWebpackConfig = require('./webpack.main');
+
 // 必须将作为node的依赖，例如 sqlite3、typeORM 等 external 掉
 // 否则无法使用
 const pkg = readJSONSync(resolve(srcPath, '../package.json'));
@@ -22,7 +21,6 @@ export default defineConfig({
   // 所以使用 react-devtools 独立版本
   // 需要添加 <script src="http://localhost:8097"></script>
   scripts: isDev ? ['http://localhost:8097'] : undefined,
-  theme,
   routes: [
     {
       path: '/',
@@ -52,7 +50,7 @@ export default defineConfig({
       },
   fastRefresh: {},
   electronBuilder: {
-    mainSrc: '../../main',
+    mainSrc: '../main',
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
@@ -61,7 +59,7 @@ export default defineConfig({
   },
   alias: {
     '@/common': resolve(srcPath, './common'),
-    '@/bridge': resolve(__dirname, '../bridge'),
-    theme: resolve(__dirname, '../theme'), // less 全局样式文件
+    '@/bridge': resolve(srcPath, './renderer/bridge'),
+    theme: resolve(srcPath, './renderer/theme'), // less 全局样式文件
   },
 });
