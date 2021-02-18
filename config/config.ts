@@ -2,14 +2,13 @@ import { defineConfig } from 'umi';
 import ElectronBuilderOpts from './electronBuilderOpts';
 import { resolve } from 'path';
 import { readJSONSync } from 'fs-extra';
+import { srcPath, isDev } from './utils';
 
-import theme from '../src/renderer/theme/theme';
-
-const isDev = process.env.NODE_ENV === 'development';
+const mainWebpackConfig = require('./webpack.main');
 
 // 必须将作为node的依赖，例如 sqlite3、typeORM 等 external 掉
 // 否则无法使用
-const pkg = readJSONSync(resolve(__dirname, '../package.json'));
+const pkg = readJSONSync(resolve(srcPath, '../package.json'));
 const deps = pkg.dependencies;
 const externals = Object.keys(deps);
 
@@ -22,19 +21,18 @@ export default defineConfig({
   // 所以使用 react-devtools 独立版本
   // 需要添加 <script src="http://localhost:8097"></script>
   scripts: isDev ? ['http://localhost:8097'] : undefined,
-  theme,
   routes: [
     {
       path: '/',
-      component: '@/renderer/layouts/BaseLayout',
+      component: '@/layouts/BaseLayout',
       routes: [
         {
           path: '/home',
-          component: '@/renderer/pages/home',
+          component: '@/pages/home',
         },
         {
           path: '/database',
-          component: '@/renderer/pages/database',
+          component: '@/pages/database',
         },
       ],
     },
@@ -52,16 +50,16 @@ export default defineConfig({
       },
   fastRefresh: {},
   electronBuilder: {
+    mainSrc: '../main',
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
     externals,
+    mainWebpackConfig,
   },
   alias: {
-    '@/hooks': resolve(__dirname, '../src/renderer/hooks'),
-    '@/bridge': resolve(__dirname, '../src/renderer/bridge'),
-    '@/utils': resolve(__dirname, '../src/renderer/utils'),
-    '@/common': resolve(__dirname, '../src/common'),
-    theme: resolve(__dirname, '../src/renderer/theme'), // less 全局样式文件
+    '@/common': resolve(srcPath, './common'),
+    '@/bridge': resolve(srcPath, './renderer/bridge'),
+    theme: resolve(srcPath, './renderer/theme'), // less 全局样式文件
   },
 });
