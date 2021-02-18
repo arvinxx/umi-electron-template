@@ -4,7 +4,7 @@ import { createConnection, getConnection } from 'typeorm';
 import path from 'path';
 import { User } from '@/models';
 import { getLogger } from '@/utils';
-import { isTest } from '@/common';
+import { isDev, isTest } from '@/common';
 
 const entities = [User];
 
@@ -17,9 +17,13 @@ const connectConfig: ConnectionOptions = {
   database:
     // 测试下使用内存数据库
     /* istanbul ignore next */
-    isTest ? ':memory:' : path.join(storagePath, 'database', 'db.sqlite'),
-  synchronize: isTest,
-  dropSchema: isTest,
+    isTest
+      ? ':memory:'
+      : path.join(
+          storagePath,
+          'database',
+          `${isDev ? 'umi-electron-template' : 'db'}.sqlite`,
+        ),
 };
 /**
  * 获取数据库链接
