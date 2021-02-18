@@ -37,7 +37,7 @@
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "---------     ": "",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
-    "postinstall": "umi generate tmp && electron-builder install-app-deps",
+    "postinstall": "cross-env APP_ROOT=src/renderer umi generate tmp && electron-builder install-app-deps",
     "postuninstall": "electron-builder install-app-deps",
     "rebuild-deps": "electron-builder install-app-deps"
   },
