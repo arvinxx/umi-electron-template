@@ -36,7 +36,7 @@ module.exports = {
       {
         assets: ['CHANGELOG.md', 'package.json'],
         message:
-          ':bookmark: chore(release): v${nextRelease.version} [skip ci]\n\nhttps://github.com/arvinxx/umi-electron-template/releases/tag/${nextRelease.gitTag}',
+          ':bookmark: chore(release): ${nextRelease.gitTag} [skip ci] \n\n${nextRelease.notes}',
       },
     ],
   ],
