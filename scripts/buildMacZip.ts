@@ -1,25 +1,26 @@
-const { execSync } = require('child_process');
-const yaml = require('js-yaml');
-const fs = require('fs');
-const { join } = require('path');
+import { execSync } from 'child_process';
+import yaml from 'js-yaml';
+import fs from 'fs';
+import { join } from 'path';
 
-const { name: appName, version } = require('../package.json');
-
-const productName = 'Umi Electron Template';
+import { name as appName, version } from '../package.json';
+import options from '../config/electronBuilderOpts';
 
 const dir = join(__dirname, '../release');
 
-const appPath = `${dir}/mac/${productName}.app`;
+const appPath = `${dir}/mac/${options.productName}.app`;
 
 const zipFileName = `${appName}_setup_${version}_mac.zip`;
 
 const zipFilePath = `${dir}/${zipFileName}`;
+
 const appBuilder = join(
   __dirname,
   '../node_modules/app-builder-bin/mac/app-builder',
 );
 
 console.log('Zipping...');
+
 execSync(
   `ditto -c -k --sequesterRsrc --keepParent "${appPath}" "${zipFilePath}"`,
 );
@@ -42,7 +43,7 @@ blockmap.blockMapSize = parseInt(
   ).toString(),
 );
 
-const doc = yaml.load(fs.readFileSync(`${dir}/latest-mac.yml`, 'utf8'));
+const doc = yaml.load(fs.readFileSync(`${dir}/latest-mac.yml`, 'utf8')) as any;
 
 doc.files.unshift({
   url: zipFileName,

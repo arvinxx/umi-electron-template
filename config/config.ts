@@ -52,7 +52,7 @@ export default defineConfig({
   electronBuilder: {
     mainSrc: '../main',
     routerMode: isDev ? 'hash' : 'browser',
-    outputDir: 'release',
+    outputDir: '../../release',
     builderOptions: ElectronBuilderOpts,
     externals,
     mainWebpackConfig,
