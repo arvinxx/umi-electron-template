@@ -48,7 +48,7 @@ export default defineConfig({
         htmlSuffix: true,
         dynamicRoot: true,
       },
-  fastRefresh: {},
+  // fastRefresh: {},
   electronBuilder: {
     mainSrc: '../main',
     routerMode: isDev ? 'hash' : 'browser',
