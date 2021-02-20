@@ -1,5 +1,56 @@
 # Umi Electron Template 更新日志
 
+# [1.9.0](https://github.com/arvinxx/umi-electron-template/compare/v1.8.2...v1.9.0) (2021-02-20)
+
+
+### ✨ 新特性
+
+* 添加一个原生依赖 robotjs ([ef7489b](https://github.com/arvinxx/umi-electron-template/commit/ef7489b))
+
+
+### 🎫 杂项
+
+* 修改数据库名称 ([2cffdea](https://github.com/arvinxx/umi-electron-template/commit/2cffdea))
+* 修正 umi type alias ([1d9ab90](https://github.com/arvinxx/umi-electron-template/commit/1d9ab90))
+* 修正 umi type 导出配置 ([420cf2c](https://github.com/arvinxx/umi-electron-template/commit/420cf2c))
+* 更新双目录架构配置项 ([2e955c3](https://github.com/arvinxx/umi-electron-template/commit/2e955c3))
+* 调整 postinstall 的 APP_ROOT ([b5cafb4](https://github.com/arvinxx/umi-electron-template/commit/b5cafb4))
+
+
+### 👷 构建系统
+
+* **依赖**: bump @ant-design/icons from 4.4.0 to 4.5.0 ([6785859](https://github.com/arvinxx/umi-electron-template/commit/6785859))
+* **依赖**: bump @types/node from 12.20.1 to 14.14.30 ([04085e6](https://github.com/arvinxx/umi-electron-template/commit/04085e6))
+* **依赖**: bump @types/node from 14.14.25 to 14.14.27 ([ab14991](https://github.com/arvinxx/umi-electron-template/commit/ab14991))
+* **依赖**: bump @types/node from 14.14.27 to 14.14.28 ([7b16385](https://github.com/arvinxx/umi-electron-template/commit/7b16385))
+* **依赖**: bump @types/react from 17.0.1 to 17.0.2 ([893e2ff](https://github.com/arvinxx/umi-electron-template/commit/893e2ff))
+* **依赖**: bump @types/react-dom from 17.0.0 to 17.0.1 ([6f1ab40](https://github.com/arvinxx/umi-electron-template/commit/6f1ab40))
+* **依赖**: bump @types/react-test-renderer from 17.0.0 to 17.0.1 ([3245b25](https://github.com/arvinxx/umi-electron-template/commit/3245b25))
+* **依赖**: bump antd from 4.12.2 to 4.12.3 ([1f7841e](https://github.com/arvinxx/umi-electron-template/commit/1f7841e))
+* **依赖**: bump eslint from 7.19.0 to 7.20.0 ([9340361](https://github.com/arvinxx/umi-electron-template/commit/9340361))
+* **依赖**: bump semantic-release from 17.3.7 to 17.3.8 ([6fb1371](https://github.com/arvinxx/umi-electron-template/commit/6fb1371))
+* **依赖**: bump semantic-release from 17.3.8 to 17.3.9 ([c56782e](https://github.com/arvinxx/umi-electron-template/commit/c56782e))
+* **依赖**: bump ts-jest from 26.5.0 to 26.5.1 ([ccca464](https://github.com/arvinxx/umi-electron-template/commit/ccca464))
+* **依赖**: bump typeorm from 0.2.30 to 0.2.31 ([bde6b12](https://github.com/arvinxx/umi-electron-template/commit/bde6b12))
+* **依赖**: bump typescript from 4.1.3 to 4.1.4 ([b3e4997](https://github.com/arvinxx/umi-electron-template/commit/b3e4997))
+* **依赖**: bump typescript from 4.1.4 to 4.1.5 ([05cd9f3](https://github.com/arvinxx/umi-electron-template/commit/05cd9f3))
+* **依赖**: bump umi-plugin-electron-builder from 1.0.1 to 1.0.2 ([d4e93f3](https://github.com/arvinxx/umi-electron-template/commit/d4e93f3))
+* **依赖**: bump umi-plugin-electron-builder from 1.0.15 to 1.0.16 ([1dc7ec6](https://github.com/arvinxx/umi-electron-template/commit/1dc7ec6))
+* **依赖**: bump umi-plugin-electron-builder from 1.0.2 to 1.0.15 ([a46b61c](https://github.com/arvinxx/umi-electron-template/commit/a46b61c))
+
+
+### 🔧 持续集成
+
+* 取消 linux 环境 ([86cd967](https://github.com/arvinxx/umi-electron-template/commit/86cd967))
+* 更新缓存 action ([f51de03](https://github.com/arvinxx/umi-electron-template/commit/f51de03))
+* 测试缓存 action ([6e4e848](https://github.com/arvinxx/umi-electron-template/commit/6e4e848))
+* 调整 release commit 内容 ([d673b8b](https://github.com/arvinxx/umi-electron-template/commit/d673b8b))
+
+
+### wip
+
+* 更新双目录结构配置 ([329e19f](https://github.com/arvinxx/umi-electron-template/commit/329e19f))
+
 ## [1.8.2](https://github.com/arvinxx/umi-electron-template/compare/v1.8.1...v1.8.2) (2021-02-09)
 
 
