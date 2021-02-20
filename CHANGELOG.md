@@ -1,5 +1,17 @@
 # Umi Electron Template 更新日志
 
+## [1.9.1](https://github.com/arvinxx/umi-electron-template/compare/v1.9.0...v1.9.1) (2021-02-20)
+
+
+### 🐛 修复
+
+* 回退 umi-plugin-electron-builder 版本修复打开报错 ([14528d2](https://github.com/arvinxx/umi-electron-template/commit/14528d2))
+
+
+### 👷 构建系统
+
+* 修正 zip 包构建 bug ([401b2db](https://github.com/arvinxx/umi-electron-template/commit/401b2db))
+
 # [1.9.0](https://github.com/arvinxx/umi-electron-template/compare/v1.8.2...v1.9.0) (2021-02-20)
 
 
