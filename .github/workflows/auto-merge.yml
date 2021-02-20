@@ -7,7 +7,10 @@ jobs:
   merge:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
     name: Dependabot Auto Merge
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [macos-latest, windows-latest]
     steps:
       - uses: actions/checkout@v2
       - name: Setup Node.js environment
