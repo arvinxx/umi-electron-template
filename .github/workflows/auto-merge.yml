@@ -4,7 +4,7 @@ on:
     types: [labeled, edited]
 
 jobs:
-  merge:
+  test:
     if: contains(github.event.pull_request.labels.*.name, 'dependencies')
     name: Dependabot Auto Merge
     runs-on: ${{ matrix.os }}
@@ -21,6 +21,12 @@ jobs:
       - uses: c-hive/gha-yarn-cache@v1
       - run: yarn
       - run: yarn lint
+
+  merge:
+    needs: test
+    name: Dependabot Auto Merge
+    runs-on: ubuntu-latest
+    steps:
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           command: merge
