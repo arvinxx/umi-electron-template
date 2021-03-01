@@ -20267,10 +20267,10 @@ umi-plugin-electron-builder@1.0.18:
     progress-bar-webpack-plugin "^2.1.0"
     typescript "^4.1.5"
 
-umi-plugin-tailwindcss@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.0.tgz#b21c19684989e32dac709bc0a68ccb64058dbc19"
-  integrity sha512-K68AtKgCohW7EGW1Aza2OrKxlwy1nnsoyfG2RH6GZJuE4i82oL3kPfcXka6lQhfnSdh1Nlc9w65xOZJ/kysi/g==
+umi-plugin-tailwindcss@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.3.tgz#e0a5d6615893d8537b34aee7d7bc3ac8d634e750"
+  integrity sha512-wtHPvZhsZ+KGm8ChjNSTl8VH2rsNNF1Z79qc5M1K7x9ZbvSt0R6XbkUC7hYFz2tUg/QJNzk88CXXvx0XuKm3rg==
   dependencies:
     tailwindcss "2.0.1-compat"
 
