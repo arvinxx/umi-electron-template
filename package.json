@@ -120,6 +120,6 @@
     "typescript": "^4.2.2",
     "umi": "^3.3.9",
     "umi-plugin-electron-builder": "1.0.18",
-    "umi-plugin-tailwindcss": "^2.1.3"
+    "umi-plugin-tailwindcss": "^3.0.0"
   }
 }
