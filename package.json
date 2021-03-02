@@ -51,7 +51,7 @@
     ]
   },
   "dependencies": {
-    "electron-updater": "^4.3.5",
+    "electron-updater": "^4.3.8",
     "inversify": "^5.0.5",
     "log4js": "^6.3.0",
     "os-name": "^4.0.0",
