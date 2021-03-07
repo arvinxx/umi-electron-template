@@ -1,8 +1,10 @@
 import { defineConfig } from 'umi';
-import ElectronBuilderOpts from './electronBuilderOpts';
 import { resolve } from 'path';
 import { readJSONSync } from 'fs-extra';
 import { srcPath, isDev } from './utils';
+import routes from './routes';
+
+import ElectronBuilderOpts from './electronBuilderOpts';
 
 const mainWebpackConfig = require('./webpack.main');
 
@@ -17,26 +19,12 @@ export default defineConfig({
     type: 'none',
   },
   // React Dev tools 暂时没法修复 (Electron 版本 >= 9.0)
-  // https://github.com/electron/electron/issues/23662
   // 所以使用 react-devtools 独立版本
   // 需要添加 <script src="http://localhost:8097"></script>
+  // Ref: https://github.com/electron/electron/issues/23662
   scripts: isDev ? ['http://localhost:8097'] : undefined,
-  routes: [
-    {
-      path: '/',
-      component: '@/layouts/BaseLayout',
-      routes: [
-        {
-          path: '/home',
-          component: '@/pages/home',
-        },
-        {
-          path: '/database',
-          component: '@/pages/database',
-        },
-      ],
-    },
-  ],
+  routes,
+  outputPath: '../../release',
   /**
    * electron 默认情况下应该其实就是 mpa 环境
    * 但是直接使用 umi 的 mpa 方法会丢失全局 Layout
@@ -48,11 +36,9 @@ export default defineConfig({
         htmlSuffix: true,
         dynamicRoot: true,
       },
-  // fastRefresh: {},
   electronBuilder: {
-    mainSrc: '../main',
     routerMode: isDev ? 'hash' : 'browser',
-    outputDir: '../../release',
+    outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
     externals,
     mainWebpackConfig,

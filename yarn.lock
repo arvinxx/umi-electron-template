@@ -1736,6 +1736,11 @@
   resolved "https://registry.yarnpkg.com/@gitmoji/parser-opts/-/parser-opts-1.2.6.tgz#1f7d253d9f52e91e9e5f65216b190e481b505277"
   integrity sha512-90e0sDneqK5EdtUqEn/e6p8hRmQ/+VDcHOm+mS/9d+4QDx1BQ8tULKhBc+cmZqRihTluZWsp2W1zNcS2VqRm8A==
 
+"@gitmoji/parser-opts@1.3.0":
+  version "1.3.0"
+  resolved "https://registry.npm.taobao.org/@gitmoji/parser-opts/download/@gitmoji/parser-opts-1.3.0.tgz#7118a512342afd89c895cb2fd95454fa73f377bb"
+  integrity sha1-cRilEjQq/YnIlcsv2VRU+nPzd7s=
+
 "@hapi/address@^2.1.2":
   version "2.1.4"
   resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz?cache=0&sync_timestamp=1603524710662&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Faddress%2Fdownload%2F%40hapi%2Faddress-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
@@ -3076,7 +3081,7 @@
   resolved "https://registry.npm.taobao.org/@types/mustache/download/@types/mustache-4.1.0.tgz#b702b1e2879d9ff1f39ac89a4a7784a489aee947"
   integrity sha1-twKx4oedn/HzmsiaSneEpImu6Uc=
 
-"@types/node@*", "@types/node@>= 8", "@types/node@^14.6.2":
+"@types/node@*", "@types/node@>= 8":
   version "14.14.31"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
   integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
@@ -6533,13 +6538,13 @@ conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.11:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@^1.4.1:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.4.1.tgz#1951d51c5967abdbb7fa922ec8355faa48fb5f47"
-  integrity sha512-YZq+uxEGs9t1V8CL5zbL8Rqj4fnwA7PiL0J8yGJZbaHBCcCjiYbVvcj5zSLs008t7txi0zSxNapHEAHTU8xoqw==
+conventional-changelog-gitmoji-config@1.4.2:
+  version "1.4.2"
+  resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.4.2.tgz#4c08bda06b77eaa4c8c286c88fffb04db96404e0"
+  integrity sha1-TAi9oGt36qTIwobIj/+wTblkBOA=
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
-    "@gitmoji/parser-opts" "1.2.6"
+    "@gitmoji/parser-opts" "1.3.0"
     cosmiconfig "^7.0.0"
 
 conventional-changelog-writer@^4.0.0:
@@ -8117,22 +8122,13 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.2.3:
+electron@^11.2.3, electron@^11.3.0:
   version "11.3.0"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-11.3.0.tgz#87e8528fd23ae53b0eeb3a738f1fe0a3ad27c2db"
-  integrity sha512-MhdS0gok3wZBTscLBbYrOhLaQybCSAfkupazbK1dMP5c+84eVMxJE/QGohiWQkzs0tVFIJsAHyN19YKPbelNrQ==
+  resolved "https://registry.npm.taobao.org/electron/download/electron-11.3.0.tgz?cache=0&sync_timestamp=1614963218548&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-11.3.0.tgz#87e8528fd23ae53b0eeb3a738f1fe0a3ad27c2db"
+  integrity sha1-h+hSj9I65TsO6zpzjx/go60nwts=
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
-    extract-zip "^1.0.3"
-
-electron@^12.0.0:
-  version "12.0.0"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-12.0.0.tgz#b3b1d88cc64622e59c637521da5a6b6ab4df4eb5"
-  integrity sha512-p6oxZ4LG82hopPGAsIMOjyoL49fr6cexyFNH0kADA9Yf+mJ72DN7bjvBG+6V7r6QKhwYgsSsW8RpxBeVOUbxVQ==
-  dependencies:
-    "@electron/get" "^1.0.1"
-    "@types/node" "^14.6.2"
     extract-zip "^1.0.3"
 
 electron@^9.1.0:
@@ -18489,6 +18485,16 @@ selfsigned@^1.10.8:
   integrity sha1-DRcgi30Swz+OrIXEGDXyf8PYGjA=
   dependencies:
     node-forge "^0.10.0"
+
+semantic-release-config-gitmoji@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.1.0.tgz#9a72697e3694fa7f9385849f76898eaa60fce275"
+  integrity sha1-mnJpfjaU+n+ThYSfdomOqmD84nU=
+  dependencies:
+    "@gitmoji/commit-types" "1.1.5"
+    "@semantic-release/changelog" "^5.0.1"
+    "@semantic-release/git" "^9.0.0"
+    conventional-changelog-gitmoji-config "1.4.2"
 
 semantic-release@^17.4.1:
   version "17.4.1"
