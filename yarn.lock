@@ -18486,10 +18486,10 @@ selfsigned@^1.10.8:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-release-config-gitmoji@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.1.0.tgz#9a72697e3694fa7f9385849f76898eaa60fce275"
-  integrity sha1-mnJpfjaU+n+ThYSfdomOqmD84nU=
+semantic-release-config-gitmoji@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.2.0.tgz#a1d3979d0abd6463e9318b90bf4d76bd396947de"
+  integrity sha1-odOXnQq9ZGPpMYuQv012vTlpR94=
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@semantic-release/changelog" "^5.0.1"
@@ -20545,10 +20545,10 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.npm.taobao.org/umask/download/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-umi-plugin-electron-builder@1.0.18:
+umi-plugin-electron-builder@^1.0.18:
   version "1.0.18"
-  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-1.0.18.tgz#569b1b00b3cd6b65e333fc3424f4ba85a17cd76f"
-  integrity sha512-2bdKK9P5rwMgBDgntqxECVEKgPBctx5bI6ZJt9Nq0VX6thcf5vDaxxuuR6kaZmfiKUVu6XdVt30HKthq3pJwOA==
+  resolved "https://registry.npm.taobao.org/umi-plugin-electron-builder/download/umi-plugin-electron-builder-1.0.18.tgz#569b1b00b3cd6b65e333fc3424f4ba85a17cd76f"
+  integrity sha1-VpsbALPNa2XjM/w0JPS6haF8128=
   dependencies:
     "@babel/plugin-syntax-dynamic-import" "^7.8.3"
     "@types/electron-devtools-installer" "^2.2.0"
