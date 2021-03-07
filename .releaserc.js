@@ -5,6 +5,4 @@ const config = createConfig({
   githubAssets: ['release'],
 });
 
-module.exports = {
-  extends: [config],
-};
+module.exports = config;
