@@ -18486,10 +18486,10 @@ selfsigned@^1.10.8:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-release-config-gitmoji@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.2.0.tgz#a1d3979d0abd6463e9318b90bf4d76bd396947de"
-  integrity sha1-odOXnQq9ZGPpMYuQv012vTlpR94=
+semantic-release-config-gitmoji@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.2.1.tgz?cache=0&sync_timestamp=1615089364326&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemantic-release-config-gitmoji%2Fdownload%2Fsemantic-release-config-gitmoji-1.2.1.tgz#49e42354178cf3ad7fb6594819ac1903b0d6bf85"
+  integrity sha1-SeQjVBeM861/tllIGawZA7DWv4U=
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@semantic-release/changelog" "^5.0.1"
