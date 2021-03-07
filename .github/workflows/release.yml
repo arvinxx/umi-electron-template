@@ -60,10 +60,7 @@ jobs:
         id: semantic
         with:
           dry_run: true
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
-            conventional-changelog-gitmoji-config
+          extra_plugins: semantic-release-config-gitmoji
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
@@ -164,9 +161,6 @@ jobs:
       - name: Release
         uses: cycjimmy/semantic-release-action@v2
         with:
-          extra_plugins: |
-            @semantic-release/changelog
-            @semantic-release/git
-            conventional-changelog-gitmoji-config
+          extra_plugins: semantic-release-config-gitmoji
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
