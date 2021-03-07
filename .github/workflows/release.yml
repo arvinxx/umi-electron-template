@@ -60,7 +60,9 @@ jobs:
         id: semantic
         with:
           dry_run: true
-          extra_plugins: semantic-release-config-gitmoji
+          extra_plugins: |
+          semantic-release-config-gitmoji
+          semantic-release-config-gitmoji/lib/createConfig
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
