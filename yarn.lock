@@ -3566,12 +3566,24 @@
   resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.3.9.tgz#acdf5589163b6b7c041c89257b1ba7d3a02292c7"
   integrity sha512-vd9/oFJS8UhsyQJyLOFYXfm75hOsvJQV8/oczmcrBamHe2OfTssx9mTd94NPvTlCnJyahRYTc02L7YprCoyBRw==
 
+"@umijs/babel-plugin-auto-css-modules@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.4.2.tgz#81387533c0f4a00417a9a7b38c130359c63ca956"
+  integrity sha512-DhEHHa3hORTgqEcOgujvvk8NqZibQ1H/R4LOEzM6IfQJs2+MlQmhKU4XI7dywXrNLBjM13PDvFEI1DVNbWK2mA==
+
 "@umijs/babel-plugin-import-to-await-require@3.3.9":
   version "3.3.9"
   resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.3.9.tgz#2cc9fe764b1743d5281b29989ce2262a3e9a4ab5"
   integrity sha512-5p1g1hbNg3ZZ77j6ScoCW6cHzDR3qnQsoe4D1x5ZNwmfpFKa0QtlAPDOZ5ETW1XzerPl6CNde+95iMKBYlOA3Q==
   dependencies:
     "@babel/types" "7.12.6"
+
+"@umijs/babel-plugin-import-to-await-require@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.4.2.tgz#a2de69f0409dffffada0f48336d0ef568d1d4e50"
+  integrity sha512-lBQL44RWSzwF6BxpPvEn4tcG7c+FArgiFPwXdqNjYZ5h+SluZfQamgvH1qHdCp84SQlII6Kk/VF4z/Wumo/NWA==
+  dependencies:
+    "@umijs/utils" "3.4.2"
 
 "@umijs/babel-plugin-lock-core-js-3@3.3.9":
   version "3.3.9"
@@ -3580,6 +3592,21 @@
   dependencies:
     "@umijs/utils" "3.3.9"
     core-js "3.6.5"
+
+"@umijs/babel-plugin-lock-core-js-3@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.4.2.tgz#7f8e4de60014f14197ad9c4c778ecb5461cb01cd"
+  integrity sha512-dl7VIXbk3D5LvgXvbBYE04F3wwrfJhrtjYWYX6StviD2RPscRH5CpkxE+1FkDMjA5YxvgGDCbvBCFPoiZT2adA==
+  dependencies:
+    "@umijs/utils" "3.4.2"
+    core-js "3.6.5"
+
+"@umijs/babel-plugin-no-anonymous-default-export@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.4.2.tgz#05763caafb69c83a787ffec3d52517301365088c"
+  integrity sha512-tlJ3pNcX7ojUrLKBaPKkjTIt8KsxMO/hy5Z+AqBIMCeSFRCb92+38ijAvrDTLHf3ZoYNu/6gEsvnUMKmifT3yw==
+  dependencies:
+    "@umijs/utils" "3.4.2"
 
 "@umijs/babel-preset-umi@3.3.9":
   version "3.3.9"
@@ -3612,6 +3639,17 @@
     babel-plugin-react-require "3.1.3"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
     babel-plugin-transform-typescript-metadata "0.3.1"
+
+"@umijs/babel-preset-umi@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.4.2.tgz#715bb33e7c098df04ace6163919cb015c808769a"
+  integrity sha512-te5ezR/qKMBiV75/+3ljCRzOdYc3tGKfLMo5LhfX/uXSfKdJXnWi/pg5toiHBC/f6jTT8XMy6GaBBFLg5m/4IQ==
+  dependencies:
+    "@babel/runtime" "7.12.5"
+    "@umijs/babel-plugin-auto-css-modules" "3.4.2"
+    "@umijs/babel-plugin-import-to-await-require" "3.4.2"
+    "@umijs/babel-plugin-lock-core-js-3" "3.4.2"
+    "@umijs/babel-plugin-no-anonymous-default-export" "3.4.2"
 
 "@umijs/bundler-utils@3.3.9":
   version "3.3.9"
@@ -3694,6 +3732,16 @@
     prettier "2.2.1"
     set-value "3.0.2"
     tapable "1.1.3"
+
+"@umijs/deps@0.4.2":
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-0.4.2.tgz#df594681577635de63e75b68d28605e1cd235843"
+  integrity sha512-5hJcomvE6Fq85D5M3C3NaOotFcFGxpIlbEbmg+q0EV6yiKiEogQGprhsz7h7/TwBtkm+5hNVADO+4Zs7Jtz+CQ==
+  dependencies:
+    chokidar "3.5.1"
+    clipboardy "2.3.0"
+    jest-worker "24.9.0"
+    prettier "2.2.1"
 
 "@umijs/error-code-map@^1.0.1":
   version "1.0.1"
@@ -3947,14 +3995,14 @@
     sockjs "0.3.21"
     spdy "4.0.2"
 
-"@umijs/test@^3.0.7", "@umijs/test@^3.3.9":
-  version "3.3.9"
-  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.3.9.tgz#5c6a585919eab3bc4098d647847fc23f4dad4989"
-  integrity sha512-zCD9EeVLFDzF/k8E14v5TLSSm9AUYXjGecHPc3yhkjOsVGTlwG1fi20gfe4jNTrswdi1cy8BCDtsT4iFySYnHQ==
+"@umijs/test@^3.0.7", "@umijs/test@^3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/test/-/test-3.4.2.tgz#67ec4d30e74b0918f75a80b44f4858b11aa901dd"
+  integrity sha512-ipldzdRglvdUPT/ZIT0MIxI9gjBrp9jmlGpWt5FZ66wdAM4Nkv39QpwqbE4gN/CS+KCHUdqFnT7D4t41mYWf+g==
   dependencies:
     "@babel/core" "7.12.10"
-    "@umijs/babel-preset-umi" "3.3.9"
-    "@umijs/utils" "3.3.9"
+    "@umijs/babel-preset-umi" "3.4.2"
+    "@umijs/utils" "3.4.2"
     babel-core "7.0.0-bridge.0"
     babel-jest "^25.4.0"
     core-js "3.8.2"
@@ -4033,6 +4081,13 @@
     signale "1.4.0"
     yargs "15.4.1"
     yargs-parser "18.1.3"
+
+"@umijs/utils@3.4.2":
+  version "3.4.2"
+  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.4.2.tgz#372c872c6b50355a822f37cee1fdb98c1121484d"
+  integrity sha512-iBvJmYgHaXCfIs9twffTnhjo6o2tlZKxduJj2XArrjKtIaK9LQVE7Iip2pvPnJdf0DJLlGxWV5TOViwavpaSug==
+  dependencies:
+    "@umijs/deps" "0.4.2"
 
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
@@ -5906,6 +5961,21 @@ chokidar@3.4.3:
   optionalDependencies:
     fsevents "~2.1.2"
 
+chokidar@3.5.1, chokidar@^3.4.1, chokidar@^3.4.2:
+  version "3.5.1"
+  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.1.tgz?cache=0&sync_timestamp=1610719384066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
+  integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
+  dependencies:
+    anymatch "~3.1.1"
+    braces "~3.0.2"
+    glob-parent "~5.1.0"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.5.0"
+  optionalDependencies:
+    fsevents "~2.3.1"
+
 chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-2.1.8.tgz?cache=0&sync_timestamp=1610719384066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
@@ -5924,21 +5994,6 @@ chokidar@^2.1.8:
     upath "^1.1.1"
   optionalDependencies:
     fsevents "^1.2.7"
-
-chokidar@^3.4.1, chokidar@^3.4.2:
-  version "3.5.1"
-  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.5.1.tgz?cache=0&sync_timestamp=1610719384066&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fchokidar%2Fdownload%2Fchokidar-3.5.1.tgz#ee9ce7bbebd2b79f49f304799d5468e31e14e68a"
-  integrity sha1-7pznu+vSt59J8wR5nVRo4x4U5oo=
-  dependencies:
-    anymatch "~3.1.1"
-    braces "~3.0.2"
-    glob-parent "~5.1.0"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.5.0"
-  optionalDependencies:
-    fsevents "~2.3.1"
 
 chownr@^1.1.1, chownr@^1.1.2, chownr@^1.1.4:
   version "1.1.4"
@@ -12249,7 +12304,7 @@ jest-watcher@^26.6.2:
     jest-util "^26.6.2"
     string-length "^4.0.1"
 
-jest-worker@^24.9.0:
+jest-worker@24.9.0, jest-worker@^24.9.0:
   version "24.9.0"
   resolved "https://registry.npm.taobao.org/jest-worker/download/jest-worker-24.9.0.tgz#5dbfdb5b2d322e98567898238a9697bcce67b3e5"
   integrity sha1-Xb/bWy0yLphWeJgjipaXvM5ns+U=
