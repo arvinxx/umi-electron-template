@@ -8671,10 +8671,10 @@ eslint-visitor-keys@^2.0.0:
   resolved "https://registry.npm.taobao.org/eslint-visitor-keys/download/eslint-visitor-keys-2.0.0.tgz?cache=0&sync_timestamp=1597435362955&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-visitor-keys%2Fdownload%2Feslint-visitor-keys-2.0.0.tgz#21fdc8fbcd9c795cc0321f0563702095751511a8"
   integrity sha1-If3I+82ceVzAMh8FY3AglXUVEag=
 
-eslint@^7.11.0, eslint@^7.21.0:
-  version "7.21.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.21.0.tgz#4ecd5b8c5b44f5dedc9b8a110b01bbfeb15d1c83"
-  integrity sha512-W2aJbXpMNofUp0ztQaF40fveSsJBjlSCSWpy//gzfTvwC+USs/nceBrKmlJOiM8r1bLwP2EuYkCqArn/6QTIgg==
+eslint@^7.11.0, eslint@^7.22.0:
+  version "7.22.0"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-7.22.0.tgz#07ecc61052fec63661a2cab6bd507127c07adc6f"
+  integrity sha512-3VawOtjSJUQiiqac8MQc+w457iGLfuNGLFn8JmF051tTKbh5/x/0vlcEj8OgDCaw7Ysa2Jn8paGshV7x2abKXg==
   dependencies:
     "@babel/code-frame" "7.12.11"
     "@eslint/eslintrc" "^0.4.0"
@@ -8693,7 +8693,7 @@ eslint@^7.11.0, eslint@^7.21.0:
     file-entry-cache "^6.0.1"
     functional-red-black-tree "^1.0.1"
     glob-parent "^5.0.0"
-    globals "^12.1.0"
+    globals "^13.6.0"
     ignore "^4.0.6"
     import-fresh "^3.0.0"
     imurmurhash "^0.1.4"
@@ -8701,7 +8701,7 @@ eslint@^7.11.0, eslint@^7.21.0:
     js-yaml "^3.13.1"
     json-stable-stringify-without-jsonify "^1.0.1"
     levn "^0.4.1"
-    lodash "^4.17.20"
+    lodash "^4.17.21"
     minimatch "^3.0.4"
     natural-compare "^1.4.0"
     optionator "^0.9.1"
@@ -9888,6 +9888,13 @@ globals@^12.1.0:
   integrity sha1-oYgTV2pBsAokqX5/gVkYwuGZJfg=
   dependencies:
     type-fest "^0.8.1"
+
+globals@^13.6.0:
+  version "13.6.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-13.6.0.tgz#d77138e53738567bb96a3916ff6f6b487af20ef7"
+  integrity sha512-YFKCX0SiPg7l5oKYCJ2zZGxcXprVXHcSnVuvzrT3oSENQonVLqM5pf9fN5dLGZGyCjhw8TN8Btwe/jKnZ0pjvQ==
+  dependencies:
+    type-fest "^0.20.2"
 
 globalthis@^1.0.1:
   version "1.0.1"
@@ -13231,10 +13238,15 @@ lodash.zip@^4.2.0:
   resolved "https://registry.npm.taobao.org/lodash.zip/download/lodash.zip-4.2.0.tgz#ec6662e4896408ed4ab6c542a3990b72cc080020"
   integrity sha1-7GZi5IlkCO1KtsVCo5kLcswIACA=
 
-lodash@4.17.20, lodash@4.x, "lodash@>=3.5 <5", lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0:
+lodash@4.17.20:
   version "4.17.20"
   resolved "https://registry.npm.taobao.org/lodash/download/lodash-4.17.20.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Flodash%2Fdownload%2Flodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha1-tEqbYpe8tpjxxRo1RaKzs2jVnFI=
+
+lodash@4.x, "lodash@>=3.5 <5", lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.17.20, lodash@^4.17.21, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.2.0:
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 log-symbols@^2.0.0, log-symbols@^2.1.0, log-symbols@^2.2.0:
   version "2.2.0"
