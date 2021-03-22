@@ -12,10 +12,10 @@
   resolved "https://registry.npm.taobao.org/7zip/download/7zip-0.0.6.tgz#9cafb171af82329490353b4816f03347aa150a30"
   integrity sha1-nK+xca+CMpSQNTtIFvAzR6oVCjA=
 
-"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.3":
-  version "2.8.3"
-  resolved "https://registry.npm.taobao.org/@ahooksjs/use-request/download/@ahooksjs/use-request-2.8.3.tgz?cache=0&sync_timestamp=1612179679669&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40ahooksjs%2Fuse-request%2Fdownload%2F%40ahooksjs%2Fuse-request-2.8.3.tgz#9b7eff972658497473f61ceb89a268d665e28aeb"
-  integrity sha1-m37/lyZYSXRz9hzriaJo1mXiius=
+"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.4":
+  version "2.8.4"
+  resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.4.tgz#c404dce2c984f1ce8573e6577582cc9656a71e37"
+  integrity sha512-Ht3XHIKL6TCNmXtgWovpDZaN9bzdZkZLNDewOwipzLwhVhhVCBeWAP6b3UFygLJAPzDF+OhJs3XJmDRVfO6r6Q==
   dependencies:
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
@@ -4318,12 +4318,12 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ahooks@^2.9.6:
-  version "2.9.6"
-  resolved "https://registry.npm.taobao.org/ahooks/download/ahooks-2.9.6.tgz?cache=0&sync_timestamp=1612180279068&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fahooks%2Fdownload%2Fahooks-2.9.6.tgz#afde34cc7af722da1c724fddf75c9191672ac2f5"
-  integrity sha1-r940zHr3Itocck/d91yRkWcqwvU=
+ahooks@^2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.0.tgz#bec2c0b928115afd6d268e67770146988347675c"
+  integrity sha512-+aq+n+wTLuRZ4oD4iWQbQEYTnAqjhvUjYFWPs8xTxyD2k/mDAZuvAyLrgYOb7Qyn19Bl0Rdxh8M62oBYcBDckQ==
   dependencies:
-    "@ahooksjs/use-request" "^2.8.3"
+    "@ahooksjs/use-request" "^2.8.4"
     "@types/js-cookie" "^2.2.6"
     dayjs "^1.9.1"
     intersection-observer "^0.7.0"
