@@ -14195,10 +14195,10 @@ nice-try@^1.0.4:
   resolved "https://registry.npm.taobao.org/nice-try/download/nice-try-1.0.5.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fnice-try%2Fdownload%2Fnice-try-1.0.5.tgz#a3378a7696ce7d223e88fc9b764bd7ef1089e366"
   integrity sha1-ozeKdpbOfSI+iPybdkvX7xCJ42Y=
 
-nise@^4.0.4:
-  version "4.0.4"
-  resolved "https://registry.npm.taobao.org/nise/download/nise-4.0.4.tgz#d73dea3e5731e6561992b8f570be9e363c4512dd"
-  integrity sha1-1z3qPlcx5lYZkrj1cL6eNjxFEt0=
+nise@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.yarnpkg.com/nise/-/nise-4.1.0.tgz#8fb75a26e90b99202fa1e63f448f58efbcdedaf6"
+  integrity sha512-eQMEmGN/8arp0xsvGoQ+B1qvSkR73B1nWSCh7nOt5neMCtwcQVYQGdzQMhcNscktTsWB54xnlSQFzOAPJD8nXA==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
     "@sinonjs/fake-timers" "^6.0.0"
@@ -18833,16 +18833,16 @@ simple-swizzle@^0.2.2:
   dependencies:
     is-arrayish "^0.3.1"
 
-sinon@^9.0.0:
-  version "9.2.4"
-  resolved "https://registry.npm.taobao.org/sinon/download/sinon-9.2.4.tgz?cache=0&sync_timestamp=1611401230784&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsinon%2Fdownload%2Fsinon-9.2.4.tgz#e55af4d3b174a4443a8762fa8421c2976683752b"
-  integrity sha1-5Vr007F0pEQ6h2L6hCHCl2aDdSs=
+sinon@^10.0.0:
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/sinon/-/sinon-10.0.0.tgz#52279f97e35646ff73d23207d0307977c9b81430"
+  integrity sha512-XAn5DxtGVJBlBWYrcYKEhWCz7FLwZGdyvANRyK06419hyEpdT0dMc5A8Vcxg5SCGHc40CsqoKsc1bt1CbJPfNw==
   dependencies:
     "@sinonjs/commons" "^1.8.1"
     "@sinonjs/fake-timers" "^6.0.1"
     "@sinonjs/samsam" "^5.3.1"
     diff "^4.0.2"
-    nise "^4.0.4"
+    nise "^4.1.0"
     supports-color "^7.1.0"
 
 sisteransi@^1.0.5:
@@ -20549,7 +20549,7 @@ typeorm@^0.2.31:
     yargonaut "^1.1.2"
     yargs "^16.0.3"
 
-typescript@^4.0.2, typescript@^4.1.5, typescript@^4.2.3:
+typescript@^4.0.2, typescript@^4.1.5:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
   integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
