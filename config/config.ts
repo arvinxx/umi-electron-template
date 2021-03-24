@@ -6,8 +6,6 @@ import routes from './routes';
 
 import ElectronBuilderOpts from './electronBuilderOpts';
 
-const mainWebpackConfig = require('./webpack.main');
-
 // 必须将作为node的依赖，例如 sqlite3、typeORM 等 external 掉
 // 否则无法使用
 const pkg = readJSONSync(resolve(srcPath, '../package.json'));
@@ -45,7 +43,6 @@ export default defineConfig({
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
     externals,
-    mainWebpackConfig,
   },
   alias: {
     '@/common': resolve(srcPath, './common'),
