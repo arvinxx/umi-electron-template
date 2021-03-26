@@ -3764,20 +3764,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-crossorigin/download/@umijs/plugin-crossorigin-1.2.0.tgz#bf9ec0ccd76cf04e178c63fda813b06e93280131"
   integrity sha1-v57AzNds8E4XjGP9qBOwbpMoATE=
 
-"@umijs/plugin-dva@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-dva/download/@umijs/plugin-dva-0.10.0.tgz?cache=0&sync_timestamp=1610536406573&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-dva%2Fdownload%2F%40umijs%2Fplugin-dva-0.10.0.tgz#e9a8ada937c3fe7403ab9608fa1b8b0ebed522ac"
-  integrity sha1-6aitqTfD/nQDq5YI+huLDr7VIqw=
+"@umijs/plugin-dva@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-dva/-/plugin-dva-0.11.0.tgz#fb789ce0207e3125ec39405cd73bd0fd825b9f9f"
+  integrity sha512-tGAERoQpW1zLS3AZBLqzBMbOiZOXDELPFP4U9utTZmte6I6jgFFvSwYXyR5TsfAlAuhA1Jo+Unbd+B0R/Uv6mw==
   dependencies:
     babel-plugin-dva-hmr "^0.4.2"
     dva "^2.6.0-beta.20"
     dva-immer "^0.5.2"
     dva-loading "^3.0.20"
 
-"@umijs/plugin-helmet@1.1.1":
-  version "1.1.1"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-helmet/download/@umijs/plugin-helmet-1.1.1.tgz#841aea37b5076b51c2f332659bf9c671cf63794d"
-  integrity sha1-hBrqN7UHa1HC8zJlm/nGcc9jeU0=
+"@umijs/plugin-helmet@1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-helmet/-/plugin-helmet-1.1.2.tgz#fbdfe158958ae4e35240992a0219e137dd77638d"
+  integrity sha512-QO1lB11Td70gQCKoxntFzkStUXfoZhW0FQwTAkx74MU5CyyaygGJQnkTbkMdbVGLYr2QiHmT3ht7EwYAYnRdQw==
   dependencies:
     "@types/react-helmet" "^6.1.0"
     react-helmet "^6.1.0"
@@ -3787,20 +3787,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.3.0.tgz#b0afc6cf8446bddb0ed2c2fa4271c4cff993d688"
   integrity sha1-sK/Gz4RGvdsO0sL6QnHEz/mT1og=
 
-"@umijs/plugin-layout@0.13.5":
-  version "0.13.5"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-layout/download/@umijs/plugin-layout-0.13.5.tgz#f2cd8ebff855c7fd470f6a825210a12cc85f2078"
-  integrity sha1-8s2Ov/hVx/1HD2qCUhChLMhfIHg=
+"@umijs/plugin-layout@0.14.1":
+  version "0.14.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.14.1.tgz#fa8eb00e6cc7cf764a975f76e596b0203b9f6ebb"
+  integrity sha512-zYU4R6B3PeqrijnvggoRaegwPojwaQ4DOzE86BPeFJw347gDXOr1KYTqFLnX/FZ+nT0PJio3kYgHpINfdSQLfw==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.10.9":
-  version "0.10.9"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.9.tgz#0995e508f531458f1745f09f79b4f81b83f7fa66"
-  integrity sha512-kokJ1YHx2OB/pD2oDcbQZXt1qpmO4+Z6sMxHGjCXHQepnvugNzcV04LwgWIN/6Ioewo5fvAX02wZyNHAkSBmOQ==
+"@umijs/plugin-locale@0.10.10":
+  version "0.10.10"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.10.10.tgz#13140bf60d655e43d864674e0698d49f24ad7102"
+  integrity sha512-qf35kkt7LSR4YIgeu1cqNwjIyADA2bl6GCn35QluYMCMYtihfEVX2E647GMNyl2KFjMhB2jyo8i+42ZGH00s8w==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -3868,20 +3868,20 @@
     umi-webpack-bundle-analyzer "3.6.0"
     zlib "1.0.5"
 
-"@umijs/preset-react@^1.8.0":
-  version "1.8.0"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.0.tgz#fe73a59fd58d874525434cbecd31e8cb96e5d3a4"
-  integrity sha512-4IZ3NEt0Wnd7AkzdW+uI9e8t5AapJQl056OLnjf+EtMLgp0SAk2/W4Tgn8bD0ifRIYxHh4bsCKOf4WfRKeYv4A==
+"@umijs/preset-react@^1.8.3":
+  version "1.8.3"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.3.tgz#f9290b0a379952fd1198affcaf8c5dcc5438feff"
+  integrity sha512-SBqKuXvUrzmdBT49GKOlzL0WdEkSurp9xSo4V7RwNJWtrtej5LkR8gI2/jxrTJAn1i44s9vOG+G99cMn7sBf8A==
   dependencies:
     "@umijs/plugin-access" "2.3.3"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.9.1"
     "@umijs/plugin-crossorigin" "1.2.0"
-    "@umijs/plugin-dva" "0.10.0"
-    "@umijs/plugin-helmet" "1.1.1"
+    "@umijs/plugin-dva" "0.11.0"
+    "@umijs/plugin-helmet" "1.1.2"
     "@umijs/plugin-initial-state" "2.3.0"
-    "@umijs/plugin-layout" "0.13.5"
-    "@umijs/plugin-locale" "0.10.9"
+    "@umijs/plugin-layout" "0.14.1"
+    "@umijs/plugin-locale" "0.10.10"
     "@umijs/plugin-model" "2.5.6"
     "@umijs/plugin-request" "2.5.2"
     "@umijs/plugin-test" "1.0.0"
@@ -20549,7 +20549,7 @@ typeorm@^0.2.31:
     yargonaut "^1.1.2"
     yargs "^16.0.3"
 
-typescript@^4.0.2, typescript@^4.1.5, typescript@^4.2.3:
+typescript@^4.0.2, typescript@^4.1.5:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
   integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
