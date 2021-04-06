@@ -44,14 +44,14 @@
     insert-css "^2.0.0"
     rc-util "^5.0.1"
 
-"@ant-design/pro-layout@^6.15.0":
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.15.0.tgz#75829326054e54af4f37fc36f878e6af38a408b6"
-  integrity sha512-On4SrzbfNTRX3txU+kRB5puq982HXDNy5MH5BV4k9KSXthpt0L6N+380O9OgWlRmF+uO3wD1bgA9Y0JuoUlM+Q==
+"@ant-design/pro-layout@^6.16.1":
+  version "6.16.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.16.1.tgz#c21da50ce31d75fffd5e96584e88e389e67a6019"
+  integrity sha512-RKKHggHrJ8lcVuuL09OF3YP9RkfS1ULy66Nc1PJf2/CVttmWJAjbSVXInWUsiLUml6kyuu7umqVC4/DwcLaX8A==
   dependencies:
     "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.4.7"
-    "@ant-design/pro-utils" "1.14.0"
+    "@ant-design/pro-provider" "1.4.9"
+    "@ant-design/pro-utils" "1.15.3"
     "@umijs/route-utils" "^1.0.35"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
@@ -59,25 +59,26 @@
     path-to-regexp "2.4.0"
     rc-resize-observer "^0.2.1"
     rc-util "^5.0.6"
+    swr "^0.5.4"
     unstated-next "^1.1.0"
     use-json-comparison "^1.0.3"
     use-media-antd-query "^1.0.6"
     warning "^4.0.3"
 
-"@ant-design/pro-provider@1.4.7":
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.7.tgz#45b852af395742e6fcc54b4d85a9b4eed8c18f12"
-  integrity sha512-IiQsifGUCFftQl+v1F5z8ZVGLuLKDJpNR5ptXUqITJ8/ASi6QmN/w1xwGcxh7rQP4GBBJhsNMphghheGk5AnSg==
+"@ant-design/pro-provider@1.4.9":
+  version "1.4.9"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.9.tgz#a9e8fa6b08965ffd7ef3d21c27836010fd97b076"
+  integrity sha512-mISOJLZ6womxQCNfr1SQpdu0DBXkKoHI23EbRSzUC3KCM6Bw/YzgZ1gxnMATErttY2amAjXtTl+PJCzglFsrvA==
   dependencies:
     rc-util "^5.0.1"
 
-"@ant-design/pro-utils@1.14.0":
-  version "1.14.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.14.0.tgz#d28d691cfbc8b8a19bc192c8abc8ec8cc244d7f9"
-  integrity sha512-Me6nqE4MAwODWtwPGhg8HmKvVWuYoxD3x1InRUj+cMuv8SXL8u92eU21djsO0abvjdc7puPPNhljP4u7leMAVA==
+"@ant-design/pro-utils@1.15.3":
+  version "1.15.3"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.15.3.tgz#7623e6c19a7711ed50c9f12c29e8e0910753ea70"
+  integrity sha512-W2S97gopF4pGYdg0Uc81lCo9XanXkYYGk3B5zK3ulwBXra/0fupMwtj5bP4B+/U2S4Qk+cbeLQpVXP+vApZM6w==
   dependencies:
     "@ant-design/icons" "^4.3.0"
-    "@ant-design/pro-provider" "1.4.7"
+    "@ant-design/pro-provider" "1.4.9"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     moment "^2.27.0"
@@ -7424,6 +7425,11 @@ deprecation@^2.0.0, deprecation@^2.3.1:
   version "2.3.1"
   resolved "https://registry.npm.taobao.org/deprecation/download/deprecation-2.3.1.tgz#6368cbdb40abf3373b525ac87e4a260c3a700919"
   integrity sha1-Y2jL20Cr8zc7UlrIfkomDDpwCRk=
+
+dequal@2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/dequal/-/dequal-2.0.2.tgz#85ca22025e3a87e65ef75a7a437b35284a7e319d"
+  integrity sha512-q9K8BlJVxK7hQYqa6XISGmBZbtQQWVXSrRrWreHC94rMt1QL/Impruc+7p2CYSYuVIUr+YCt6hjrs1kkdJRTug==
 
 des.js@^1.0.0:
   version "1.0.1"
@@ -19840,6 +19846,13 @@ svgo@^1.0.0, svgo@^1.2.2:
     unquote "~1.1.1"
     util.promisify "~1.0.0"
 
+swr@^0.5.4:
+  version "0.5.5"
+  resolved "https://registry.yarnpkg.com/swr/-/swr-0.5.5.tgz#c72c1615765f33570a16bbb13699e3ac87eaaa3a"
+  integrity sha512-u4mUorK9Ipt+6LEITvWRWiRWAQjAysI6cHxbMmMV1dIdDzxMnswWo1CyGoyBHXX91CchxcuoqgFZ/ycx+YfhCA==
+  dependencies:
+    dequal "2.0.2"
+
 symbol-observable@^1.2.0:
   version "1.2.0"
   resolved "https://registry.npm.taobao.org/symbol-observable/download/symbol-observable-1.2.0.tgz?cache=0&sync_timestamp=1604337940566&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsymbol-observable%2Fdownload%2Fsymbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
@@ -20549,7 +20562,7 @@ typeorm@^0.2.31:
     yargonaut "^1.1.2"
     yargs "^16.0.3"
 
-typescript@^4.0.2, typescript@^4.1.5, typescript@^4.2.3:
+typescript@^4.0.2, typescript@^4.1.5:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.2.3.tgz#39062d8019912d43726298f09493d598048c1ce3"
   integrity sha512-qOcYwxaByStAWrBf4x0fibwZvMRG+r4cQoTjbPtUlrWjBHbmCAww1i448U0GJ+3cNNEtebDteo/cHOR3xJ4wEw==
