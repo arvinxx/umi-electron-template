@@ -33,7 +33,7 @@ export const createWindow = (opts: WindowOpts) => {
       enableRemoteModule: remote,
       // 上下文隔离环境
       // https://www.electronjs.org/docs/tutorial/context-isolation
-      // contextIsolation: true,
+      contextIsolation: false,
       // devTools: isDev,
     },
   });
