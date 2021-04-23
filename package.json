@@ -61,12 +61,12 @@
     "robotjs": "^0.6.0",
     "source-map-support": "^0.5.16",
     "sqlite3": "5.0.0",
-    "typeorm": "^0.2.31"
+    "typeorm": "^0.2.32"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.5.0",
     "@ant-design/pro-layout": "^6.15.0",
-    "@commitlint/cli": "^12.0.1",
+    "@commitlint/cli": "^12.1.1",
     "@jest-runner/electron": "^3.0.0",
     "@testing-library/react": "^11.2.5",
     "@types/classnames": "^2.2.11",
