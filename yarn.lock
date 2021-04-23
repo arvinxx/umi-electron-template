@@ -2554,6 +2554,13 @@
   resolved "https://registry.yarnpkg.com/@types/scheduler/-/scheduler-0.16.1.tgz#18845205e86ff0038517aab7a18a62a6b9f71275"
   integrity sha512-EaCxbanVeyxDRTQBkdLb3Bvl/HK7PBK6UJjsSixB0iHKoWxE5uu2Q/DgtpOhPIojN0Zl1whvOd7PoHs2P0s5eA==
 
+"@types/semantic-release@^17.2.0":
+  version "17.2.0"
+  resolved "https://registry.yarnpkg.com/@types/semantic-release/-/semantic-release-17.2.0.tgz#2ed941f0ccd1ba714ec46ddefe4f224164946872"
+  integrity sha512-l+I+I+VDBW/k4EjXpN4CDEjBAcFtdulmzwSGWAxcyWfD4/gLc2i1v4ra6nZT466dPTe3fOF2nHDRMqtRGnpLgg==
+  dependencies:
+    "@types/node" "*"
+
 "@types/semver@^7.3.4":
   version "7.3.4"
   resolved "https://registry.npm.taobao.org/@types/semver/download/@types/semver-7.3.4.tgz#43d7168fec6fa0988bb1a513a697b29296721afb"
@@ -5424,10 +5431,10 @@ conventional-changelog-angular@^5.0.0, conventional-changelog-angular@^5.0.11:
     compare-func "^2.0.0"
     q "^1.5.1"
 
-conventional-changelog-gitmoji-config@1.4.2:
-  version "1.4.2"
-  resolved "https://registry.npm.taobao.org/conventional-changelog-gitmoji-config/download/conventional-changelog-gitmoji-config-1.4.2.tgz#4c08bda06b77eaa4c8c286c88fffb04db96404e0"
-  integrity sha1-TAi9oGt36qTIwobIj/+wTblkBOA=
+conventional-changelog-gitmoji-config@1.4.3:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/conventional-changelog-gitmoji-config/-/conventional-changelog-gitmoji-config-1.4.3.tgz#a4516ea4400e512ddd1e573b8234f69a9ed21a6d"
+  integrity sha512-8HqbhNFuya85ICZvXv1ck2a2B7KlSVPGEFtK+Jar/qCUuq+E0PiINBJbpYcHOfsEucDRW4W4AUMQH7ap6+0DdQ==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@gitmoji/parser-opts" "1.3.0"
@@ -16312,15 +16319,16 @@ selfsigned@^1.10.8:
   dependencies:
     node-forge "^0.10.0"
 
-semantic-release-config-gitmoji@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npm.taobao.org/semantic-release-config-gitmoji/download/semantic-release-config-gitmoji-1.2.1.tgz?cache=0&sync_timestamp=1615089364326&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fsemantic-release-config-gitmoji%2Fdownload%2Fsemantic-release-config-gitmoji-1.2.1.tgz#49e42354178cf3ad7fb6594819ac1903b0d6bf85"
-  integrity sha1-SeQjVBeM861/tllIGawZA7DWv4U=
+semantic-release-config-gitmoji@^1.2.4:
+  version "1.2.4"
+  resolved "https://registry.yarnpkg.com/semantic-release-config-gitmoji/-/semantic-release-config-gitmoji-1.2.4.tgz#6962f6b42fe62b437e2795e62a3ec0ebe3ad4eff"
+  integrity sha512-wSs1jnPeYfn+ALex0H58NOuW/juFL8Mza8UEEU+EWZ4a0VsepXT1LMVXnY7TwxtFqRNnYhJ6r6KCFUcIS7JiAA==
   dependencies:
     "@gitmoji/commit-types" "1.1.5"
     "@semantic-release/changelog" "^5.0.1"
     "@semantic-release/git" "^9.0.0"
-    conventional-changelog-gitmoji-config "1.4.2"
+    "@types/semantic-release" "^17.2.0"
+    conventional-changelog-gitmoji-config "1.4.3"
 
 semantic-release@^17.4.1:
   version "17.4.1"

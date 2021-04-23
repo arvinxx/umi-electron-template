@@ -113,7 +113,7 @@
     "react-devtools": "^4.10.1",
     "react-dom": "17.x",
     "semantic-release": "^17.4.1",
-    "semantic-release-config-gitmoji": "^1.2.1",
+    "semantic-release-config-gitmoji": "^1.2.4",
     "sinon": "^9.0.0",
     "ts-jest": "^26.5.5",
     "ts-node": "^9.1.1",
