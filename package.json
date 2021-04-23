@@ -61,7 +61,7 @@
     "robotjs": "^0.6.0",
     "source-map-support": "^0.5.16",
     "sqlite3": "5.0.0",
-    "typeorm": "^0.2.31"
+    "typeorm": "^0.2.32"
   },
   "devDependencies": {
     "@ant-design/icons": "^4.5.0",

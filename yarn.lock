@@ -2498,10 +2498,10 @@
   resolved "https://registry.npm.taobao.org/@sinonjs/text-encoding/download/@sinonjs/text-encoding-0.7.1.tgz#8da5c6530915653f3a1f38fd5f101d8c3f8079c5"
   integrity sha1-jaXGUwkVZT86Hzj9XxAdjD+AecU=
 
-"@sqltools/formatter@1.2.2":
-  version "1.2.2"
-  resolved "https://registry.npm.taobao.org/@sqltools/formatter/download/@sqltools/formatter-1.2.2.tgz#9390a8127c0dcba61ebd7fdcc748655e191bdd68"
-  integrity sha1-k5CoEnwNy6YevX/cx0hlXhkb3Wg=
+"@sqltools/formatter@^1.2.2":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@sqltools/formatter/-/formatter-1.2.3.tgz#1185726610acc37317ddab11c3c7f9066966bd20"
+  integrity sha512-O3uyB/JbkAEMZaP3YqyHH7TMnex7tWyCbCI4EfJdOCoN6HIhqdJBWTM6aCCiWQ/5f5wxjgU735QAIpJbjDvmzg==
 
 "@stylelint/postcss-css-in-js@^0.37.2":
   version "0.37.2"
@@ -3225,6 +3225,11 @@
   integrity sha1-NPf+yLOJ1/PB/QgCaldj4HLTxtw=
   dependencies:
     "@types/yargs-parser" "*"
+
+"@types/zen-observable@^0.8.2":
+  version "0.8.2"
+  resolved "https://registry.yarnpkg.com/@types/zen-observable/-/zen-observable-0.8.2.tgz#808c9fa7e4517274ed555fa158f2de4b4f468e71"
+  integrity sha512-HrCIVMLjE1MOozVoD86622S7aunluLb2PJdPfb3nYiEtohm8mIB/vyv0Fd37AdeMFrTUQXEunw78YloMA3Qilg==
 
 "@typescript-eslint/eslint-plugin@^4.10.0":
   version "4.14.2"
@@ -5201,6 +5206,14 @@ buffer@^5.1.0, buffer@^5.5.0:
   dependencies:
     base64-js "^1.3.1"
     ieee754 "^1.1.13"
+
+buffer@^6.0.3:
+  version "6.0.3"
+  resolved "https://registry.yarnpkg.com/buffer/-/buffer-6.0.3.tgz#2ace578459cc8fbe2a70aaa8f52ee63b6a74c6c6"
+  integrity sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA==
+  dependencies:
+    base64-js "^1.3.1"
+    ieee754 "^1.2.1"
 
 builder-util-runtime@8.7.3:
   version "8.7.3"
@@ -9915,7 +9928,7 @@ identity-obj-proxy@3.0.0:
   dependencies:
     harmony-reflect "^1.4.6"
 
-ieee754@^1.1.13, ieee754@^1.1.4:
+ieee754@^1.1.13, ieee754@^1.1.4, ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.npm.taobao.org/ieee754/download/ieee754-1.2.1.tgz?cache=0&sync_timestamp=1603838418666&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fieee754%2Fdownload%2Fieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
   integrity sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=
@@ -19120,15 +19133,15 @@ tsconfig-paths@^3.9.0:
     minimist "^1.2.0"
     strip-bom "^3.0.0"
 
-tslib@^1.13.0, tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.8.1, tslib@^1.9.0:
   version "1.14.1"
   resolved "https://registry.npm.taobao.org/tslib/download/tslib-1.14.1.tgz?cache=0&sync_timestamp=1609887785854&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha1-zy04vcNKE0vK8QkcQfZhni9nLQA=
 
-tslib@^2.0.3:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/tslib/download/tslib-2.1.0.tgz?cache=0&sync_timestamp=1609887785854&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ftslib%2Fdownload%2Ftslib-2.1.0.tgz#da60860f1c2ecaa5703ab7d39bc05b6bf988b97a"
-  integrity sha1-2mCGDxwuyqVwOrfTm8Bba/mIuXo=
+tslib@^2.0.3, tslib@^2.1.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.2.0.tgz#fb2c475977e35e241311ede2693cee1ec6698f5c"
+  integrity sha512-gS9GVHRU+RGn5KQM2rllAlR3dU6m7AcpJKdtH8gFvQiC4Otgk98XnmMU+nZenHt/+VhnBPWwgrJsyrdcw6i23w==
 
 tsutils@^3.17.1:
   version "3.20.0"
@@ -19248,27 +19261,28 @@ typedarray@^0.0.6:
   resolved "https://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typeorm@^0.2.31:
-  version "0.2.31"
-  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.31.tgz#82b8a1b233224f81c738f53b0380386ccf360917"
-  integrity sha512-dVvCEVHH48DG0QPXAKfo0l6ecQrl3A8ucGP4Yw4myz4YEDMProebTQo8as83uyES+nrwCbu3qdkL4ncC2+qcMA==
+typeorm@^0.2.32:
+  version "0.2.32"
+  resolved "https://registry.yarnpkg.com/typeorm/-/typeorm-0.2.32.tgz#544dbfdfe0cd0887548d9bcbd28527ea4f4b3c9b"
+  integrity sha512-LOBZKZ9As3f8KRMPCUT2H0JZbZfWfkcUnO3w/1BFAbL/X9+cADTF6bczDGGaKVENJ3P8SaKheKmBgpt5h1x+EQ==
   dependencies:
-    "@sqltools/formatter" "1.2.2"
+    "@sqltools/formatter" "^1.2.2"
     app-root-path "^3.0.0"
-    buffer "^5.5.0"
+    buffer "^6.0.3"
     chalk "^4.1.0"
     cli-highlight "^2.1.10"
-    debug "^4.1.1"
+    debug "^4.3.1"
     dotenv "^8.2.0"
     glob "^7.1.6"
-    js-yaml "^3.14.0"
+    js-yaml "^4.0.0"
     mkdirp "^1.0.4"
     reflect-metadata "^0.1.13"
     sha.js "^2.4.11"
-    tslib "^1.13.0"
+    tslib "^2.1.0"
     xml2js "^0.4.23"
-    yargonaut "^1.1.2"
-    yargs "^16.0.3"
+    yargonaut "^1.1.4"
+    yargs "^16.2.0"
+    zen-observable-ts "^1.0.0"
 
 typescript@^4.0.2, typescript@^4.1.5, typescript@^4.2.3:
   version "4.2.3"
@@ -20451,10 +20465,10 @@ yaml@^1.10.0:
   resolved "https://registry.npm.taobao.org/yaml/download/yaml-1.10.0.tgz#3b593add944876077d4d683fee01081bd9fff31e"
   integrity sha1-O1k63ZRIdgd9TWg/7gEIG9n/8x4=
 
-yargonaut@^1.1.2:
+yargonaut@^1.1.4:
   version "1.1.4"
-  resolved "https://registry.npm.taobao.org/yargonaut/download/yargonaut-1.1.4.tgz#c64f56432c7465271221f53f5cc517890c3d6e0c"
-  integrity sha1-xk9WQyx0ZScSIfU/XMUXiQw9bgw=
+  resolved "https://registry.yarnpkg.com/yargonaut/-/yargonaut-1.1.4.tgz#c64f56432c7465271221f53f5cc517890c3d6e0c"
+  integrity sha512-rHgFmbgXAAzl+1nngqOcwEljqHGG9uUZoPjsdZEs1w5JW9RXYzrSvH/u70C1JE5qFi0qjsdhnUX/dJRpWqitSA==
   dependencies:
     chalk "^1.1.1"
     figlet "^1.1.1"
@@ -20553,7 +20567,7 @@ yargs@^14.2.3:
     y18n "^4.0.0"
     yargs-parser "^15.0.1"
 
-yargs@^16.0.0, yargs@^16.0.3, yargs@^16.2.0:
+yargs@^16.0.0, yargs@^16.2.0:
   version "16.2.0"
   resolved "https://registry.npm.taobao.org/yargs/download/yargs-16.2.0.tgz?cache=0&sync_timestamp=1610219939446&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyargs%2Fdownload%2Fyargs-16.2.0.tgz#1c82bf0f6b6a66eafce7ef30e376f49a12477f66"
   integrity sha1-HIK/D2tqZur85+8w43b0mhJHf2Y=
@@ -20602,6 +20616,19 @@ yocto-queue@^0.1.0:
   version "0.1.0"
   resolved "https://registry.npm.taobao.org/yocto-queue/download/yocto-queue-0.1.0.tgz?cache=0&sync_timestamp=1606290282107&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fyocto-queue%2Fdownload%2Fyocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha1-ApTrPe4FAo0x7hpfosVWpqrxChs=
+
+zen-observable-ts@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/zen-observable-ts/-/zen-observable-ts-1.0.0.tgz#30d1202b81d8ba4c489e3781e8ca09abf0075e70"
+  integrity sha512-KmWcbz+9kKUeAQ8btY8m1SsEFgBcp7h/Uf3V5quhan7ZWdjGsf0JcGLULQiwOZibbFWnHkYq8Nn2AZbJabovQg==
+  dependencies:
+    "@types/zen-observable" "^0.8.2"
+    zen-observable "^0.8.15"
+
+zen-observable@^0.8.15:
+  version "0.8.15"
+  resolved "https://registry.yarnpkg.com/zen-observable/-/zen-observable-0.8.15.tgz#96415c512d8e3ffd920afd3889604e30b9eaac15"
+  integrity sha512-PQ2PC7R9rslx84ndNBZB/Dkv8V8fZEpk83RLgXtYd0fwUgEjseMn1Dgajh2x6S8QbZAFa9p2qVCEuYZNgve0dQ==
 
 zscroller@~0.4.0:
   version "0.4.8"
