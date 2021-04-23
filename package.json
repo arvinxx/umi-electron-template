@@ -110,7 +110,7 @@
     "lint-staged": "^10.5.3",
     "prettier": "^2.2.0",
     "react": "17.x",
-    "react-devtools": "^4.10.1",
+    "react-devtools": "^4.12.4",
     "react-dom": "17.x",
     "semantic-release": "^17.4.1",
     "semantic-release-config-gitmoji": "^1.2.1",

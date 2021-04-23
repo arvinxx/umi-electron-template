@@ -6796,10 +6796,10 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.3.0:
-  version "11.3.0"
-  resolved "https://registry.npm.taobao.org/electron/download/electron-11.3.0.tgz?cache=0&sync_timestamp=1614963218548&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-11.3.0.tgz#87e8528fd23ae53b0eeb3a738f1fe0a3ad27c2db"
-  integrity sha1-h+hSj9I65TsO6zpzjx/go60nwts=
+electron@^11.1.0, electron@^11.3.0:
+  version "11.4.3"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-11.4.3.tgz#74319635417c24fd19e31cfce5a39c8792e4014b"
+  integrity sha512-RhCWJqiYK5oIRGOheilhg/nngCgk0fPgaf00KvbxorlvFZAz8OeMT5ShCpVsMSoyYhk4XEnn4orRly5ltaFYJg==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
@@ -6812,15 +6812,6 @@ electron@^12.0.1:
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^14.6.2"
-    extract-zip "^1.0.3"
-
-electron@^9.1.0:
-  version "9.4.2"
-  resolved "https://registry.npm.taobao.org/electron/download/electron-9.4.2.tgz?cache=0&sync_timestamp=1612459746013&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Felectron%2Fdownload%2Felectron-9.4.2.tgz#0c76dfc3d317108adac66844b868a9e2e57d48f5"
-  integrity sha1-DHbfw9MXEIraxmhEuGip4uV9SPU=
-  dependencies:
-    "@electron/get" "^1.0.1"
-    "@types/node" "^12.0.12"
     extract-zip "^1.0.3"
 
 elliptic@^6.5.3:
@@ -15060,24 +15051,24 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devtools-core@4.10.1:
-  version "4.10.1"
-  resolved "https://registry.npm.taobao.org/react-devtools-core/download/react-devtools-core-4.10.1.tgz#6d57db291aeac9cc45ef9fb4636dd2ab97490daf"
-  integrity sha1-bVfbKRrqycxF75+0Y23Sq5dJDa8=
+react-devtools-core@4.12.4:
+  version "4.12.4"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.12.4.tgz#50ed121d467f44b051d1f7d19694849db0365d52"
+  integrity sha512-hVCT7wRtA5xWclgLb3oA51RNBAlbuTauEYkqFX+qRAkPLVJoX8qdJnO7r+47SSUckD5vkBm3kaAhg6597m7gDA==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-devtools@^4.10.1:
-  version "4.10.1"
-  resolved "https://registry.npm.taobao.org/react-devtools/download/react-devtools-4.10.1.tgz#579c14fe0b181e222e262a75fc55c2e2e17abc7a"
-  integrity sha1-V5wU/gsYHiIuJip1/FXC4uF6vHo=
+react-devtools@^4.12.4:
+  version "4.12.4"
+  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-4.12.4.tgz#523ad1437ce3f86165d648992e58e1d33e41a991"
+  integrity sha512-Va+PzvPEfVM9CpjCbRbDepU1vdbZy2OGfu5eZ4DyhgjQBWrOf/lGz1OuaeegfXDjS/vQDaYUBjLo2I6yfQNVqA==
   dependencies:
     cross-spawn "^5.0.1"
-    electron "^9.1.0"
+    electron "^11.1.0"
     ip "^1.1.4"
     minimist "^1.2.3"
-    react-devtools-core "4.10.1"
+    react-devtools-core "4.12.4"
     update-notifier "^2.1.0"
 
 react-dom@16.x:
