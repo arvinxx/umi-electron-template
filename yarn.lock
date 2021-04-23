@@ -19353,10 +19353,10 @@ umi-plugin-electron-builder@^2.0.4:
     webpack "^5.28.0"
     webpack-chain "^6.5.1"
 
-umi-plugin-tailwindcss@^3.0.3:
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.3.tgz#e0a5d6615893d8537b34aee7d7bc3ac8d634e750"
-  integrity sha512-wtHPvZhsZ+KGm8ChjNSTl8VH2rsNNF1Z79qc5M1K7x9ZbvSt0R6XbkUC7hYFz2tUg/QJNzk88CXXvx0XuKm3rg==
+umi-plugin-tailwindcss@^3.0.4:
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.0.4.tgz#5ef4b280998b4be2eabe1f6afc6240f774be81f5"
+  integrity sha512-N0XL7Zh1Ht6uwnHoHG0+IUow+rTTBQ2q/c4tt7W05Gd/X5KxM3fav84sGc6c/EZnczci8we0kUUOqqYBpq/rrw==
   dependencies:
     tailwindcss "2.0.1-compat"
 
