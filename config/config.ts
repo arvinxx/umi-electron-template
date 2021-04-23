@@ -39,6 +39,7 @@ export default defineConfig({
   // renderer 部分相对根目录的输出路径为 ../..
   outputPath: '../../release',
   electronBuilder: {
+    rendererTarget: 'electron-renderer',
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',
     builderOptions: ElectronBuilderOpts,
