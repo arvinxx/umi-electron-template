@@ -9329,10 +9329,10 @@ inversify-binding-decorators@^4.0.0:
   resolved "https://registry.npm.taobao.org/inversify-binding-decorators/download/inversify-binding-decorators-4.0.0.tgz#c4d1ac50d7d6531f465ee7894e92031f7471c865"
   integrity sha1-xNGsUNfWUx9GXueJTpIDH3RxyGU=
 
-inversify@^5.0.5:
-  version "5.0.5"
-  resolved "https://registry.npm.taobao.org/inversify/download/inversify-5.0.5.tgz#bd1f8e6d8e0f739331acd8ba9bc954635aae0bbf"
-  integrity sha1-vR+ObY4Pc5MxrNi6m8lUY1quC78=
+inversify@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/inversify/-/inversify-5.1.1.tgz#6fbd668c591337404e005a1946bfe0d802c08730"
+  integrity sha512-j8grHGDzv1v+8T1sAQ+3boTCntFPfvxLCkNcxB1J8qA0lUN+fAlSyYd+RXKvaPRL4AGyPxViutBEJHNXOyUdFQ==
 
 invert-kv@^1.0.0:
   version "1.0.0"
