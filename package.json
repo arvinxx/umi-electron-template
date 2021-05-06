@@ -90,7 +90,7 @@
     "cross-env": "^7.0.3",
     "devtron": "^1.4.0",
     "diff": "^5.0.0",
-    "dotenv": "^8.5.1",
+    "dotenv": "^9.0.0",
     "electron": "^11.3.0",
     "electron-builder": "^22.11.1",
     "electron-builder-notarize": "^1.2.0",
