@@ -3400,10 +3400,10 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ahooks@^2.10.3:
-  version "2.10.3"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.3.tgz#5032371ca7874b92ff33b65d190ebaab8006218e"
-  integrity sha512-PtSklAZkvxTLUog/lg/tpzgXI0Bw1N7ILqZpQFfQZM4gIemvngFo9RQCiYEs4zbQkZUDyPkl2s3tKMZ+o6JgTw==
+ahooks@^2.10.4:
+  version "2.10.4"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.4.tgz#50a71c37c72544997d55686c73cc601adcefe30f"
+  integrity sha512-Rpseuh/Z0mfZV08WQhJxKacIug4LwisfyGWrHCD6dWHTmzncXv1VqbJNEB3aN4/B56KY8aqYro6QZa/ovCjvkw==
   dependencies:
     "@ahooksjs/use-request" "^2.8.6"
     "@types/js-cookie" "^2.2.6"
