@@ -82,7 +82,7 @@
     "@umijs/preset-react": "^1.8.7",
     "@umijs/test": "^3.4.20",
     "ahooks": "^2.10.4",
-    "antd": "^4.15.5",
+    "antd": "^4.15.6",
     "awesome-typescript-loader": "^5.2.1",
     "classnames": "^2.2.6",
     "commitlint-config-gitmoji": "^2.2.5",
