@@ -15172,24 +15172,24 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-devtools-core@4.13.2:
-  version "4.13.2"
-  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.13.2.tgz#61399c6648d3ded5917eaa4e59b474b3fa838faa"
-  integrity sha512-/lA5FVLMhUHrkQwtEf5wZNCKsXmc2RBZMNS/kkq3WlXPg2Y7COUGMh0Lmz34jjMpM0kvLMDuj+DqsPT/jSADbw==
+react-devtools-core@4.13.3:
+  version "4.13.3"
+  resolved "https://registry.yarnpkg.com/react-devtools-core/-/react-devtools-core-4.13.3.tgz#e303687b8ebd3605a10ac22c49e2fdfad5e037e6"
+  integrity sha512-MKk9NTA9Ym+7vERGLPAH2ODI2YgMCYsEdGIcjs3tsCSctNiEgOSYrQ1rooK9lQIlNKtyTdHVtgD2O6R0WXK7aQ==
   dependencies:
     shell-quote "^1.6.1"
     ws "^7"
 
-react-devtools@^4.13.2:
-  version "4.13.2"
-  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-4.13.2.tgz#4eb3399a68ba33728f48e32fa1ffef2aec1371c2"
-  integrity sha512-JFNwahGsSQ8ilE25Dqysm7AH5jjKVqI6PhdleeXNGxcbJRMPTYBbR4UvlpZIeccr74pgfu217n6SXkIL6Lfl5w==
+react-devtools@^4.13.3:
+  version "4.13.3"
+  resolved "https://registry.yarnpkg.com/react-devtools/-/react-devtools-4.13.3.tgz#7583be7f1c9ef182edcc33e1237551b6d00842dd"
+  integrity sha512-R0cwFub12eDDys3UTSTRizKwpWnAlWN53/972nITd+r4MF7qKJDY7/SbUcCf1PWo+y8YkLdNOXExyM1/NZE6fQ==
   dependencies:
     cross-spawn "^5.0.1"
     electron "^11.1.0"
     ip "^1.1.4"
     minimist "^1.2.3"
-    react-devtools-core "4.13.2"
+    react-devtools-core "4.13.3"
     update-notifier "^2.1.0"
 
 react-dom@16.x:
