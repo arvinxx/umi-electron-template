@@ -2143,6 +2143,13 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
+"@sinonjs/fake-timers@^7.0.4":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@sinonjs/fake-timers/-/fake-timers-7.1.0.tgz#8f13af27d842cbf51ad4502e05562fe9391d084e"
+  integrity sha512-hAEzXi6Wbvlb67NnGMGSNOeAflLVnMa4yliPU/ty1qjgW/vAletH15/v/esJwASSIA0YlIyjnloenFbEZc9q9A==
+  dependencies:
+    "@sinonjs/commons" "^1.7.0"
+
 "@sinonjs/samsam@^5.3.1":
   version "5.3.1"
   resolved "https://registry.npm.taobao.org/@sinonjs/samsam/download/@sinonjs/samsam-5.3.1.tgz#375a45fe6ed4e92fca2fb920e007c48232a6507f"
@@ -2578,17 +2585,12 @@
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-7.3.5.tgz#74deebbbcb1e86634dbf10a5b5e8798626f5a597"
   integrity sha512-iotVxtCCsPLRAvxMFFgxL8HD2l4mAZ2Oin7/VJ2ooWO0VOK4EGOGmZWZn1uCq7RofR3I/1IOSjCHlFT71eVK0Q==
 
-"@types/sinon@^9.0.11":
-  version "9.0.11"
-  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-9.0.11.tgz#7af202dda5253a847b511c929d8b6dda170562eb"
-  integrity sha512-PwP4UY33SeeVKodNE37ZlOsR9cReypbMJOhZ7BVE0lB+Hix3efCOxiJWiE5Ia+yL9Cn2Ch72EjFTRze8RZsNtg==
+"@types/sinon@^10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@types/sinon/-/sinon-10.0.0.tgz#eecc3847af03d45ffe53d55aaaaf6ecb28b5e584"
+  integrity sha512-jDZ55oCKxqlDmoTBBbBBEx+N8ZraUVhggMZ9T5t+6/Dh8/4NiOjSUfpLrPiEwxQDlAe3wpAkoXhWvE6LibtsMQ==
   dependencies:
-    "@types/sinonjs__fake-timers" "*"
-
-"@types/sinonjs__fake-timers@*":
-  version "6.0.2"
-  resolved "https://registry.npm.taobao.org/@types/sinonjs__fake-timers/download/@types/sinonjs__fake-timers-6.0.2.tgz?cache=0&sync_timestamp=1605058736419&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fsinonjs__fake-timers%2Fdownload%2F%40types%2Fsinonjs__fake-timers-6.0.2.tgz#3a84cf5ec3249439015e14049bd3161419bf9eae"
-  integrity sha1-OoTPXsMklDkBXhQEm9MWFBm/nq4=
+    "@sinonjs/fake-timers" "^7.0.4"
 
 "@types/source-list-map@*":
   version "0.1.2"
