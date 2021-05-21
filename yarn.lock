@@ -2978,10 +2978,10 @@
     react-intl "3.12.1"
     warning "^4.0.3"
 
-"@umijs/plugin-model@2.5.7":
-  version "2.5.7"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.5.7.tgz#1472dde968603a56e2b8c1d2d88540f3e0bcfd61"
-  integrity sha512-TYUHFDGwNnJz7ptzNN4Ls4fD6Rj1r6nLJXcbpNgcxsYREkW2Gg70Ur5TgStCZEvsIL6C1jLqokImovOGTo9BZA==
+"@umijs/plugin-model@2.6.0":
+  version "2.6.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-model/-/plugin-model-2.6.0.tgz#cc8a29f2061bb785fe30fff1b09c7712465cdd1e"
+  integrity sha512-QXFoF6Yvqh+zcr5EktrVf+JFw9zMMK329HywBWI0vcnkhLOApKj2LvF6GYKB+T/lT9Emy8DV/AEFAIQe7gZDoA==
   dependencies:
     fast-deep-equal "3.1.1"
 
@@ -3023,10 +3023,10 @@
     react-router-dom "5.2.0"
     regenerator-runtime "0.13.5"
 
-"@umijs/preset-react@^1.8.7":
-  version "1.8.7"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.7.tgz#8d48ddaadfebdaf38911b60474bc109540e6da81"
-  integrity sha512-31VWcTca1sQxebziITWJ0HzevMtaqI0FWbHwiUov/Vw/lNwDS4tOW/oydOsw2Kjw/GUP8EtkVEhuxqLJbWkP0w==
+"@umijs/preset-react@^1.8.8":
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.8.tgz#1fc8dacad1a59e4bf23a7b6d52349e475740890a"
+  integrity sha512-QXkiQhMmXIPlZ4l0hWU2TXfl/pEMGRh2jSJBuU37264guWLI9skEAoBs4DtSKzhy/ATFhrRs5iYDJhmOxP2JwA==
   dependencies:
     "@umijs/plugin-access" "2.3.3"
     "@umijs/plugin-analytics" "0.2.2"
@@ -3037,7 +3037,7 @@
     "@umijs/plugin-initial-state" "2.3.0"
     "@umijs/plugin-layout" "0.15.0"
     "@umijs/plugin-locale" "0.11.2"
-    "@umijs/plugin-model" "2.5.7"
+    "@umijs/plugin-model" "2.6.0"
     "@umijs/plugin-request" "2.5.2"
     "@umijs/plugin-test" "1.0.0"
 
