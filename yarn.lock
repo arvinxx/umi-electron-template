@@ -2910,10 +2910,10 @@
     stylelint-order "^4.0.0"
     typescript "^4.0.2"
 
-"@umijs/plugin-access@2.3.3":
-  version "2.3.3"
-  resolved "https://registry.npm.taobao.org/@umijs/plugin-access/download/@umijs/plugin-access-2.3.3.tgz?cache=0&sync_timestamp=1610339700617&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40umijs%2Fplugin-access%2Fdownload%2F%40umijs%2Fplugin-access-2.3.3.tgz#3206ef8dd0707dbbd35fa0e2acf0fc964b807e3d"
-  integrity sha1-MgbvjdBwfbvTX6DirPD8lkuAfj0=
+"@umijs/plugin-access@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-access/-/plugin-access-2.4.0.tgz#f78e21e213dc004c6c3b5e49822cd3fce34a44cd"
+  integrity sha512-Q7WI4iYIZ071xLUmDWBUfLPEgIpPVYWLdnpts58+yAww9kx/vYc3j8lWBfuFLMntwPJjtazg3LXWKDQiVJeXsA==
 
 "@umijs/plugin-analytics@0.2.2":
   version "0.2.2"
@@ -2956,20 +2956,20 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-initial-state/download/@umijs/plugin-initial-state-2.3.0.tgz#b0afc6cf8446bddb0ed2c2fa4271c4cff993d688"
   integrity sha1-sK/Gz4RGvdsO0sL6QnHEz/mT1og=
 
-"@umijs/plugin-layout@0.15.0":
-  version "0.15.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.15.0.tgz#9b1722145c439e8973e62667dcaa3c71d112509f"
-  integrity sha512-/8f1kUePDn3ao3GmtGrMKgkuJZr3hCJvCg1BAyxk6kO+3ATi/b2dy05/bJtE+MjcomWWV1SHfKDoEj4qaPR4Ww==
+"@umijs/plugin-layout@0.16.0":
+  version "0.16.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-layout/-/plugin-layout-0.16.0.tgz#ae88021d0e907cab6ba579c05c45980d318ee73e"
+  integrity sha512-QlluXcxe5H1bqzC5SqGW0AXOZk7L+CuCF2jfkn6ATfZ5eHgmQgNy0yd/3Lyf8ScdaQxrWiA+F098Zvk/y4kkTA==
   dependencies:
     "@umijs/route-utils" "^1.0.7"
     antd "^4.1.2"
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.11.2":
-  version "0.11.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.11.2.tgz#281db607916febb18d204b41c2b58fc5c0b7ecc7"
-  integrity sha512-r/wbAQOoh/ogcG9xAiPXPCCKJ8+wAO7LeCEgGWlZdoIT+eJig+o/Ai0hBRTI/9cbowV3o9e1jovbFsO9feiHzQ==
+"@umijs/plugin-locale@0.12.0":
+  version "0.12.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.12.0.tgz#ab7fd563202847024b15d46859a924072dd1cd7f"
+  integrity sha512-D8oDHFHS7rcgpsV5NqenuJbenFoMhX0WLqNMEYrDSX4aeZA+6+xgaYmT8iBMMt6ngvLA7hvmJ83qxhc3rt1nCQ==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -3024,20 +3024,20 @@
     react-router-dom "5.2.0"
     regenerator-runtime "0.13.5"
 
-"@umijs/preset-react@^1.8.8":
-  version "1.8.8"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.8.tgz#1fc8dacad1a59e4bf23a7b6d52349e475740890a"
-  integrity sha512-QXkiQhMmXIPlZ4l0hWU2TXfl/pEMGRh2jSJBuU37264guWLI9skEAoBs4DtSKzhy/ATFhrRs5iYDJhmOxP2JwA==
+"@umijs/preset-react@^1.8.9":
+  version "1.8.9"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.9.tgz#03c86f35a9b242ee5e7ea6162f16454e53322b8d"
+  integrity sha512-QO7miP06N68Zd8/qq6amNVgxUIqfuf/4q9zNZHPiFqj1QBURKAGMpviOgnUisb0sMShuQFJSpMDSVBp6J2i4wQ==
   dependencies:
-    "@umijs/plugin-access" "2.3.3"
+    "@umijs/plugin-access" "2.4.0"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.9.1"
     "@umijs/plugin-crossorigin" "1.2.0"
     "@umijs/plugin-dva" "0.12.1"
     "@umijs/plugin-helmet" "1.1.3"
     "@umijs/plugin-initial-state" "2.3.0"
-    "@umijs/plugin-layout" "0.15.0"
-    "@umijs/plugin-locale" "0.11.2"
+    "@umijs/plugin-layout" "0.16.0"
+    "@umijs/plugin-locale" "0.12.0"
     "@umijs/plugin-model" "2.6.0"
     "@umijs/plugin-request" "2.5.2"
     "@umijs/plugin-test" "1.0.0"
