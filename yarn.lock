@@ -2420,20 +2420,15 @@
   resolved "https://registry.npm.taobao.org/@types/minimist/download/@types/minimist-1.2.1.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fminimist%2Fdownload%2F%40types%2Fminimist-1.2.1.tgz#283f669ff76d7b8260df8ab7a4262cc83d988256"
   integrity sha1-KD9mn/dte4Jg34q3pCYsyD2YglY=
 
-"@types/node@*", "@types/node@>= 8":
-  version "14.14.31"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-14.14.31.tgz#72286bd33d137aa0d152d47ec7c1762563d34055"
-  integrity sha512-vFHy/ezP5qI0rFgJ7aQnjDXwAMrG0KqqIH7tQG5PPv3BWBayOPIQNBjVc/P6hhdZfMx51REc6tfDNXHUio893g==
+"@types/node@*", "@types/node@>= 8", "@types/node@^14.6.2":
+  version "14.14.35"
+  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.35.tgz?cache=0&sync_timestamp=1615834822695&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.35.tgz#42c953a4e2b18ab931f72477e7012172f4ffa313"
+  integrity sha1-QslTpOKxirkx9yR35wEhcvT/oxM=
 
 "@types/node@^12.0.12":
   version "12.20.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.1.tgz#63d36c10e162666f0107f247cdca76542c3c7472"
   integrity sha512-tCkE96/ZTO+cWbln2xfyvd6ngHLanvVlJ3e5BeirJ3BYI5GbAyubIrmV4JjjugDly5D9fHjOL5MNsqsCnqwW6g==
-
-"@types/node@^14.6.2":
-  version "14.14.35"
-  resolved "https://registry.npm.taobao.org/@types/node/download/@types/node-14.14.35.tgz?cache=0&sync_timestamp=1615834822695&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.14.35.tgz#42c953a4e2b18ab931f72477e7012172f4ffa313"
-  integrity sha1-QslTpOKxirkx9yR35wEhcvT/oxM=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -6839,7 +6834,7 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.1.0, electron@^11.3.0:
+electron@^11.1.0:
   version "11.4.3"
   resolved "https://registry.yarnpkg.com/electron/-/electron-11.4.3.tgz#74319635417c24fd19e31cfce5a39c8792e4014b"
   integrity sha512-RhCWJqiYK5oIRGOheilhg/nngCgk0fPgaf00KvbxorlvFZAz8OeMT5ShCpVsMSoyYhk4XEnn4orRly5ltaFYJg==
@@ -6852,6 +6847,15 @@ electron@^12.0.8:
   version "12.0.8"
   resolved "https://registry.yarnpkg.com/electron/-/electron-12.0.8.tgz#e52583b2b4f1eaa6fbb0e3666b9907f99f1f24c7"
   integrity sha512-bN2wYNnnma7ugBsiwysO1LI6oTTV1lDHOXuWip+OGjDUiz0IiJmZ+r0gAIMMeypVohZh7AA1ftnKad7tJ8sH4A==
+  dependencies:
+    "@electron/get" "^1.0.1"
+    "@types/node" "^14.6.2"
+    extract-zip "^1.0.3"
+
+electron@^13.1.1:
+  version "13.1.1"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-13.1.1.tgz#de1ea908bcac2197d7a5a373fb68c0c66043e10e"
+  integrity sha512-kySSb5CbIkWU2Kd9mf2rpGZC9p1nWhVVNl+CJjuOUGeVPXHbojHvTkDU1iC8AvV28eik3gqHisSJss40Caprog==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^14.6.2"
