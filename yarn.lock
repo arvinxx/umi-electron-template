@@ -6875,10 +6875,10 @@ electron@^11.1.0, electron@^11.3.0:
     "@types/node" "^12.0.12"
     extract-zip "^1.0.3"
 
-electron@^12.0.8:
-  version "12.0.8"
-  resolved "https://registry.yarnpkg.com/electron/-/electron-12.0.8.tgz#e52583b2b4f1eaa6fbb0e3666b9907f99f1f24c7"
-  integrity sha512-bN2wYNnnma7ugBsiwysO1LI6oTTV1lDHOXuWip+OGjDUiz0IiJmZ+r0gAIMMeypVohZh7AA1ftnKad7tJ8sH4A==
+electron@^13.1.1:
+  version "13.1.2"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-13.1.2.tgz#8c9abf9015766c9cbc16f10c99282d00d6ae1b90"
+  integrity sha512-aNT9t+LgdQaZ7FgN36pN7MjSEoj+EWc2T9yuOqBApbmR4HavGRadSz7u9N2Erw2ojdIXtei2RVIAvVm8mbDZ0g==
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^14.6.2"
@@ -7103,10 +7103,10 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.3:
     d "^1.0.1"
     ext "^1.1.2"
 
-esbuild@^0.11.23:
-  version "0.11.23"
-  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.11.23.tgz#c42534f632e165120671d64db67883634333b4b8"
-  integrity sha512-iaiZZ9vUF5wJV8ob1tl+5aJTrwDczlvGP0JoMmnpC2B0ppiMCu8n8gmy5ZTGl5bcG081XBVn+U+jP+mPFm5T5Q==
+esbuild@^0.12.5:
+  version "0.12.8"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.8.tgz#ac90da77cb3bfbf49ab815200bcef7ffe1a3348f"
+  integrity sha512-sx/LwlP/SWTGsd9G4RlOPrXnIihAJ2xwBUmzoqe2nWwbXORMQWtAGNJNYLBJJqa3e9PWvVzxdrtyFZJcr7D87g==
 
 escalade@^3.1.1:
   version "3.1.1"
@@ -7348,7 +7348,7 @@ eslint-scope@5.1.0:
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
 
-eslint-scope@^5.0.0, eslint-scope@^5.1.1:
+eslint-scope@5.1.1, eslint-scope@^5.0.0, eslint-scope@^5.1.1:
   version "5.1.1"
   resolved "https://registry.npm.taobao.org/eslint-scope/download/eslint-scope-5.1.1.tgz?cache=0&sync_timestamp=1599933675196&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Feslint-scope%2Fdownload%2Feslint-scope-5.1.1.tgz#e786e59a66cb92b3f6c1fb0d508aab174848f48c"
   integrity sha1-54blmmbLkrP2wfsNUIqrF0hI9Iw=
@@ -14352,14 +14352,14 @@ postcss@^8.1.4, postcss@^8.2.1, postcss@^8.2.4:
     nanoid "^3.1.20"
     source-map "^0.6.1"
 
-postcss@^8.2.10:
-  version "8.2.15"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.2.15.tgz#9e66ccf07292817d226fc315cbbf9bc148fbca65"
-  integrity sha512-2zO3b26eJD/8rb106Qu2o7Qgg52ND5HPjcyQiK2B98O388h43A448LCslC0dI2P97wCAQRJsFvwTRcXxTKds+Q==
+postcss@^8.3.0:
+  version "8.3.0"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-8.3.0.tgz#b1a713f6172ca427e3f05ef1303de8b65683325f"
+  integrity sha512-+ogXpdAjWGa+fdYY5BQ96V/6tAo+TdSSIMP5huJBIygdWwKtVoB5JWZ7yUd4xZ8r+8Kvvx4nyg/PQ071H4UtcQ==
   dependencies:
     colorette "^1.2.2"
     nanoid "^3.1.23"
-    source-map "^0.6.1"
+    source-map-js "^0.6.2"
 
 prebuild-install@^5.3.3:
   version "5.3.6"
@@ -16930,6 +16930,11 @@ source-list-map@^2.0.0, source-list-map@^2.0.1:
   resolved "https://registry.npm.taobao.org/source-list-map/download/source-list-map-2.0.1.tgz#3993bd873bfc48479cca9ea3a547835c7c154b34"
   integrity sha1-OZO9hzv8SEecyp6jpUeDXHwVSzQ=
 
+source-map-js@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-0.6.2.tgz#0bb5de631b41cfbda6cfba8bd05a80efdfd2385e"
+  integrity sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==
+
 source-map-resolve@^0.5.0:
   version "0.5.3"
   resolved "https://registry.npm.taobao.org/source-map-resolve/download/source-map-resolve-0.5.3.tgz#190866bece7553e1f8f267a2ee82c606b5509a1a"
@@ -18206,7 +18211,7 @@ ts-loader@^6.2.2:
     micromatch "^4.0.0"
     semver "^6.0.0"
 
-ts-loader@^8.2.0:
+ts-loader@^8.3.0:
   version "8.3.0"
   resolved "https://registry.yarnpkg.com/ts-loader/-/ts-loader-8.3.0.tgz#83360496d6f8004fab35825279132c93412edf33"
   integrity sha512-MgGly4I6cStsJy27ViE32UoqxPTN9Xly4anxxVyaIWR+9BGxboV4EyJBGfR3RePV7Ksjj3rHmPZJeIt+7o4Vag==
@@ -18394,7 +18399,7 @@ typeorm@^0.2.34:
     yargs "^16.2.0"
     zen-observable-ts "^1.0.0"
 
-typescript@^4.0.2, typescript@^4.2.4, typescript@^4.3.2:
+typescript@^4.0.2, typescript@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
   integrity sha512-zZ4hShnmnoVnAHpVHWpTcxdv7dWP60S2FsydQLV8V5PbS3FifjWFFRiHSWpDJahly88PRyV5teTSLoq4eG7mKw==
@@ -18419,22 +18424,22 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.npm.taobao.org/umask/download/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-umi-plugin-electron-builder@^2.0.7:
-  version "2.0.7"
-  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.0.7.tgz#6433124c27fcf165c7b188c6676e2b3c3cc67f39"
-  integrity sha512-1IRFjXzZh4N60831ouDmu7iTHLI7fPEl8BC6DHAFnkilrIgEZlroDsyJOQyyjfpx9xwAga0JULoJbCgNFPTfFQ==
+umi-plugin-electron-builder@^2.0.8:
+  version "2.0.8"
+  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.0.8.tgz#1dcfcffe523d5c032091b48548c58b352e2ec3cb"
+  integrity sha512-T3g8VQCGN/lfVtYtKmd5/YDZL8JGYHRUdj0EueEqzMCAAGSULdjba4yBJIk6dmeGWhlvJoEJxdqYQX1eh3QUqw==
   dependencies:
     "@types/electron-devtools-installer" "^2.2.0"
     "@types/fs-extra" "^9.0.11"
     cross-env "^7.0.3"
-    electron "^12.0.8"
+    electron "^13.1.1"
     electron-builder "^22.10.5"
     electron-devtools-installer "^3.2.0"
     fs-extra "^10.0.0"
-    ts-loader "^8.2.0"
-    typescript "^4.2.4"
-    vite "^2.3.3"
-    webpack "^5.37.0"
+    ts-loader "^8.3.0"
+    typescript "^4.3.2"
+    vite "^2.3.6"
+    webpack "^5.38.1"
     webpack-chain "^6.5.1"
 
 umi-plugin-tailwindcss@^3.0.4:
@@ -18976,13 +18981,13 @@ vfile@^4.0.0:
     unist-util-stringify-position "^2.0.0"
     vfile-message "^2.0.0"
 
-vite@^2.3.3:
-  version "2.3.3"
-  resolved "https://registry.yarnpkg.com/vite/-/vite-2.3.3.tgz#7e88a71abd03985c647789938d784cce0ee3b0fd"
-  integrity sha512-eO1iwRbn3/BfkNVMNJDeANAFCZ5NobYOFPu7IqfY7DcI7I9nFGjJIZid0EViTmLDGwwSUPmRAq3cRBbO3+DsMA==
+vite@^2.3.6:
+  version "2.3.7"
+  resolved "https://registry.yarnpkg.com/vite/-/vite-2.3.7.tgz#3023892419367465e1af1739578f8663d04243b2"
+  integrity sha512-Y0xRz11MPYu/EAvzN94+FsOZHbSvO6FUvHv127CyG7mV6oDoay2bw+g5y9wW3Blf8OY3chaz3nc/DcRe1IQ3Nw==
   dependencies:
-    esbuild "^0.11.23"
-    postcss "^8.2.10"
+    esbuild "^0.12.5"
+    postcss "^8.3.0"
     resolve "^1.19.0"
     rollup "^2.38.5"
   optionalDependencies:
@@ -19037,10 +19042,10 @@ warning@^4.0.1, warning@^4.0.3:
   dependencies:
     loose-envify "^1.0.0"
 
-watchpack@^2.0.0:
-  version "2.1.1"
-  resolved "https://registry.nlark.com/watchpack/download/watchpack-2.1.1.tgz#e99630550fca07df9f90a06056987baa40a689c7"
-  integrity sha1-6ZYwVQ/KB9+fkKBgVph7qkCmicc=
+watchpack@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/watchpack/-/watchpack-2.2.0.tgz#47d78f5415fe550ecd740f99fe2882323a58b1ce"
+  integrity sha512-up4YAn/XHgZHIxFBVCdlMiWDj6WaLKpwVeGQk2I5thdYxF/KmF0aaz6TfJZ/hfl1h/XlcDr7k1KH7ThDagpFaA==
   dependencies:
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.1.2"
@@ -19182,18 +19187,18 @@ webpack-sources@^1.1.0, webpack-sources@^1.4.3:
     source-list-map "^2.0.0"
     source-map "~0.6.1"
 
-webpack-sources@^2.1.1:
-  version "2.2.0"
-  resolved "https://registry.nlark.com/webpack-sources/download/webpack-sources-2.2.0.tgz?cache=0&sync_timestamp=1618846953657&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fwebpack-sources%2Fdownload%2Fwebpack-sources-2.2.0.tgz#058926f39e3d443193b6c31547229806ffd02bac"
-  integrity sha1-BYkm8549RDGTtsMVRyKYBv/QK6w=
+webpack-sources@^2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-2.3.0.tgz#9ed2de69b25143a4c18847586ad9eccb19278cfa"
+  integrity sha512-WyOdtwSvOML1kbgtXbTDnEW0jkJ7hZr/bDByIwszhWd/4XX1A3XMkrbFMsuH4+/MfLlZCUzlAdg4r7jaGKEIgQ==
   dependencies:
     source-list-map "^2.0.1"
     source-map "^0.6.1"
 
-webpack@^5.37.0:
-  version "5.37.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.37.1.tgz#2deb5acd350583c1ab9338471f323381b0b0c14b"
-  integrity sha512-btZjGy/hSjCAAVHw+cKG+L0M+rstlyxbO2C+BOTaQ5/XAnxkDrP5sVbqWhXgo4pL3X2dcOib6rqCP20Zr9PLow==
+webpack@^5.38.1:
+  version "5.38.1"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.38.1.tgz#5224c7f24c18e729268d3e3bc97240d6e880258e"
+  integrity sha512-OqRmYD1OJbHZph6RUMD93GcCZy4Z4wC0ele4FXyYF0J6AxO1vOSuIlU1hkS/lDlR9CDYBz64MZRmdbdnFFoT2g==
   dependencies:
     "@types/eslint-scope" "^3.7.0"
     "@types/estree" "^0.0.47"
@@ -19205,7 +19210,7 @@ webpack@^5.37.0:
     chrome-trace-event "^1.0.2"
     enhanced-resolve "^5.8.0"
     es-module-lexer "^0.4.0"
-    eslint-scope "^5.1.1"
+    eslint-scope "5.1.1"
     events "^3.2.0"
     glob-to-regexp "^0.4.1"
     graceful-fs "^4.2.4"
@@ -19216,8 +19221,8 @@ webpack@^5.37.0:
     schema-utils "^3.0.0"
     tapable "^2.1.1"
     terser-webpack-plugin "^5.1.1"
-    watchpack "^2.0.0"
-    webpack-sources "^2.1.1"
+    watchpack "^2.2.0"
+    webpack-sources "^2.3.0"
 
 websocket-driver@>=0.5.1, websocket-driver@^0.7.4:
   version "0.7.4"
