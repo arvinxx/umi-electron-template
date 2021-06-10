@@ -3416,10 +3416,10 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ahooks@^2.10.5:
-  version "2.10.5"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.5.tgz#a6145510160e0a5c7a62c57f0b39a47fa0c78f93"
-  integrity sha512-PyHzeTJ+/S0BAn3+sSP+0Ku6/jsCUfbh+n9vKZcv4p95epUNLu3k53/zFGFWNrTG6t5k38YvQO5Ff329mq7q8w==
+ahooks@^2.10.6:
+  version "2.10.6"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.6.tgz#05fad82f77a308886c174a61b7e1232cb16516ac"
+  integrity sha512-E/eUaa7CrLMV2cNdgzh/YMLgJWCmyQQPf8i7xwzrI3d0i5EdzMl+lV+A9E1UbDV4yBuuYhWMfZkmkJOh+f5mXA==
   dependencies:
     "@ahooksjs/use-request" "^2.8.7"
     "@types/js-cookie" "^2.2.6"

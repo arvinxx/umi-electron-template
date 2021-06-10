@@ -81,7 +81,7 @@
     "@umijs/fabric": "^2.6.2",
     "@umijs/preset-react": "^1.8.12",
     "@umijs/test": "^3.4.25",
-    "ahooks": "^2.10.5",
+    "ahooks": "^2.10.6",
     "antd": "^4.16.2",
     "awesome-typescript-loader": "^5.2.1",
     "classnames": "^2.2.6",
