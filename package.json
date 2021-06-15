@@ -65,7 +65,7 @@
   },
   "devDependencies": {
     "@ant-design/icons": "^4.6.2",
-    "@ant-design/pro-layout": "^6.19.4",
+    "@ant-design/pro-layout": "^6.19.5",
     "@commitlint/cli": "^12.1.4",
     "@jest-runner/electron": "^3.0.1",
     "@testing-library/react": "^11.2.7",
