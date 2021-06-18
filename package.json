@@ -75,7 +75,7 @@
     "@types/js-yaml": "^4.0.1",
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.11",
-    "@types/react-dom": "^17.0.7",
+    "@types/react-dom": "^17.0.8",
     "@types/react-test-renderer": "^17.0.1",
     "@types/sinon": "^10.0.2",
     "@umijs/fabric": "^2.6.2",
