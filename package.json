@@ -71,7 +71,7 @@
     "@testing-library/react": "^11.2.7",
     "@types/classnames": "^2.3.1",
     "@types/diff": "^5.0.0",
-    "@types/jest": "^26.0.23",
+    "@types/jest": "^26.0.24",
     "@types/js-yaml": "^4.0.1",
     "@types/node": "^15.14.0",
     "@types/react": "^17.0.13",
