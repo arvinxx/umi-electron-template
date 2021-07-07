@@ -12,10 +12,10 @@
   resolved "https://registry.npm.taobao.org/7zip/download/7zip-0.0.6.tgz#9cafb171af82329490353b4816f03347aa150a30"
   integrity sha1-nK+xca+CMpSQNTtIFvAzR6oVCjA=
 
-"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.7":
-  version "2.8.7"
-  resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.7.tgz#35558494d6aadee023cda49477fc679b49f9ff2d"
-  integrity sha512-r4Ks+Gg2R48lXb780O8/NkkQ82HtHnBFzt8HrO12JRGP6AoTAejyEB90RgDQ8tpu1Lz10NKoNisAj2XA16gAtQ==
+"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.8":
+  version "2.8.8"
+  resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.8.tgz#63d859ed61696a9d9bd80a74135903f725894b2f"
+  integrity sha512-1nfGB1jtZ/L8iz3wVoQUtk8sfzR9zE4Ehs67xF07GLlWA0Xsuj6thUH/kUXhHWYR9nPd4M9whHgpUvj5EKGIkQ==
   dependencies:
     lodash.debounce "^4.0.8"
     lodash.throttle "^4.1.1"
@@ -3517,12 +3517,12 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ahooks@^2.10.6:
-  version "2.10.6"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.6.tgz#05fad82f77a308886c174a61b7e1232cb16516ac"
-  integrity sha512-E/eUaa7CrLMV2cNdgzh/YMLgJWCmyQQPf8i7xwzrI3d0i5EdzMl+lV+A9E1UbDV4yBuuYhWMfZkmkJOh+f5mXA==
+ahooks@^2.10.7:
+  version "2.10.7"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.7.tgz#6733e9ebc45b0794a33f7f1e01394fb91c28bffe"
+  integrity sha512-ORFtyT5QIy73xH/drMV9SxquIe+SQilPXLYKTN6ZpUdXFpcmmKUz8hgJsv+vBT8S1GjAjxRxf+BMcIDOlorNPA==
   dependencies:
-    "@ahooksjs/use-request" "^2.8.7"
+    "@ahooksjs/use-request" "^2.8.8"
     "@types/js-cookie" "^2.2.6"
     dayjs "^1.9.1"
     intersection-observer "^0.7.0"
