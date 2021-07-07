@@ -2810,12 +2810,12 @@
     "@typescript-eslint/types" "4.14.2"
     eslint-visitor-keys "^2.0.0"
 
-"@umijs/ast@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/ast/-/ast-3.5.4.tgz#1e03027c03600e47c6f87d13894c58f1eb0f09b4"
-  integrity sha512-7s9WTJRWsR/fYT89yfULLyj5odKEjCK063YwERsaPJbvzF+6w8EsIsgG2olXTC1RAI/H0xNb7aStF1nVOwxkrg==
+"@umijs/ast@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/ast/-/ast-3.5.5.tgz#eb69075d154f84b5cf310384ac7a1e30b4f56575"
+  integrity sha512-3l/SDZoG4cGOYH6XoQ0rvkklu9mzwD7KLgIwF4oR7CTbPCwiDUE210AeeIGUI15hYOejN6kJhl2sNjYc1T2UaQ==
   dependencies:
-    "@umijs/utils" "3.5.4"
+    "@umijs/utils" "3.5.5"
 
 "@umijs/babel-plugin-auto-css-modules@3.4.25":
   version "3.4.25"
@@ -2828,6 +2828,13 @@
   integrity sha512-Z3bk1u5hkEe9C27VUhmGGLOKqBSc44J8nNoZYzztJkkZXQEOjmxYk2Rf9fDUVr5kK4qTN0ntys0iO3w73FALCw==
   dependencies:
     "@umijs/utils" "3.5.4"
+
+"@umijs/babel-plugin-auto-css-modules@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-auto-css-modules/-/babel-plugin-auto-css-modules-3.5.5.tgz#f2358a82ae4fe5efc1ac78a7a8988fadfc18a03b"
+  integrity sha512-LXz/cuYwBDxlyZArH0fo4ptLnQguoS+JxawEC+fpx/0jHnq6bOVpC+c9zcltlxP3a/zVoPSbFb76dv2DeVHvKQ==
+  dependencies:
+    "@umijs/utils" "3.5.5"
 
 "@umijs/babel-plugin-import-to-await-require@3.4.25":
   version "3.4.25"
@@ -2842,6 +2849,13 @@
   integrity sha512-0DyEIX8x4TloxChj0fpGGByrqr+zkyOsOsqzmmRttVBZy3BHY/RaUsqpRws1l1n/rPR4SQuF3+jr2uKSP0tBNA==
   dependencies:
     "@umijs/utils" "3.5.4"
+
+"@umijs/babel-plugin-import-to-await-require@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-import-to-await-require/-/babel-plugin-import-to-await-require-3.5.5.tgz#9d9daf78cc9301a012cf549267801731b6e88411"
+  integrity sha512-PrLPcGATE8xXF1q/QqAbegRODcl6BWIJ2+btfVX7gAXd5bvV+ZNPVC8m/QoJmi9pjgqhjbQUEgSeAExGqpHcHA==
+  dependencies:
+    "@umijs/utils" "3.5.5"
 
 "@umijs/babel-plugin-lock-core-js-3@3.4.25":
   version "3.4.25"
@@ -2859,6 +2873,14 @@
     "@umijs/utils" "3.5.4"
     core-js "3.6.5"
 
+"@umijs/babel-plugin-lock-core-js-3@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-lock-core-js-3/-/babel-plugin-lock-core-js-3-3.5.5.tgz#9bb5d0b9f002df2814e77971bbca3ab54c012ef6"
+  integrity sha512-/GevsM7VwKYEu9ySPbKxWx+OcHQMjA5b9nz0FCA70zQz9DyyFzlA43h+G2c2L4WTZZpfb+wMwbMgyhAIarZgZA==
+  dependencies:
+    "@umijs/utils" "3.5.5"
+    core-js "3.6.5"
+
 "@umijs/babel-plugin-no-anonymous-default-export@3.4.25":
   version "3.4.25"
   resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.4.25.tgz#4c47af75656b98bc84659bf7a4cc869645d95c0f"
@@ -2872,6 +2894,13 @@
   integrity sha512-rcETYf1GJqMD1F5vGBIdwaC+JWGGGXs4ZYf6RDQehvP+PiiHctsVZd2yDHlODoC42bntkDHjFbFZHAXrNEPlDQ==
   dependencies:
     "@umijs/utils" "3.5.4"
+
+"@umijs/babel-plugin-no-anonymous-default-export@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-plugin-no-anonymous-default-export/-/babel-plugin-no-anonymous-default-export-3.5.5.tgz#2f36978f229a0c591bad1eccd87804e30aeecbb9"
+  integrity sha512-fYBWQZtHecKkuDQIQkm7/JAVC0ck4qCIk4I3jv7qc7VxHQSsZukQt6GOyvj81Jr5czBFIEm8BxuO5RKFXeFBPA==
+  dependencies:
+    "@umijs/utils" "3.5.5"
 
 "@umijs/babel-preset-umi@3.4.25":
   version "3.4.25"
@@ -2896,24 +2925,36 @@
     "@umijs/babel-plugin-no-anonymous-default-export" "3.5.4"
     "@umijs/deps" "3.5.4"
 
-"@umijs/bundler-utils@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/bundler-utils/-/bundler-utils-3.5.4.tgz#db74ed593d9d73db4ceeeebec3ced9b7f3bf5914"
-  integrity sha512-Fz4RnGybUDMDXoOre1lShUoj9bpAWXGjj3PMsjnU0FzmjI03egGoJ92Jrb0QXeHmw4+Fx2MaTGJBNY8votsRDg==
+"@umijs/babel-preset-umi@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/babel-preset-umi/-/babel-preset-umi-3.5.5.tgz#f74d95ac75ef8acb2790ad771c10624cb43de188"
+  integrity sha512-EgAyV4UieWI0Gh30uTFVOIAGiyn8p42uHzq0rg6FnAk94FlyvzeOraAIo0qXYbwRlD/NGh54AJDjZ9YE5Kk8CQ==
   dependencies:
-    "@umijs/babel-preset-umi" "3.5.4"
-    "@umijs/types" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@babel/runtime" "7.12.5"
+    "@umijs/babel-plugin-auto-css-modules" "3.5.5"
+    "@umijs/babel-plugin-import-to-await-require" "3.5.5"
+    "@umijs/babel-plugin-lock-core-js-3" "3.5.5"
+    "@umijs/babel-plugin-no-anonymous-default-export" "3.5.5"
+    "@umijs/deps" "3.5.5"
 
-"@umijs/bundler-webpack@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/bundler-webpack/-/bundler-webpack-3.5.4.tgz#bfb78880a84102cd7f6cf5de7e56318998f86b4a"
-  integrity sha512-ls0Skjfrxeae+ET/669pRCMF0UHOUydcazforrcq/bQWpRw+POkzSvHlsKz4wIN2Zh4uhZreYv0Sa57AwkLTCQ==
+"@umijs/bundler-utils@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/bundler-utils/-/bundler-utils-3.5.5.tgz#7192a0a56f1d7792c140ef523435fe6581227a88"
+  integrity sha512-G0dODB8wC6UDsxwRqNh2AezfY8B/4WJEMirx5ZC2d3zz8mUByeaj0umhe0pO1jKMMm4xLx+KCmenUDrHjgi9SQ==
   dependencies:
-    "@umijs/bundler-utils" "3.5.4"
-    "@umijs/deps" "3.5.4"
-    "@umijs/types" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/babel-preset-umi" "3.5.5"
+    "@umijs/types" "3.5.5"
+    "@umijs/utils" "3.5.5"
+
+"@umijs/bundler-webpack@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/bundler-webpack/-/bundler-webpack-3.5.5.tgz#177605c8742670050f15e0da2b616084b1d379ca"
+  integrity sha512-9KhDp2S4RKe3kw5k5fGICxu+drUBsfTTvt8CKzYWZPhgprLAXENjMOM197Qrgvh2ZfbJQ39uTlzN2sMdCCXOgw==
+  dependencies:
+    "@umijs/bundler-utils" "3.5.5"
+    "@umijs/deps" "3.5.5"
+    "@umijs/types" "3.5.5"
+    "@umijs/utils" "3.5.5"
     jest-worker "26.6.2"
     node-libs-browser "2.2.1"
     normalize-url "1.9.1"
@@ -2925,15 +2966,15 @@
     terser "5.6.0"
     webpack-chain "6.5.1"
 
-"@umijs/core@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/core/-/core-3.5.4.tgz#c740dc5f8a8e6fc2f8dc4e65e0dde0e1e431af86"
-  integrity sha512-T/4U8w94vyIFoIWjoapS8xaVqGzsOsR4DwWnDyVxdGDav0HloHmTH+YY8WvRQL5lbHDc+kxyq5hjpPpDnmXUhw==
+"@umijs/core@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/core/-/core-3.5.5.tgz#ed6e07fd81e4f8af807efa27446b5af1138a46a1"
+  integrity sha512-I0M2xWMWAKjJorC26T4Z8i/V6MxewwKMDw7BRw3zhPnTiY6RtO1pfYcMHtQdTjiFzMCHwE5uUjtCSUq2E9jsqw==
   dependencies:
-    "@umijs/ast" "3.5.4"
-    "@umijs/babel-preset-umi" "3.5.4"
-    "@umijs/deps" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/ast" "3.5.5"
+    "@umijs/babel-preset-umi" "3.5.5"
+    "@umijs/deps" "3.5.5"
+    "@umijs/utils" "3.5.5"
 
 "@umijs/deps@3.4.25":
   version "3.4.25"
@@ -2954,6 +2995,18 @@
     "@bloomberg/record-tuple-polyfill" "0.0.3"
     chokidar "3.5.1"
     clipboardy "2.3.0"
+    jest-worker "24.9.0"
+    prettier "2.2.1"
+
+"@umijs/deps@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/deps/-/deps-3.5.5.tgz#b3272903c5690ee2cb0e9efaaa18d9eec5153781"
+  integrity sha512-sY3LBmz2kDui1KLPxNQBUDilcStU9BBBP7Yt9Ti5sc5jS/BM8JMuaPzHP6Nv3vtJGJPVx8rqpyNPoNy7ezEH6w==
+  dependencies:
+    "@bloomberg/record-tuple-polyfill" "0.0.3"
+    chokidar "3.5.1"
+    clipboardy "2.3.0"
+    esbuild "0.12.15"
     jest-worker "24.9.0"
     prettier "2.2.1"
 
@@ -3091,26 +3144,26 @@
   dependencies:
     "@umijs/test" "~3.4.25"
 
-"@umijs/preset-built-in@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-built-in/-/preset-built-in-3.5.4.tgz#fcd51ad82f7f7bee2a871d75222a8cebfa43f5d7"
-  integrity sha512-nKKJRBLv9EqVm16ZKn2W8fr4Pzk3XQvYzQumEo7wk4qrUVLbnq+aAhoSdsgAjSDc8Dxce76ofrphFlmRnQC2pQ==
+"@umijs/preset-built-in@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-built-in/-/preset-built-in-3.5.5.tgz#aac801f3290b0e630a63c8f2500ebbf0486fb89a"
+  integrity sha512-x48B0nuQV5jDJTb9CsV1AORicabE5T5EPkysjZovrBVUfjD/HeHr5SIewKRozX8Mf8AcY8cJ+TcVIO4vCl4eZg==
   dependencies:
     "@types/react-router-config" "5.0.2"
-    "@umijs/babel-preset-umi" "3.5.4"
-    "@umijs/bundler-webpack" "3.5.4"
-    "@umijs/deps" "3.5.4"
-    "@umijs/renderer-mpa" "3.5.4"
-    "@umijs/renderer-react" "3.5.4"
-    "@umijs/runtime" "3.5.4"
-    "@umijs/server" "3.5.4"
-    "@umijs/types" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/babel-preset-umi" "3.5.5"
+    "@umijs/bundler-webpack" "3.5.5"
+    "@umijs/deps" "3.5.5"
+    "@umijs/renderer-mpa" "3.5.5"
+    "@umijs/renderer-react" "3.5.5"
+    "@umijs/runtime" "3.5.5"
+    "@umijs/server" "3.5.5"
+    "@umijs/types" "3.5.5"
+    "@umijs/utils" "3.5.5"
     ansi-html "^0.0.7"
     core-js "3.6.5"
     core-js-pure "^3.8.1"
     error-stack-parser "^2.0.6"
-    es-module-lexer "0.6.0"
+    es-module-lexer "0.7.1"
     es5-imcompatible-versions "^0.1.62"
     history-with-query "4.10.4"
     html-entities "^2.1.0"
@@ -3140,24 +3193,24 @@
     "@umijs/plugin-request" "2.6.0"
     "@umijs/plugin-test" "1.0.1"
 
-"@umijs/renderer-mpa@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/renderer-mpa/-/renderer-mpa-3.5.4.tgz#dd24a1a9f6d5489250581254734e720c6af7ba45"
-  integrity sha512-Fs8wVKeh4bBKnp2XsnNyLJDIaNfwYtlOJDw7b1bp2pkw8e412bRkkPw5jGhp+V4YKYFSnJPEQRfs+87kVlfBZw==
+"@umijs/renderer-mpa@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/renderer-mpa/-/renderer-mpa-3.5.5.tgz#14c492f6bcee1a7f6f99761b1f83b1c95575ce21"
+  integrity sha512-qLSzaby0tyXxfBwY6phuq2HvFnKLjq+wdcSPQ7m+MuKYxnvZ6z4eP/BPm4kIHzEB9a7Y1o+mwuqHxWUNQD+CWQ==
   dependencies:
     "@types/react" "^16.9.43"
     "@types/react-dom" "^16.9.8"
-    "@umijs/runtime" "3.5.4"
+    "@umijs/runtime" "3.5.5"
 
-"@umijs/renderer-react@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/renderer-react/-/renderer-react-3.5.4.tgz#ba548a41bbb39d3e5d331c172c2d7e9024e1e6fd"
-  integrity sha512-KcOoT1Yl4tPxYCkWCOdVIGczlQU1NkYVeBmIVNzWGU0R2GA0Fd9aICmKTl4mQB08hrAXklUlpg3kQoTr8ngxew==
+"@umijs/renderer-react@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/renderer-react/-/renderer-react-3.5.5.tgz#bbb1cc7e80908cfd617690bdff0ca4dab7e2a798"
+  integrity sha512-O1GjKEB61OoHUrNP1F7gFGlN2C8xke+Rgs3+gHDsKA/Dy1sMjFaiRjgnYSuhJe7cs1s2IUrzbnbknGEv9uXtZg==
   dependencies:
     "@types/react" "^16.9.43"
     "@types/react-dom" "^16.9.8"
     "@types/react-router-config" "^5.0.2"
-    "@umijs/runtime" "3.5.4"
+    "@umijs/runtime" "3.5.5"
     react-router-config "5.1.1"
 
 "@umijs/route-utils@^1.0.35", "@umijs/route-utils@^1.0.7":
@@ -3170,10 +3223,10 @@
     lodash.isequal "^4.5.0"
     memoize-one "^5.1.1"
 
-"@umijs/runtime@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/runtime/-/runtime-3.5.4.tgz#9539b2ac50a5fcb6ac6ee84bae5f55cebf8709ee"
-  integrity sha512-LImM9mKHP/6Q3H7VtPX25TAHQWRhOZMwsPfSNRk4qHW9pHHhs8gN1xJ6X7K6C9665kRL+mIV1tS/On2asGwvqw==
+"@umijs/runtime@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/runtime/-/runtime-3.5.5.tgz#9daec817c8e21da0b9611a61d24159244d06598e"
+  integrity sha512-AB08qjJwm5RatM6yaF/kuW9sY8idrev42Z+NQQz9DoYlWbSfneyWQv7FAt3288E8VirVEBTqW7bKp/p2dhTGnA==
   dependencies:
     "@types/react-router" "5.1.12"
     "@types/react-router-dom" "5.1.7"
@@ -3182,13 +3235,13 @@
     react-router-dom "5.2.0"
     use-subscription "1.5.1"
 
-"@umijs/server@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/server/-/server-3.5.4.tgz#acd8645fc60e69106829133fde6f25e217d7f5c7"
-  integrity sha512-sTsjQxnC/6XEQ7zhXWx95gXQYEtlKuBgujUi37c/ZJv5aaEE9R0N5sC5lTyYacHW3ShsgmJZjX3WDOwE8owjoQ==
+"@umijs/server@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/server/-/server-3.5.5.tgz#86af1d12763db0a3b928ba40581d66b4ce587582"
+  integrity sha512-2eklCAbAkvl+yapSAK5KD/IwGXejkHeEa5XLy99qbaKJpQuksWJLDqYO3Sbts2M1tI+vpPOS849nRH5VTe1T3w==
   dependencies:
-    "@umijs/deps" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/deps" "3.5.5"
+    "@umijs/utils" "3.5.5"
 
 "@umijs/test@^3.5.4":
   version "3.5.4"
@@ -3226,16 +3279,16 @@
     regenerator-runtime "^0.13.7"
     whatwg-fetch "^3.5.0"
 
-"@umijs/types@3.5.4":
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/@umijs/types/-/types-3.5.4.tgz#b2a55c60cc50af83c40d0af63d29519036f2e1ff"
-  integrity sha512-mWvGICQjJrBYVW5397GUespXHpBNe2quxK228S9ZTATDLqxQCv44DQzN3SWnIQSMHljNlBKTV1lQHzjGtwxcqQ==
+"@umijs/types@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/types/-/types-3.5.5.tgz#ac61fe819bf2cf915f2f5e52ade5beb83ee11310"
+  integrity sha512-voXQ6Il4EQ/GV3L9WavgjrjmZX+J57Y6dCQbrZYWGxwBh1LNz5XpAinhRIps5s5ncyY9b1xplpKX4FMvoqpwWA==
   dependencies:
-    "@umijs/babel-preset-umi" "3.5.4"
-    "@umijs/core" "3.5.4"
-    "@umijs/deps" "3.5.4"
-    "@umijs/server" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/babel-preset-umi" "3.5.5"
+    "@umijs/core" "3.5.5"
+    "@umijs/deps" "3.5.5"
+    "@umijs/server" "3.5.5"
+    "@umijs/utils" "3.5.5"
     webpack-chain "6.5.1"
 
 "@umijs/use-params@^1.0.2":
@@ -3256,6 +3309,13 @@
   integrity sha512-J/QCHrDtBuoMpTCEDTXNVJNwVOu2GtV3E/KMcBft4FDBL1decU0u7KNWErzwYohJmAJJ3fFRdimHzZAf3zBVXg==
   dependencies:
     "@umijs/deps" "3.5.4"
+
+"@umijs/utils@3.5.5":
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/@umijs/utils/-/utils-3.5.5.tgz#e6ee8f52576b9c6727af38a6a14bb78f23581f02"
+  integrity sha512-Tb2o+MaZyh+np/rwXp6tJeHM44vURTGaE3KpjgvdauA6rJFtTFBCZwJ1n8cKcNmWjSY5jaWwGZpoVI8Ewrm4WQ==
+  dependencies:
+    "@umijs/deps" "3.5.5"
 
 "@webassemblyjs/ast@1.11.0":
   version "1.11.0"
@@ -7154,10 +7214,10 @@ es-abstract@^1.18.0-next.1:
     string.prototype.trimend "^1.0.3"
     string.prototype.trimstart "^1.0.3"
 
-es-module-lexer@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.6.0.tgz#e72ab05b7412e62b9be37c37a09bdb6000d706f0"
-  integrity sha512-f8kcHX1ArhllUtb/wVSyvygoKCznIjnxhLxy7TCvIiMdT7fL4ZDTIKaadMe6eLvOXg6Wk02UeoFgUoZ2EKZZUA==
+es-module-lexer@0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-0.7.1.tgz#c2c8e0f46f2df06274cdaf0dd3f3b33e0a0b267d"
+  integrity sha512-MgtWFl5No+4S3TmhDmCz2ObFGm6lEpTnzbQi+Dd+pw4mlTIZTmM2iAs5gRlmx5zS9luzobCSBSI90JM/1/JgOw==
 
 es-module-lexer@^0.4.0:
   version "0.4.1"
@@ -7220,6 +7280,11 @@ es6-symbol@^3.1.1, es6-symbol@~3.1.3:
   dependencies:
     d "^1.0.1"
     ext "^1.1.2"
+
+esbuild@0.12.15:
+  version "0.12.15"
+  resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.12.15.tgz#9d99cf39aeb2188265c5983e983e236829f08af0"
+  integrity sha512-72V4JNd2+48eOVCXx49xoSWHgC3/cCy96e7mbXKY+WOWghN00cCmlGnwVLRhRHorvv0dgCyuMYBZlM2xDM5OQw==
 
 esbuild@^0.12.5:
   version "0.12.8"
@@ -18591,18 +18656,18 @@ umi-request@^1.2.14:
     isomorphic-fetch "^2.2.1"
     qs "^6.9.1"
 
-umi@^3.5.4:
-  version "3.5.4"
-  resolved "https://registry.yarnpkg.com/umi/-/umi-3.5.4.tgz#0cc6614b5ff43f21409a4621b62d755ba07910e4"
-  integrity sha512-XQQy/8A//QLr+fejgo+njsCL+bfWJwYl4ymS5TtATnK0v1NGgZ1dk6DHdUVHQINQJuZZ6CSs/ldQPihXrgJzsg==
+umi@^3.5.5:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/umi/-/umi-3.5.5.tgz#113c19d9de7a5e3800547c693ec949733e2518f2"
+  integrity sha512-NvpH2hbjVEbOGQNK7MbP/RtXeyMtQBALN/jnRvdrWT0WSxUB2icEwoj8TMBnOrWH9sZi4FHoNh47GfG8TvcEEA==
   dependencies:
-    "@umijs/bundler-webpack" "3.5.4"
-    "@umijs/core" "3.5.4"
-    "@umijs/deps" "3.5.4"
-    "@umijs/preset-built-in" "3.5.4"
-    "@umijs/runtime" "3.5.4"
-    "@umijs/types" "3.5.4"
-    "@umijs/utils" "3.5.4"
+    "@umijs/bundler-webpack" "3.5.5"
+    "@umijs/core" "3.5.5"
+    "@umijs/deps" "3.5.5"
+    "@umijs/preset-built-in" "3.5.5"
+    "@umijs/runtime" "3.5.5"
+    "@umijs/types" "3.5.5"
+    "@umijs/utils" "3.5.5"
     react "16.x"
     react-dom "16.x"
     v8-compile-cache "2.3.0"
