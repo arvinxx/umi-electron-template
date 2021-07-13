@@ -3042,10 +3042,10 @@
     "@types/react-helmet" "^6.1.0"
     react-helmet "^6.1.0"
 
-"@umijs/plugin-initial-state@2.3.1":
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-initial-state/-/plugin-initial-state-2.3.1.tgz#780c6e6931dad53ea541c89e181059de4871a8a4"
-  integrity sha512-IChoNH5tkxnx1HTzPgePaGBz+8wqrr00olJXOvwdGDrSw9vQh32upiw6E/DERVzl8G8xVEmS+Xm20hJnluae3g==
+"@umijs/plugin-initial-state@2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-initial-state/-/plugin-initial-state-2.4.0.tgz#a6759082f2bdd0aeb278ae95b2e4b562a061aed6"
+  integrity sha512-UHH5fTL9skm4771R3xvWCrjd5xiQ7OdJ83G0P1YZLhuNbh0cAFVT8SPTU8dA9o8TTAZ66IEq7axhWl1cGxVsXw==
 
 "@umijs/plugin-layout@0.17.1":
   version "0.17.1"
@@ -3057,10 +3057,10 @@
     lodash "^4.17.15"
     path-to-regexp "1.x"
 
-"@umijs/plugin-locale@0.13.0":
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.13.0.tgz#5508441702242dcd9155af29d719392a3340533d"
-  integrity sha512-zdMaF+Eh0bbd2Ru0/kaGLpigNpvxm+UbwBw1k0xTJDdp0tPUyBb61EkQEfU7G5l0LraCKyiA0ftVpbiEQtd7pw==
+"@umijs/plugin-locale@0.13.1":
+  version "0.13.1"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-locale/-/plugin-locale-0.13.1.tgz#a37380080e84e4ca6163488c45ee630ed745faf0"
+  integrity sha512-E0NoG6zzPX6ghGvqF6jyoStQ/EyN70I+kNF5xV4mRGPZYYERmYnT1lOCv5dOm7ig/qwAFlAbqAqdD2R0OiLk9Q==
   dependencies:
     "@ant-design/icons" "^4.1.0"
     "@formatjs/intl-pluralrules" "^1.5.0"
@@ -3123,10 +3123,10 @@
     regenerator-runtime "0.13.5"
     schema-utils "^3.0.0"
 
-"@umijs/preset-react@^1.8.14":
-  version "1.8.14"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.14.tgz#fbe06c0f922463e7fa83b9582b3086157893bdd7"
-  integrity sha512-U96lKcVZOAE4VV8fW8RpHpfk0MqdsD2ga6J9w+TC3/Jee3cIKae/dyEYc6PuATeMOOgv+p6TzRqJGY6j9g0mIA==
+"@umijs/preset-react@^1.8.17":
+  version "1.8.17"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.17.tgz#7842aea81f4c5fd9b0fa3b2fc671c57bf7f8218d"
+  integrity sha512-PUmKpsC3z+OcpBL3FddLqtTG0RkWNZgadjTf065tbVFUCps9EZ3D9mJ8HDT0SzorcG+/mwMvrhK12bgHUpyspg==
   dependencies:
     "@umijs/plugin-access" "2.4.2"
     "@umijs/plugin-analytics" "0.2.2"
@@ -3134,9 +3134,9 @@
     "@umijs/plugin-crossorigin" "1.2.1"
     "@umijs/plugin-dva" "0.13.0"
     "@umijs/plugin-helmet" "1.1.3"
-    "@umijs/plugin-initial-state" "2.3.1"
+    "@umijs/plugin-initial-state" "2.4.0"
     "@umijs/plugin-layout" "0.17.1"
-    "@umijs/plugin-locale" "0.13.0"
+    "@umijs/plugin-locale" "0.13.1"
     "@umijs/plugin-model" "2.6.1"
     "@umijs/plugin-request" "2.6.0"
     "@umijs/plugin-test" "1.0.1"
