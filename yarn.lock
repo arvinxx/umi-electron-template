@@ -43,14 +43,14 @@
     classnames "^2.2.6"
     rc-util "^5.9.4"
 
-"@ant-design/pro-layout@^6.20.0":
-  version "6.20.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.20.0.tgz#4df2df541ff3496aa5e60760e2b9ba7f862b9e3d"
-  integrity sha512-17ZDPWtySgQ5QYcEG9UV5xPeGw+THs6KFXLgOhpxNenN2RheBLGibVeDdAPq+8iABq36mqIQBpJi8iz2y4XiTA==
+"@ant-design/pro-layout@^6.22.0":
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.22.0.tgz#c5764f3428d434c94926c9e764b726e0df1a83d4"
+  integrity sha512-q7mdpBfT9aEwDaMNi6B6b7678pMh/y9O1cUf8fN5CsBBiXEADOksIQ4nS6KJEpURNJRpUePKTRDqxlg+XyCCrA==
   dependencies:
     "@ant-design/icons" "^4.0.0"
-    "@ant-design/pro-provider" "1.4.14"
-    "@ant-design/pro-utils" "1.19.3"
+    "@ant-design/pro-provider" "1.4.16"
+    "@ant-design/pro-utils" "1.19.6"
     "@umijs/route-utils" "^1.0.35"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
@@ -65,20 +65,20 @@
     use-media-antd-query "^1.0.6"
     warning "^4.0.3"
 
-"@ant-design/pro-provider@1.4.14":
-  version "1.4.14"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.14.tgz#468b522eb818e16c97fb53200fc1413525a47d8c"
-  integrity sha512-yhtNVLgLICnUgtJpYSwG/FF997IPs0Rnpl/4yEwljW8NJHld4ZgZDez2CSW0adb//jRm0/hD0F89a3BYb7RYhw==
+"@ant-design/pro-provider@1.4.16":
+  version "1.4.16"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-provider/-/pro-provider-1.4.16.tgz#7a6ebba33eaf2219d11bb2d4d1098a1c6ff37127"
+  integrity sha512-bVBdbMbilmw9Jt91TRq8IIZUkMv5v4DMgH2nYEH8LOd6Hi/SKtoukCRnmMYmCmJ3cXy7yg+fx6iZ14RFrp2hPQ==
   dependencies:
     rc-util "^5.0.1"
 
-"@ant-design/pro-utils@1.19.3":
-  version "1.19.3"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.19.3.tgz#80a0d48f4e0dee24df2cb741386d53e68874e484"
-  integrity sha512-rEmDN/llsZ3JyQcqQ1ym8pSra61JR2C2nWzzVTw5lRzVRsjd62XBJNSxaQgGTAMLxbYo0Qbkp9LtS8+WLzJgoQ==
+"@ant-design/pro-utils@1.19.6":
+  version "1.19.6"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.19.6.tgz#ae25100f27f68942165f6f5c494e6f0fc480896c"
+  integrity sha512-IXOvUK/u00Xe6RZ83O5LoKH6oh7A409G8cV5DIdUE5gcV+e+wkzsKeMUxYUwOmks79zH/Ci4cYKoCna46y3Hfg==
   dependencies:
     "@ant-design/icons" "^4.3.0"
-    "@ant-design/pro-provider" "1.4.14"
+    "@ant-design/pro-provider" "1.4.16"
     classnames "^2.2.6"
     fast-deep-equal "^3.1.3"
     lodash.merge "^4.6.2"
