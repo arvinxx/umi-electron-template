@@ -56,7 +56,7 @@
     "electron-updater": "^4.4.2",
     "inversify": "^5.1.1",
     "log4js": "^6.3.0",
-    "os-name": "^4.0.0",
+    "os-name": "^4.0.1",
     "reflect-metadata": "^0.1.13",
     "robotjs": "^0.6.0",
     "source-map-support": "^0.5.16",

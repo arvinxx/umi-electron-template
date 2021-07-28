@@ -11880,10 +11880,10 @@ lz-string@^1.4.4:
   resolved "https://registry.npm.taobao.org/lz-string/download/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
 
-macos-release@^2.2.0:
-  version "2.4.1"
-  resolved "https://registry.npm.taobao.org/macos-release/download/macos-release-2.4.1.tgz#64033d0ec6a5e6375155a74b1a1eba8e509820ac"
-  integrity sha1-ZAM9Dsal5jdRVadLGh66jlCYIKw=
+macos-release@^2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-2.5.0.tgz#067c2c88b5f3fb3c56a375b2ec93826220fa1ff2"
+  integrity sha512-EIgv+QZ9r+814gjJj0Bt5vSLJLzswGmSUbUpbi9AIr/fsN2IWFBl2NucV9PAiek+U1STK468tEkxmVYUtuAN3g==
 
 make-dir@^1.0.0:
   version "1.3.0"
@@ -13379,12 +13379,12 @@ os-locale@^5.0.0:
     lcid "^3.0.0"
     mem "^5.0.0"
 
-os-name@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/os-name/download/os-name-4.0.0.tgz#6c05c09c41c15848ea74658d12c9606f0f286599"
-  integrity sha1-bAXAnEHBWEjqdGWNEslgbw8oZZk=
+os-name@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/os-name/-/os-name-4.0.1.tgz#32cee7823de85a8897647ba4d76db46bf845e555"
+  integrity sha512-xl9MAoU97MH1Xt5K9ERft2YfCAoaO6msy1OBA0ozxEC0x0TmIoE6K3QvgJMMZA9yKGLmHXNY/YZoDbiGDj4zYw==
   dependencies:
-    macos-release "^2.2.0"
+    macos-release "^2.5.0"
     windows-release "^4.0.0"
 
 os-tmpdir@^1.0.0:
