@@ -32,10 +32,10 @@
   resolved "https://registry.npm.taobao.org/@ant-design/icons-svg/download/@ant-design/icons-svg-4.1.0.tgz#480b025f4b20ef7fe8f47d4a4846e4fee84ea06c"
   integrity sha1-SAsCX0sg73/o9H1KSEbk/uhOoGw=
 
-"@ant-design/icons@^4.0.0", "@ant-design/icons@^4.1.0", "@ant-design/icons@^4.3.0", "@ant-design/icons@^4.6.2":
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-4.6.2.tgz#290f2e8cde505ab081fda63e511e82d3c48be982"
-  integrity sha512-QsBG2BxBYU/rxr2eb8b2cZ4rPKAPBpzAR+0v6rrZLp/lnyvflLH3tw1vregK+M7aJauGWjIGNdFmUfpAOtw25A==
+"@ant-design/icons@^4.0.0", "@ant-design/icons@^4.1.0", "@ant-design/icons@^4.3.0", "@ant-design/icons@^4.6.2", "@ant-design/icons@^4.6.3":
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons/-/icons-4.6.3.tgz#cdcccf4df24d51501acef9228444efb7ef8938b1"
+  integrity sha512-OO4JW3OE13FKahplPYhqEg3uEhMiMDxujVUUx/RJUCEkSgBtAEnpKnq8oz2sBKqXeEhkr9/GE2tAHO1gyc70Uw==
   dependencies:
     "@ant-design/colors" "^6.0.0"
     "@ant-design/icons-svg" "^4.0.0"
