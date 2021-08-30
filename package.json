@@ -64,7 +64,7 @@
     "typeorm": "^0.2.37"
   },
   "devDependencies": {
-    "@ant-design/icons": "^4.6.2",
+    "@ant-design/icons": "^4.6.4",
     "@ant-design/pro-layout": "^6.24.3",
     "@commitlint/cli": "^12.1.4",
     "@jest-runner/electron": "^3.0.1",
