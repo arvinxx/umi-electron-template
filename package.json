@@ -73,7 +73,7 @@
     "@types/diff": "^5.0.1",
     "@types/jest": "^26.0.24",
     "@types/js-yaml": "^4.0.3",
-    "@types/node": "^15.14.0",
+    "@types/node": "^16.7.8",
     "@types/react": "^17.0.19",
     "@types/react-dom": "^17.0.9",
     "@types/react-test-renderer": "^17.0.1",
