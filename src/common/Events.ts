@@ -6,7 +6,7 @@ export interface MainEvents {
 }
 
 /**
- * renderer -> main 的广播事件
+ * renderer -> main 的请求事件
  */
 export interface RendererEvents {
   /**

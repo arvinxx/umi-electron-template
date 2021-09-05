@@ -1,18 +1,9 @@
-import type { EntityTarget , Connection} from 'typeorm';
-import { createConnection, getConnection } from 'typeorm';
+import type { EntityTarget, Connection } from 'typeorm';
+import { createConnection } from 'typeorm';
 
 import Logger from '@/core/Logger';
 import connectConfig from '@/databaseConfig';
 import type { App } from '@/core/App';
-
-/**
- * 获取某个仓库值
- * @param entity
- */
-export function getRepository<T>(entity: EntityTarget<T>) {
-  const conn = getConnection();
-  return conn.getRepository(entity);
-}
 
 export default class DataBase {
   private app: App;
@@ -45,7 +36,6 @@ export default class DataBase {
   };
 
   getRepository<T>(entity: EntityTarget<T>) {
-    console.log(this.connection);
     return this.connection?.getRepository(entity);
   }
 }

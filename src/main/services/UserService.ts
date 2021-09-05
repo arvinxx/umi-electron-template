@@ -14,7 +14,7 @@ export default class UserService extends ServiceModule {
    */
   @event('/user/add')
   async insert(name: string, surname: string): Promise<User> {
-    return this.app.database.getRepository(User)!.save({ name, surname });
+    return this.model.save({ name, surname });
   }
 
   /**
