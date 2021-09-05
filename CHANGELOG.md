@@ -1,5 +1,55 @@
 # Umi Electron Template 更新日志
 
+# [2.0.0](https://github.com/arvinxx/umi-electron-template/compare/v1.9.1...v2.0.0) (2021-09-05)
+
+
+### ♻ 重构
+
+* 重构架构框 ([cb6958e](https://github.com/arvinxx/umi-electron-template/commit/cb6958e))
+
+
+### 🎫 杂项
+
+* 优化部分细节 ([41b8a1d](https://github.com/arvinxx/umi-electron-template/commit/41b8a1d))
+* 更新 umi-plugin-electron-builder 依赖 ([c5d2681](https://github.com/arvinxx/umi-electron-template/commit/c5d2681))
+* 调整 release 配置 ([a9d97a1](https://github.com/arvinxx/umi-electron-template/commit/a9d97a1))
+* 调整 release 配置 ([8b95be0](https://github.com/arvinxx/umi-electron-template/commit/8b95be0))
+* 调整 release 配置 ([0772d64](https://github.com/arvinxx/umi-electron-template/commit/0772d64))
+* 调整配置 ([ba7e1ca](https://github.com/arvinxx/umi-electron-template/commit/ba7e1ca))
+* 调整配置 ([06f3fcf](https://github.com/arvinxx/umi-electron-template/commit/06f3fcf))
+
+
+### 🐛 修复
+
+* 修复 macOS 下开发 electron 部分会重启的 bug ([07de636](https://github.com/arvinxx/umi-electron-template/commit/07de636))
+* 修正 v2 版本插件的 bug ([3a86f3c](https://github.com/arvinxx/umi-electron-template/commit/3a86f3c))
+
+
+### 👷 构建系统
+
+* 优化配置项 ([fe276d3](https://github.com/arvinxx/umi-electron-template/commit/fe276d3))
+
+
+### 📝 文档
+
+* 补充说明 ([f6bd7fc](https://github.com/arvinxx/umi-electron-template/commit/f6bd7fc))
+* **说明文档**: 调整说明文档 ([139e1b9](https://github.com/arvinxx/umi-electron-template/commit/139e1b9))
+
+
+### 🔧 持续集成
+
+* 修正 auto-merge 报错 ([02e615b](https://github.com/arvinxx/umi-electron-template/commit/02e615b))
+* 修正 lint ci ([889c469](https://github.com/arvinxx/umi-electron-template/commit/889c469))
+* 修正自动 merge 的问题 ([89d463a](https://github.com/arvinxx/umi-electron-template/commit/89d463a))
+* 调整 release ci 配置 ([f9979fa](https://github.com/arvinxx/umi-electron-template/commit/f9979fa))
+* 调整 release ci 配置 ([9ed3995](https://github.com/arvinxx/umi-electron-template/commit/9ed3995))
+* 调整 release ci 配置 ([1233a8b](https://github.com/arvinxx/umi-electron-template/commit/1233a8b))
+
+
+### 💥 BREAKING CHANGES
+
+* 重构框架
+
 ## [1.9.1](https://github.com/arvinxx/umi-electron-template/compare/v1.9.0...v1.9.1) (2021-02-20)
 
 
