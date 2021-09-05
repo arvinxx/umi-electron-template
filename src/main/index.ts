@@ -1,3 +1,3 @@
-import { bootstrap } from './bootstrap';
+import { App } from './core/App';
 
-bootstrap().catch(console.error);
+new App().bootstrap();

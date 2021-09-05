@@ -1,5 +1,5 @@
 import { getLogger } from '@/bridge';
-import { createLogProxy } from '@/common';
+import { createLogProxy } from '@/common/utils';
 
 const logger = getLogger('renderer');
 

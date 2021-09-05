@@ -14,6 +14,9 @@ module.exports = {
     'no-shadow': 'warn',
     'no-console': 0,
     'no-underscore-dangle': 0,
+    'no-new': 0,
+    '@typescript-eslint/no-parameter-properties': 0,
+    '@typescript-eslint/no-useless-constructor': 0,
   },
   ignorePatterns: ['commitlint.config.js', '.eslintrc.js', 'webpack.config.js'],
 };
