@@ -6,8 +6,18 @@ import { useShell } from '@/hooks';
 
 import styles from './index.less';
 
+import useAppEvent from '@/hooks/useAppEvent';
+
 const Home: FC = () => {
   const { openUrl } = useShell();
+
+  useAppEvent(
+    'initDatabase',
+    (e) => {
+      console.log(e.data);
+    },
+    [],
+  );
 
   return (
     <div className={styles.container}>

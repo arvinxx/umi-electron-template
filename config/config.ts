@@ -39,6 +39,9 @@ export default defineConfig({
   // renderer 部分相对根目录的输出路径为 ../..
   outputPath: '../../release',
   electronBuilder: {
+    // vite 和 typeorm 暂时还不兼容
+    // https://github.com/BySlin/umi-plugin-electron-builder/issues/23
+    buildType: 'webpack',
     rendererTarget: 'electron-renderer',
     routerMode: isDev ? 'hash' : 'browser',
     outputDir: 'release',

@@ -2,7 +2,7 @@ import { app } from 'electron';
 import { join } from 'path';
 
 import type { Configuration, Layout } from 'log4js';
-import { isDev } from '@/common';
+import { isDev } from '@/common/utils';
 
 const logDir = join(app.getPath('userData'), 'Logs');
 
