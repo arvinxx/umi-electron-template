@@ -43,14 +43,14 @@
     classnames "^2.2.6"
     rc-util "^5.9.4"
 
-"@ant-design/pro-layout@^6.24.3":
-  version "6.24.3"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.24.3.tgz#2ae50c99a1a6fe200c6875d5503997b845aebc5b"
-  integrity sha512-qqHQhtChuLCf8Gwz+qx8x6sB0b2H6IHHd+ypvBy9GewEJiIWF69+3o2z888VZT//kDHdtJtFFyisNDoB1Caa8Q==
+"@ant-design/pro-layout@^6.25.1":
+  version "6.25.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.25.1.tgz#60c2908f265b0758b95b9a7c495f0f626e0e04b4"
+  integrity sha512-TF+sP8BB2vbuQS3VgA1phuaW8i94Ln/24BWJhb4ybHCKZvyj+hQXB1SAvhEddzEGLTxwOb80TYx2w48AKZYaAA==
   dependencies:
     "@ant-design/icons" "^4.0.0"
     "@ant-design/pro-provider" "1.4.17"
-    "@ant-design/pro-utils" "1.23.0"
+    "@ant-design/pro-utils" "1.24.1"
     "@umijs/route-utils" "^1.0.35"
     "@umijs/use-params" "^1.0.2"
     classnames "^2.2.6"
@@ -72,18 +72,18 @@
   dependencies:
     rc-util "^5.0.1"
 
-"@ant-design/pro-utils@1.23.0":
-  version "1.23.0"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.23.0.tgz#62d6e01b1483ffd3310424f2658b570d5be62c10"
-  integrity sha512-lWuYOd7ARoPLX4jjVAxsuvJcOvssxHgZzdRXvpyaeVFdSV1Hz276wmnzoIkeKeB0xd01a6oZvtj1FQJCEgQfdw==
+"@ant-design/pro-utils@1.24.1":
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-utils/-/pro-utils-1.24.1.tgz#3af944ba58dcb6d2b129dc70f8059d44489c7177"
+  integrity sha512-AkHGPhC3H+X3GcHPt+LFqyRHoVEM5WEMohY2E+lD0U8u0qFbfHTur3OH1fmzy4gwrQVSyvuPXrWMsF/UWGAT5Q==
   dependencies:
     "@ant-design/icons" "^4.3.0"
     "@ant-design/pro-provider" "1.4.17"
     classnames "^2.2.6"
-    fast-deep-equal "^3.1.3"
     lodash.merge "^4.6.2"
     moment "^2.27.0"
     rc-util "^5.0.6"
+    react-sortable-hoc "^2.0.0"
     swr "^0.5.6"
 
 "@ant-design/react-slick@~0.28.1":
@@ -1117,6 +1117,13 @@
   version "7.12.13"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.12.13.tgz?cache=0&sync_timestamp=1612314635545&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.12.13.tgz#0a21452352b02542db0ffb928ac2d3ca7cb6d66d"
   integrity sha1-CiFFI1KwJULbD/uSisLTyny21m0=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.2.0":
+  version "7.15.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.15.3.tgz#2e1c2880ca118e5b2f9988322bd8a7656a32502b"
+  integrity sha512-OvwMLqNXkCXSz1kSm58sEsNuhqOx/fKpnUnKnFB5v8uDda5bLNEHNgKPvhDN6IU0LDcnHQ90LlJ0Q6jnyBSIBA==
   dependencies:
     regenerator-runtime "^0.13.4"
 
@@ -14724,7 +14731,7 @@ promzard@^0.3.0:
   dependencies:
     read "1"
 
-prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.x, prop-types@^15.5.10, prop-types@^15.5.4, prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
@@ -15581,6 +15588,15 @@ react-side-effect@^2.1.0:
   version "2.1.1"
   resolved "https://registry.npm.taobao.org/react-side-effect/download/react-side-effect-2.1.1.tgz#66c5701c3e7560ab4822a4ee2742dee215d72eb3"
   integrity sha1-ZsVwHD51YKtIIqTuJ0Le4hXXLrM=
+
+react-sortable-hoc@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/react-sortable-hoc/-/react-sortable-hoc-2.0.0.tgz#f6780d8aa4b922a21f3e754af542f032677078b7"
+  integrity sha512-JZUw7hBsAHXK7PTyErJyI7SopSBFRcFHDjWW5SWjcugY0i6iH7f+eJkY8cJmGMlZ1C9xz1J3Vjz0plFpavVeRg==
+  dependencies:
+    "@babel/runtime" "^7.2.0"
+    invariant "^2.2.4"
+    prop-types "^15.5.7"
 
 react-tween-state@^0.1.5:
   version "0.1.5"
