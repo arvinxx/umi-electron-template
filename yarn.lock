@@ -3024,10 +3024,10 @@
   resolved "https://registry.npm.taobao.org/@umijs/plugin-analytics/download/@umijs/plugin-analytics-0.2.2.tgz#575fd231d4327ea13413217aa1b5fc6bdd89465e"
   integrity sha1-V1/SMdQyfqE0EyF6obX8a92JRl4=
 
-"@umijs/plugin-antd@0.10.0":
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-antd/-/plugin-antd-0.10.0.tgz#affc422825771150750d2aca042c26dbff11b8de"
-  integrity sha512-qXhJVR0b9MeeA5IgjysYqmXFpTJvF1IEiJLjD1/DO1qbIc6JNv1I52Y10EC3KYkB0TECQkTzDInAZ2iczQSHQA==
+"@umijs/plugin-antd@0.11.0":
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-antd/-/plugin-antd-0.11.0.tgz#f2f952bd433607847f1b73cd42a0780bb7e2f04d"
+  integrity sha512-zpBSVMlU2z7PpYeDLhorgG1sXWyzus0t+g75wZVJqLIXKdQDjJZRTbKPwLnCYdmgh/MUYAEJmT39IHfnF1MQ5A==
   dependencies:
     antd "^4.1.3"
     antd-mobile "^2.3.1"
@@ -3136,14 +3136,14 @@
     regenerator-runtime "0.13.5"
     schema-utils "^3.0.0"
 
-"@umijs/preset-react@^1.8.22":
-  version "1.8.22"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.22.tgz#6307424d0468b190cedd1aaad42c7b4fbbff5232"
-  integrity sha512-2otGy4g41lO46Q1M/eGwPhnH8m0iFULv/U3zpqb8mhRv+ETbhVWR+JufoL9jGzSn90r1awQtrAjvZQUO/U3OOA==
+"@umijs/preset-react@^1.8.23":
+  version "1.8.23"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.23.tgz#5fd3fc1dcd03ef2ca2b01402348d80bbcf004990"
+  integrity sha512-neSchzZmXQ/gE9ZN6Dz7B8WEM474rsSDEsSufBh51VfvAK81V6xA602EkFF/62ODxtsjBchrGJqgmknUZioLfQ==
   dependencies:
     "@umijs/plugin-access" "2.4.2"
     "@umijs/plugin-analytics" "0.2.2"
-    "@umijs/plugin-antd" "0.10.0"
+    "@umijs/plugin-antd" "0.11.0"
     "@umijs/plugin-crossorigin" "1.2.1"
     "@umijs/plugin-dva" "0.13.0"
     "@umijs/plugin-helmet" "1.1.3"
