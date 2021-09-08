@@ -4091,7 +4091,7 @@ atob@^2.1.2:
   resolved "https://registry.npm.taobao.org/atob/download/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha1-bZUX654DDSQ2ZmZR6GvZ9vE1M8k=
 
-autoprefixer@^9, autoprefixer@^9.0.0, autoprefixer@^9.6.1, autoprefixer@^9.8.6:
+autoprefixer@9.x, autoprefixer@^9, autoprefixer@^9.0.0, autoprefixer@^9.6.1, autoprefixer@^9.8.6:
   version "9.8.6"
   resolved "https://registry.npm.taobao.org/autoprefixer/download/autoprefixer-9.8.6.tgz?cache=0&sync_timestamp=1611941146886&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fautoprefixer%2Fdownload%2Fautoprefixer-9.8.6.tgz#3b73594ca1bf9266320c5acf1588d74dea74210f"
   integrity sha1-O3NZTKG/kmYyDFrPFYjXTep0IQ8=
@@ -18663,12 +18663,13 @@ umi-plugin-electron-builder@^2.1.4:
     webpack "^5.49.0"
     webpack-chain "^6.5.1"
 
-umi-plugin-tailwindcss@^3.1.5:
-  version "3.1.5"
-  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.1.5.tgz#d006a9570a58b6e710bb0da61dc170d346064cc3"
-  integrity sha512-aWz1fmXk9C0vWO0ci1cY6ihKE3HpQ3Bi0aLvIwgg3pKpo0o9DilctbKaYoM5dfnt82XBeEM3Tw3oc8PFEkANGA==
+umi-plugin-tailwindcss@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/umi-plugin-tailwindcss/-/umi-plugin-tailwindcss-3.2.1.tgz#231bec0fab9218e8a244ab70ba25a5458dd33149"
+  integrity sha512-oBeY5XOK07mtX5lG5AGgPDZB2OB7RKs97Di6TuTUJXvhpL5+vi/TjKjboNOoYCBzPfT5XxKU2ggUsaWZCI6Yig==
   dependencies:
     "@tailwindcss/postcss7-compat" latest
+    autoprefixer "9.x"
 
 umi-request@^1.2.14:
   version "1.3.5"
