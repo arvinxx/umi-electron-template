@@ -115,7 +115,7 @@
     "ts-jest": "^26.5.6",
     "ts-node": "^10.2.1",
     "typescript": "^4.4.2",
-    "umi": "^3.5.17",
+    "umi": "^3.5.18",
     "umi-plugin-electron-builder": "^2.1.4",
     "umi-plugin-tailwindcss": "^3.2.1"
   }
