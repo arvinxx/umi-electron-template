@@ -58,7 +58,7 @@
     "os-name": "^5.0.0",
     "reflect-metadata": "^0.1.13",
     "robotjs": "^0.6.0",
-    "source-map-support": "^0.5.16",
+    "source-map-support": "^0.5.20",
     "sqlite3": "5.0.0",
     "typeorm": "^0.2.37"
   },
