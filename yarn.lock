@@ -3090,10 +3090,10 @@
   dependencies:
     fast-deep-equal "3.1.1"
 
-"@umijs/plugin-request@2.7.0":
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-request/-/plugin-request-2.7.0.tgz#a2a8b4760b836b7d875dd661c97416b45f69c39d"
-  integrity sha512-n1oH0j14skld4eHNVQg23XcZaH8nZFcCaEE6bZKJKWCMvortovIqMBxc1dw5vVdsVdLe9fSJzYh7v1agB3iRtA==
+"@umijs/plugin-request@2.8.0":
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-request/-/plugin-request-2.8.0.tgz#f2ac21a1e39e6a2f94b42f1b348a4b480b355139"
+  integrity sha512-bwJg0rFbMZcizO+fHbSNz6X/U6suR84ciLIo9zLtRMuradx/yanMnz+ckh2dlZvTlGYrckkJwWgoSFxWlU8yyA==
   dependencies:
     "@ahooksjs/use-request" "^2.0.0"
     umi-request "^1.2.14"
@@ -3136,10 +3136,10 @@
     regenerator-runtime "0.13.5"
     schema-utils "^3.0.0"
 
-"@umijs/preset-react@^1.8.23":
-  version "1.8.23"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.23.tgz#5fd3fc1dcd03ef2ca2b01402348d80bbcf004990"
-  integrity sha512-neSchzZmXQ/gE9ZN6Dz7B8WEM474rsSDEsSufBh51VfvAK81V6xA602EkFF/62ODxtsjBchrGJqgmknUZioLfQ==
+"@umijs/preset-react@^1.8.24":
+  version "1.8.24"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.24.tgz#42eb5b1f2a061981972954aa8446d4d1e830ca14"
+  integrity sha512-xi0HfbgQC9TAYHXRTEiKQMiYczXg64W8ccsmkHc0SIkbCBYUfxxy3rAGABp98RlGZ2PrmQqcoHmkITBOOF0T3w==
   dependencies:
     "@umijs/plugin-access" "2.4.2"
     "@umijs/plugin-analytics" "0.2.2"
@@ -3151,7 +3151,7 @@
     "@umijs/plugin-layout" "0.17.2"
     "@umijs/plugin-locale" "0.14.2"
     "@umijs/plugin-model" "2.6.1"
-    "@umijs/plugin-request" "2.7.0"
+    "@umijs/plugin-request" "2.8.0"
     "@umijs/plugin-test" "1.0.2"
 
 "@umijs/renderer-mpa@3.5.18":
