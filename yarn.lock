@@ -6789,7 +6789,7 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.1.0, electron@^11.3.0:
+electron@^11.1.0:
   version "11.5.0"
   resolved "https://registry.nlark.com/electron/download/electron-11.5.0.tgz#f1650543b9d8f2047d3807755bdb120153ed210f"
   integrity sha1-8WUFQ7nY8gR9OAd1W9sSAVPtIQ8=
