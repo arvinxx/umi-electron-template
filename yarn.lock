@@ -17802,10 +17802,10 @@ umask@^1.1.0, umask@~1.1.0:
   resolved "https://registry.npm.taobao.org/umask/download/umask-1.1.0.tgz#f29cebf01df517912bb58ff9c4e50fde8e33320d"
   integrity sha1-8pzr8B31F5ErtY/5xOUP3o4zMg0=
 
-umi-plugin-electron-builder@^2.1.7:
-  version "2.1.7"
-  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.1.7.tgz#9ee935e9c22a107f53236219d00cc4d9276fe558"
-  integrity sha512-9BivHVhYHwZJfbutA8BafOiy2jPxTr0Me9hIKJb/213lxkanRZT9V4tTycJGslzpTrJO4KtFaMWy8ZI6JkpjYQ==
+umi-plugin-electron-builder@^2.1.10:
+  version "2.1.10"
+  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.1.10.tgz#288c2322b80c62e3b90bf8cc871a13d2da7a4060"
+  integrity sha512-TkxAntJiQmfhs+IMx+o/YZF1OBxJmwSrczyLDenpXO6PIcIAluVHLUf6R5VWAdEdy9HwJjp9+PjrOv2RrECdrg==
   dependencies:
     "@types/electron-devtools-installer" "^2.2.0"
     "@types/fs-extra" "^9.0.12"
