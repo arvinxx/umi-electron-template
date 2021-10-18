@@ -43,10 +43,10 @@
     classnames "^2.2.6"
     rc-util "^5.9.4"
 
-"@ant-design/pro-layout@^6.26.4":
-  version "6.26.4"
-  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.26.4.tgz#69c632ccc0f037265c5eaeb9c744c24e2e91a91f"
-  integrity sha512-VtRF/lmo4Hp3MjHNsg6lSaowCsINDp0sgnj2N8iKvqosRqRbtoqWHSuFX9g5rfcqnzXZg4p0Kn/KhTbuLtr6eg==
+"@ant-design/pro-layout@^6.26.5":
+  version "6.26.5"
+  resolved "https://registry.yarnpkg.com/@ant-design/pro-layout/-/pro-layout-6.26.5.tgz#365b7e40a857d1548757509eceb6a12b8d557d48"
+  integrity sha512-O9j87nvF1oY5Pi6f9lbnU6ioZjw+07diN5ULppA6/BHJEYUh4nD2vjv0F7sECvyoxyqp89+beAmNjyvqX237gA==
   dependencies:
     "@ant-design/icons" "^4.0.0"
     "@ant-design/pro-provider" "1.4.20"
