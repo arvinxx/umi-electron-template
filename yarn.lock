@@ -11650,7 +11650,7 @@ lz-string@^1.4.4:
   resolved "https://registry.npm.taobao.org/lz-string/download/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
   integrity sha1-wNjq82BZ9wV5bh40SBHPTEmNOiY=
 
-macos-release@^3.0.0:
+macos-release@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/macos-release/-/macos-release-3.0.1.tgz#7d2a1329a616297db4a57f3d3ba8fa07a7caadd6"
   integrity sha512-3l6OrhdDg2H2SigtuN3jBh+5dRJRWxNKuJTPBbGeNJTsmt/pj9PO25wYaNb05NuNmAsl435j4rDP6rgNXz7s7g==
@@ -13098,13 +13098,13 @@ os-locale@^5.0.0:
     lcid "^3.0.0"
     mem "^5.0.0"
 
-os-name@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/os-name/-/os-name-5.0.0.tgz#287be8ceccc017855753aace59505b8efd0d82a2"
-  integrity sha512-2NNINSnda99omAve/ayz0vIOwwS7fC1jNlutqxAcAsS8NXOGU3Rdku1lCm00fDNFdOMLd1YCVTNnfUsVs5471Q==
+os-name@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/os-name/-/os-name-5.0.1.tgz#acb4f996ec5bd86c41755fef9d6d31905c47172e"
+  integrity sha512-0EQpaHUHq7olp2/YFUr+0vZi9tMpDTblHGz+Ch5RntKxiRXOAY0JOz1UlxhSjMSksHvkm13eD6elJj3M8Ht/kw==
   dependencies:
-    macos-release "^3.0.0"
-    windows-release "^5.0.0"
+    macos-release "^3.0.1"
+    windows-release "^5.0.1"
 
 os-tmpdir@^1.0.0:
   version "1.0.2"
@@ -18776,10 +18776,10 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
-windows-release@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/windows-release/-/windows-release-5.0.0.tgz#43e0b2fa59a37ebc3c8f34db06ed838021d3b531"
-  integrity sha512-oiBC+rh4zgwD2E1WvsdcuaBlcNtO+bfoq4GT7sR36J8X+AZNJuXXf+5BjLflDqhEZty25SahBMYSEBhg/V8ikg==
+windows-release@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/windows-release/-/windows-release-5.0.1.tgz#d1f7cd1f25660ba05cac6359711844dce909a8ed"
+  integrity sha512-y1xFdFvdMiDXI3xiOhMbJwt1Y7dUxidha0CWPs1NgjZIjZANTcX7+7bMqNjuezhzb8s5JGEiBAbQjQQYYy7ulw==
   dependencies:
     execa "^5.1.1"
 
