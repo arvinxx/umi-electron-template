@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "@arvinxu/macos-traffic-light": "^2.0.3",
-    "electron-updater": "^4.6.4",
+    "electron-updater": "^4.6.5",
     "log4js": "^6.3.0",
     "os-name": "^5.0.1",
     "reflect-metadata": "^0.1.13",
