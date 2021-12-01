@@ -100,10 +100,10 @@
     lodash "^4.17.15"
     resize-observer-polyfill "^1.5.0"
 
-"@arvinxu/macos-traffic-light@^2.0.3":
-  version "2.0.3"
-  resolved "https://registry.npm.taobao.org/@arvinxu/macos-traffic-light/download/@arvinxu/macos-traffic-light-2.0.3.tgz#c8df00723d07a40ee47f531dfcad1f8b53098f9b"
-  integrity sha1-yN8Acj0HpA7kf1Md/K0fi1MJj5s=
+"@arvinxu/macos-traffic-light@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@arvinxu/macos-traffic-light/-/macos-traffic-light-3.0.0.tgz#f7ce33849d036705d9a0c4a2fd1d1b748ddf2d97"
+  integrity sha512-c4tIn6Noo9zy2OQ857N68hvHCJr05OXjK+BBKgUPhMiMLCzg9DMge/fLGjbungquHn9m+EZLvQqe1nfbRyxKsQ==
   dependencies:
     classnames "^2.2.6"
 
