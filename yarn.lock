@@ -12,7 +12,7 @@
   resolved "https://registry.npm.taobao.org/7zip/download/7zip-0.0.6.tgz#9cafb171af82329490353b4816f03347aa150a30"
   integrity sha1-nK+xca+CMpSQNTtIFvAzR6oVCjA=
 
-"@ahooksjs/use-request@^2.0.0", "@ahooksjs/use-request@^2.8.14":
+"@ahooksjs/use-request@^2.0.0":
   version "2.8.14"
   resolved "https://registry.yarnpkg.com/@ahooksjs/use-request/-/use-request-2.8.14.tgz#f4019e4ee0b891938f2810b0636fef33410d9d9e"
   integrity sha512-oWcRccPUFePt6knFRopiTrFTfna56PV6ez2ZmdZ+MRSxiies5T9NlQLuq82TcXI79k802O5vIAllbOx+H9m0cA==
@@ -2488,11 +2488,6 @@
     jest-diff "^26.0.0"
     pretty-format "^26.0.0"
 
-"@types/js-cookie@^2.2.6":
-  version "2.2.6"
-  resolved "https://registry.npm.taobao.org/@types/js-cookie/download/@types/js-cookie-2.2.6.tgz#f1a1cb35aff47bc5cfb05cb0c441ca91e914c26f"
-  integrity sha1-8aHLNa/0e8XPsFywxEHKkekUwm8=
-
 "@types/js-yaml@^4.0.5":
   version "4.0.5"
   resolved "https://registry.yarnpkg.com/@types/js-yaml/-/js-yaml-4.0.5.tgz#738dd390a6ecc5442f35e7f03fa1431353f7e138"
@@ -3506,19 +3501,15 @@ aggregate-error@^3.0.0:
     clean-stack "^2.0.0"
     indent-string "^4.0.0"
 
-ahooks@^2.10.14:
-  version "2.10.14"
-  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-2.10.14.tgz#e134a5846b610079775ba881192c9aacca9102a8"
-  integrity sha512-axWa7VoAgu7bxA56dDl0CXW4rvaQmDBiov/d3tAy0x1YNYywYMKokL8TdLgJ5zO/oXGiWmG7BxlGOQGkqE/zkQ==
+ahooks@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/ahooks/-/ahooks-3.0.1.tgz#092a0fdc4083fb8d4ec48ce0115e1d91343468d9"
+  integrity sha512-/qIFqEmIQevlp7MPV/VMNTx2dvy6fr7VsnDDEIJ3dp82P0XFREHRRlkdrbsivXBEX7r1LU4KihEkjgKbXyrgFg==
   dependencies:
-    "@ahooksjs/use-request" "^2.8.14"
-    "@types/js-cookie" "^2.2.6"
     dayjs "^1.9.1"
     intersection-observer "^0.7.0"
-    js-cookie "^2.2.1"
-    lodash.debounce "^4.0.8"
-    lodash.isequal "^4.5.0"
-    lodash.throttle "^4.1.1"
+    js-cookie "^3.0.0"
+    lodash "^4.17.21"
     resize-observer-polyfill "^1.5.1"
     screenfull "^5.0.0"
 
@@ -10727,10 +10718,10 @@ jest@^26.6.3:
     import-local "^3.0.2"
     jest-cli "^26.6.3"
 
-js-cookie@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.npm.taobao.org/js-cookie/download/js-cookie-2.2.1.tgz#69e106dc5d5806894562902aa5baec3744e9b2b8"
-  integrity sha1-aeEG3F1YBolFYpAqpbrsN0Tpsrg=
+js-cookie@^3.0.0:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/js-cookie/-/js-cookie-3.0.1.tgz#9e39b4c6c2f56563708d7d31f6f5f21873a92414"
+  integrity sha512-+0rgsUXZu4ncpPxRL+lNEptWMOWl9etvPHc/koSRp6MPwpRYAhmk0dUG00J4bxVV3r9uUzfo24wW0knS07SKSw==
 
 js-message@1.0.7:
   version "1.0.7"
