@@ -77,7 +77,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-test-renderer": "^17.0.1",
     "@types/sinon": "^10.0.6",
-    "@umijs/fabric": "^2.10.0",
+    "@umijs/fabric": "^2.10.1",
     "@umijs/preset-react": "^1.8.30",
     "@umijs/test": "^3.5.20",
     "ahooks": "^2.10.14",
