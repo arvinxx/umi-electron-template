@@ -112,7 +112,7 @@
     "semantic-release": "^18.0.1",
     "semantic-release-config-gitmoji": "^1.2.4",
     "sinon": "^9.0.0",
-    "ts-jest": "^26.5.6",
+    "ts-jest": "^27.1.3",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.5",
     "umi": "^3.5.20",
