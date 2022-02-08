@@ -18068,10 +18068,10 @@ uglify-js@^3.1.4:
   resolved "https://registry.npm.taobao.org/uglify-js/download/uglify-js-3.12.6.tgz?cache=0&sync_timestamp=1612134281314&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fuglify-js%2Fdownload%2Fuglify-js-3.12.6.tgz#f884584fcc42e10bca70db5cb32e8625c2c42535"
   integrity sha1-+IRYT8xC4QvKcNtcsy6GJcLEJTU=
 
-umi-plugin-electron-builder@^2.1.13:
-  version "2.1.13"
-  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.1.13.tgz#e436a41345daefb2f5a0fe9ba54f0030d174ac8d"
-  integrity sha512-QtNNHMbpLxDYmWQXgzdHdyU87sAgvnV6svQgOq0LpwMU7mT1OMVDIKPXK4hNLDIdlRip55Eo5kuXROjEB1sH6w==
+umi-plugin-electron-builder@^2.1.14:
+  version "2.1.14"
+  resolved "https://registry.yarnpkg.com/umi-plugin-electron-builder/-/umi-plugin-electron-builder-2.1.14.tgz#94e0251e046a00276f855a0165ef4b62c11bb548"
+  integrity sha512-lcyNiIRC7gbFFtxi6FSxIhfQhdLv1MoccirJpcej/TfX26C8F/niAe90Wubl/Ts7gSeFFuMrAVHol21e0cblrg==
   dependencies:
     "@types/electron-devtools-installer" "^2.2.1"
     "@types/fs-extra" "^9.0.13"
