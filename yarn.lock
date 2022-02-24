@@ -3158,10 +3158,10 @@
     jest-worker "24.9.0"
     prettier "2.2.1"
 
-"@umijs/fabric@^2.10.1":
-  version "2.10.1"
-  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.10.1.tgz#4d56243d175c85acc12efefc2b47772f051da14e"
-  integrity sha512-loRxdPvqyGleywhC1Ms0lHf8OUpjAM09GeGkadKpftvepRaWXyfxV+vynKWMY3es3JZqbhyCDSPmcxBZJSn0qw==
+"@umijs/fabric@^2.10.2":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@umijs/fabric/-/fabric-2.10.2.tgz#eb9337fe53218d4df57ee6d263d43cd8602d308e"
+  integrity sha512-X0mRa6sH/R6TmgtxwtUyGNjpN8zqhptUpktYDtwqbLt8yJSqsukCuO9zamFzLhEJj12ZFsABT6pCjeQWfl8DKQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/eslint-parser" "^7.12.1"
