@@ -3193,10 +3193,10 @@
     stylelint-declaration-block-no-ignored-properties "^2.1.0"
     typescript "^4.5.4"
 
-"@umijs/plugin-access@2.4.2":
-  version "2.4.2"
-  resolved "https://registry.yarnpkg.com/@umijs/plugin-access/-/plugin-access-2.4.2.tgz#0bc4b63d9dc0a2a04a303a352556721c891a8b30"
-  integrity sha512-cP00Uh2kDEAgvQ/PwiR9d09js5x0k1PDvHqXN6B/kFt/Tz3u2C4yPy71d2C7KLWDIm1HTsWcoQtIqvJZwLmLJQ==
+"@umijs/plugin-access@2.4.3":
+  version "2.4.3"
+  resolved "https://registry.yarnpkg.com/@umijs/plugin-access/-/plugin-access-2.4.3.tgz#6bccbfe4969f43e58bc552a5ffbe247a2c33779a"
+  integrity sha512-6FON4aHzVFs/vtFK5Sdnw+FBolfoYi8wV8V9Q8x2T19NwjZtjXSPjt0gtrG4jdx4LRsSV2DKLaMGoJYbNr94aA==
 
 "@umijs/plugin-analytics@0.2.2":
   version "0.2.2"
@@ -3316,12 +3316,12 @@
     regenerator-runtime "0.13.5"
     schema-utils "^3.0.0"
 
-"@umijs/preset-react@^1.8.30":
-  version "1.8.30"
-  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.30.tgz#eebf9b1e7195f598f6b6e183c2e50208d712d8df"
-  integrity sha512-l+l5r+x9cyqNxbtmUNqoibfV9UK/daiD2HjFiTql3wyKzR6cEIq+h8RQ+ehO9DmzU8Tu5LPRimT97MuOsMciOQ==
+"@umijs/preset-react@^1.8.31":
+  version "1.8.31"
+  resolved "https://registry.yarnpkg.com/@umijs/preset-react/-/preset-react-1.8.31.tgz#3f5a5604c8f9353685e990475bc15814059df6ce"
+  integrity sha512-zQRYJw68mgG6pPcy6GwAXFRC/XxATIGmiaFAZHt7aYDy3VCccmjNKjs1pXqrcHYmGhoa7TyjCHUYEuJSv0n8uw==
   dependencies:
-    "@umijs/plugin-access" "2.4.2"
+    "@umijs/plugin-access" "2.4.3"
     "@umijs/plugin-analytics" "0.2.2"
     "@umijs/plugin-antd" "0.13.0"
     "@umijs/plugin-crossorigin" "1.2.1"
