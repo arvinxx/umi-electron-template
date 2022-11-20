@@ -1385,6 +1385,22 @@
     global-agent "^2.0.2"
     global-tunnel-ng "^2.7.1"
 
+"@electron/get@^1.13.0":
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/@electron/get/-/get-1.14.1.tgz#16ba75f02dffb74c23965e72d617adc721d27f40"
+  integrity sha512-BrZYyL/6m0ZXz/lDxy/nlVhQz+WF+iPS6qXolEU8atw7h6v1aYkjwJZ63m+bJMBTxDE66X+r2tPS4a/8C82sZw==
+  dependencies:
+    debug "^4.1.1"
+    env-paths "^2.2.0"
+    fs-extra "^8.1.0"
+    got "^9.6.0"
+    progress "^2.0.3"
+    semver "^6.2.0"
+    sumchecker "^3.0.1"
+  optionalDependencies:
+    global-agent "^3.0.0"
+    global-tunnel-ng "^2.7.1"
+
 "@electron/universal@1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@electron/universal/-/universal-1.0.5.tgz#b812340e4ef21da2b3ee77b2b4d35c9b86defe37"
@@ -2681,6 +2697,11 @@
   version "12.20.1"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.1.tgz#63d36c10e162666f0107f247cdca76542c3c7472"
   integrity sha512-tCkE96/ZTO+cWbln2xfyvd6ngHLanvVlJ3e5BeirJ3BYI5GbAyubIrmV4JjjugDly5D9fHjOL5MNsqsCnqwW6g==
+
+"@types/node@^16.11.26":
+  version "16.18.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.18.3.tgz#d7f7ba828ad9e540270f01ce00d391c54e6e0abc"
+  integrity sha512-jh6m0QUhIRcZpNv7Z/rpN+ZWXOicUUQbSoWks7Htkbb9IjFQj4kzcX/xFCkjstCj5flMsN8FiSvt+q+Tcs4Llg==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -7009,13 +7030,22 @@ electron-webpack@^2.8.2:
     webpack-merge "^4.2.2"
     yargs "^15.3.1"
 
-electron@^11.1.0, electron@^11.3.0:
+electron@^11.1.0:
   version "11.5.0"
   resolved "https://registry.nlark.com/electron/download/electron-11.5.0.tgz#f1650543b9d8f2047d3807755bdb120153ed210f"
   integrity sha1-8WUFQ7nY8gR9OAd1W9sSAVPtIQ8=
   dependencies:
     "@electron/get" "^1.0.1"
     "@types/node" "^12.0.12"
+    extract-zip "^1.0.3"
+
+electron@^18.0.0:
+  version "18.3.15"
+  resolved "https://registry.yarnpkg.com/electron/-/electron-18.3.15.tgz#5ffe24b9dbd0fe433c246b454f39f1dcdb1cf3f0"
+  integrity sha512-frkBt8skyo8SmlG4TbByDxZw6/tqttRYYIBaeTBfkoG18OyD59IVwVaXXHO8UYKB5/1C2Rce0Gj6uoxlAHQHzQ==
+  dependencies:
+    "@electron/get" "^1.13.0"
+    "@types/node" "^16.11.26"
     extract-zip "^1.0.3"
 
 elliptic@^6.5.3:
@@ -8504,6 +8534,18 @@ global-agent@^2.0.2:
   dependencies:
     boolean "^3.0.1"
     core-js "^3.6.5"
+    es6-error "^4.1.1"
+    matcher "^3.0.0"
+    roarr "^2.15.3"
+    semver "^7.3.2"
+    serialize-error "^7.0.1"
+
+global-agent@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/global-agent/-/global-agent-3.0.0.tgz#ae7cd31bd3583b93c5a16437a1afe27cc33a1ab6"
+  integrity sha512-PT6XReJ+D07JvGoxQMkT6qji/jVNfX/h364XHZOWeRzy64sSFr+xJ5OX7LI3b4MPQzdL4H8Y8M0xzPpsVMwA8Q==
+  dependencies:
+    boolean "^3.0.1"
     es6-error "^4.1.1"
     matcher "^3.0.0"
     roarr "^2.15.3"
