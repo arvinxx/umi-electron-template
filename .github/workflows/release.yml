@@ -30,7 +30,7 @@ jobs:
       matrix:
         os: [macos-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
@@ -53,7 +53,7 @@ jobs:
       is_new_version: ${{ steps.semantic.outputs.new_release_published }} # ! MUST BE STRING
       version: ${{ steps.semantic.outputs.new_release_version }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Semantic Release with dryRun
         uses: cycjimmy/semantic-release-action@v2
@@ -73,7 +73,7 @@ jobs:
       matrix:
         os: [macos-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - uses: c-hive/gha-yarn-cache@v1
 
@@ -147,7 +147,7 @@ jobs:
     name: Semantic release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Download artifact
         uses: actions/download-artifact@v2
