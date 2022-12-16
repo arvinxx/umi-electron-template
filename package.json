@@ -79,7 +79,7 @@
     "@types/sinon": "^10.0.11",
     "@umijs/fabric": "^2.10.1",
     "@umijs/preset-react": "^1.8.30",
-    "@umijs/test": "^3.5.20",
+    "@umijs/test": "^4.0.37",
     "ahooks": "^2.10.14",
     "antd": "^4.18.8",
     "awesome-typescript-loader": "^5.2.1",
