@@ -111,7 +111,7 @@
     "react-dom": "17.x",
     "semantic-release": "^18.0.1",
     "semantic-release-config-gitmoji": "^1.2.4",
-    "sinon": "^9.0.0",
+    "sinon": "^15.0.1",
     "ts-jest": "^26.5.6",
     "ts-node": "^10.5.0",
     "typescript": "^4.5.5",
