@@ -1,8 +1,9 @@
 import { EventEmitter } from 'events';
-import { app, ipcMain, protocol } from 'electron';
+import { app, ipcMain } from 'electron';
 import { dev, windows } from 'electron-is';
-import { createLogProxy } from '../../../common/src/utils';
+import { createLogProxy, isDev } from '@umi-electron-template/common';
 import type { TServiceModule } from '@/services';
+import { createProtocol } from '@/utils';
 
 import BrowserManager from './BrowserManager';
 import Logger from './Logger';
@@ -43,6 +44,7 @@ export class App extends EventEmitter {
 
     // 载入 services
     const services: TServiceModule[] = importAll(
+      // @ts-ignore
       require.context('../services', false, /.+Service\.ts$/),
     );
     services.forEach((service) => this.addService(service));
@@ -89,9 +91,12 @@ export class App extends EventEmitter {
    */
   bootstrap = () => {
     // 注册协议
-    protocol.registerSchemesAsPrivileged([
-      { scheme: 'app', privileges: { secure: true, standard: true } },
-    ]);
+    if (!isDev) {
+      createProtocol('app');
+    }
+    // protocol.registerSchemesAsPrivileged([
+    //   { scheme: 'app', privileges: { secure: true, standard: true } },
+    // ]);
 
     // 控制单例
     const isSingle = app.requestSingleInstanceLock();
@@ -131,7 +136,6 @@ export class App extends EventEmitter {
 
    */
   initBrowsers() {
-    // 载入 browsers
     Object.values(browserItems).forEach((item) => {
       this.browserManager.retrieveOrInitialize(item);
     });

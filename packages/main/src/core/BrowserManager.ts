@@ -1,7 +1,7 @@
 import type { App } from '@/core/App';
 import type { BrowserWindowOpts } from '@/core/Browser';
 import Browser from '@/core/Browser';
-import type { MainEvents } from '../../../common/src/Events';
+import type { MainEvents } from '@umi-electron-template/common/src/Events';
 
 export default class BrowserManager {
   app: App;

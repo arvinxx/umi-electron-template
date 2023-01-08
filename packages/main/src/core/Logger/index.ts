@@ -3,7 +3,7 @@ import { arch, cpus, platform, release, totalmem } from 'os';
 import osName from 'os-name';
 import { app } from 'electron';
 
-import { isDev } from '../../../../common/src/utils';
+import { isDev } from '@umi-electron-template/common/src/utils';
 import { getLogger } from './customLogger';
 
 interface LogInfo {

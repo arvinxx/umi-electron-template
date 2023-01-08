@@ -1,13 +1,10 @@
 {
   "extends": "../../tsconfig.json",
-  "include": [
-    "../../src/main", "../../types"],
+  "include": ["src", "config"],
   "compilerOptions": {
-    "baseUrl": "../../src/main",
+    "baseUrl": ".",
     "paths": {
-      "@/common": ["../common"],
-      "@/common/*": ["../common/*"],
-      "@/*": ["./*"]
+      "@/*": ["src/*"]
     }
   }
 }

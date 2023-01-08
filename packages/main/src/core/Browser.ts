@@ -1,16 +1,10 @@
 import EventEmitter from 'events';
-import type {
-  BrowserWindowConstructorOptions} from 'electron';
-import {
-  app,
-  BrowserWindow,
-  protocol
-} from 'electron';
+import type { BrowserWindowConstructorOptions } from 'electron';
+import { app, BrowserWindow, protocol } from 'electron';
 import { dev } from 'electron-is';
-import createProtocol from 'umi-plugin-electron-builder/lib/createProtocol';
-
 import type { App } from '@/core/App';
-import type { MainEvents } from '../../../common/src/Events';
+import { createProtocol } from '@/utils';
+import type { MainEvents } from '@umi-electron-template/common';
 
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } },
@@ -88,10 +82,10 @@ export default class Browser extends EventEmitter {
     const { PORT = 8000 } = process.env;
 
     if (dev()) {
-      this.browserWindow.loadURL(`http://localhost:${PORT}/#/${name}`);
+      this.browserWindow.loadURL(`http://localhost:${PORT}/${name}`);
     } else {
       createProtocol('app');
-      this.browserWindow.loadURL(`app://./${name}.html`);
+      this.browserWindow.loadURL(`app://./webview/${name}/index.html`);
     }
   };
 
