@@ -32,10 +32,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:

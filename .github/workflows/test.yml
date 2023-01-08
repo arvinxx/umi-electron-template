@@ -9,17 +9,20 @@ jobs:
       matrix:
         os: [macos-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 7
 
       - name: Setup Node.js environment
-        uses: actions/setup-node@v2.1.2
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
 
-      - uses: c-hive/gha-yarn-cache@v1
-
-      - name: Install
-        run: yarn
+      - name: Install deps
+        run: pnpm install
 
       - name: lint
-        run: yarn lint
+        run: pnpm run lint
