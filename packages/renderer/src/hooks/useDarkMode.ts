@@ -6,10 +6,9 @@ import { useEffect } from 'react';
  */
 export const useDarkMode = () => {
   // DarkMode 可见
-  const [theme, setTheme] = useLocalStorageState<'light' | 'dark'>(
-    'theme',
-    'light',
-  );
+  const [theme, setTheme] = useLocalStorageState<'light' | 'dark'>('theme', {
+    defaultValue: 'light',
+  });
 
   const switchDarkMode = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');

@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import { useDarkMode } from '@/hooks';
 import { Outlet } from '@umijs/max';
+import { useDarkMode } from '@/hooks';
 
 import useStyles from './style';
 
