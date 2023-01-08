@@ -35,4 +35,4 @@ release
 static/dictionary.mdx
 coverage
 /.eslintcache
-/src/renderer/theme/override.less
+/packages/renderer/src/theme/override.less

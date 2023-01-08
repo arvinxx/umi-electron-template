@@ -22,7 +22,7 @@
 
 ### 内置功能
 
-- **样式框架**: 集成 [TailwindCSS][tailwindcss]；
+- **样式框架**: 集成 [antd-style][tailwindcss]；
 - **数据持久化**: 集成 [sqlite3][sqlite3] 作为本地数据库， [TypeORM][typeorm] 作为 ORM；
 - **签名公证**: 集成 macOS App 签名与公证，包含在 CI/CD 流程中；
 
@@ -39,7 +39,7 @@
 [electron-builder]: https://www.electron.build/
 [redux-devtools]: https://github.com/reduxjs/redux-devtools
 [gitmoji-commit-workflow]: https://github.com/arvinxx/gitmoji-commit-workflow/
-[tailwindcss]: https://tailwindcss.com/
+[tailwindcss]: https://antd-style.arvinx.app/
 [sqlite3]: https://github.com/mapbox/node-sqlite3
 [typeorm]: https://typeorm.io/#/
 [inversify]: https://github.com/inversify/InversifyJS

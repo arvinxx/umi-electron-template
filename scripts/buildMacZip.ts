@@ -4,7 +4,7 @@ import fs from 'fs';
 import { join } from 'path';
 
 import { name as appName, version } from '../package.json';
-import options from '../config/electronBuilderOpts';
+import options from '../packages/renderer/config/electronBuilderOpts';
 
 const dir = join(__dirname, '../release');
 
