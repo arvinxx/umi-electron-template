@@ -19,10 +19,6 @@ export interface BrowserWindowOpts extends BrowserWindowConstructorOptions {
   width?: number;
   height?: number;
   devTools?: boolean;
-  /**
-   * 允许 renderer 进行使用 remote 模块
-   */
-  remote?: boolean;
 }
 
 export default class Browser extends EventEmitter {

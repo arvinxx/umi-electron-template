@@ -14,6 +14,7 @@
     "lint:fix": "max eslint --fix",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "test": "jest",
+    "start": "npm run dev",
     "test:coverage": "jest --coverage",
     "type-check": "tsc -p tsconfig-check.json"
   },
