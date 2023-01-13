@@ -2,4 +2,4 @@ const { resolve } = require('path');
 
 export const isDev = process.env.NODE_ENV === 'development';
 
-export const srcPath = resolve(__dirname, '../..');
+export const packagesPath = resolve(__dirname, '../..');

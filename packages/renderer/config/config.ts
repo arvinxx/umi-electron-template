@@ -1,9 +1,9 @@
 import { defineConfig } from '@umijs/max';
 import { resolve } from 'path';
-import { srcPath } from './utils';
+import { packagesPath } from './utils';
 import routes from './routes';
 
-const releasePath = resolve(srcPath, '../release');
+const releasePath = resolve(packagesPath, '../release');
 
 export default defineConfig({
   npmClient: 'pnpm',
