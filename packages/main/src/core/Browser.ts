@@ -79,10 +79,8 @@ export default class Browser extends EventEmitter {
    * @param name 在 renderer 中的路径名称
    */
   loadUrl = (name: Main.WindowName) => {
-    const { PORT = 8000 } = process.env;
-
     if (dev()) {
-      this.browserWindow.loadURL(`http://localhost:${PORT}/${name}`);
+      this.browserWindow.loadURL(`http://localhost:7777/${name}`);
     } else {
       createProtocol('app');
       this.browserWindow.loadURL(`app://./webview/${name}/index.html`);
@@ -162,10 +160,9 @@ export default class Browser extends EventEmitter {
       webPreferences: {
         nodeIntegration: true,
 
-        enableRemoteModule: remote,
         // 上下文隔离环境
         // https://www.electronjs.org/docs/tutorial/context-isolation
-        contextIsolation: false,
+        contextIsolation: true,
         // devTools: isDev,
       },
     });

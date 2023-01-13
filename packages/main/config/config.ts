@@ -1,7 +1,9 @@
 import { defineConfig } from '@umijs/max';
-import { join, resolve } from 'path';
+import { resolve } from 'path';
 import { readJSONSync } from 'fs-extra';
-import { srcPath, isDev } from './utils';
+import { LogType } from 'umi-plugin-electron-builder/lib/types';
+
+import { srcPath, handleLog } from './utils';
 
 import ElectronBuilderOpts from './electronBuilderOpts';
 
@@ -16,17 +18,20 @@ export default defineConfig({
   plugins: ['umi-plugin-electron-builder'],
 
   electronBuilder: {
-    // vite 和 typeorm 暂时还不兼容
-    // https://github.com/BySlin/umi-plugin-electron-builder/issues/23
+    parallelBuild: true,
     buildType: 'webpack',
     mainSrc: 'src', //默认主进程目录
-    // preloadSrc: resolve(srcPath, 'preload/src'), //默认preload目录，可选，不需要可删除
+    preloadSrc: resolve(srcPath, 'preload/src'), //默认preload目录，可选，不需要可删除
     outputDir: '../../release',
     builderOptions: ElectronBuilderOpts,
     externals,
-    mainWebpackChain: () => {
-      // memo.entryPoints.delete('main');
-      // console.log(memo.context());
+    // @ts-ignore
+    logProcess: (log: string, type: LogType) => {
+      if (type === 'normal') {
+        handleLog(log.trim());
+      } else if (type === 'error') {
+        console.error(log.trim());
+      }
     },
   },
 });

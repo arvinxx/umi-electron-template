@@ -6,7 +6,7 @@ export default {
    */
   appId: 'com.arvinxx.umi-electron-template',
   productName: 'Umi Electron Template',
-  copyright: 'Copyright © 2021 Arvin Xu | All Right Reserved.',
+  copyright: 'Copyright © 2021 - Present Arvin Xu | All Right Reserved.',
 
   /**
    * 配置 notarize dmg

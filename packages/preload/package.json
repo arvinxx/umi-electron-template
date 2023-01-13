@@ -13,6 +13,6 @@
     "test:coverage": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
-    "electron": "^19"
+    "electron": "^22"
   }
 }

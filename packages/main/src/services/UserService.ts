@@ -1,6 +1,6 @@
 import { User } from '@/models';
 
-import { event, ServiceModule } from '@/services/index';
+import { event, ServiceModule } from '@/services';
 
 export default class UserService extends ServiceModule {
   get model() {

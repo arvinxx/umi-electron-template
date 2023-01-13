@@ -1,4 +1,4 @@
-import { isMacOS } from '@umi-electron-template/common/src/utils';
+import { isMacOS } from '@umi-electron-template/common';
 import { systemPreferences } from 'electron';
 import { event, ServiceModule } from './index';
 
