@@ -1,6 +1,6 @@
-import { createStyles, css } from 'antd-style';
+import { createStyles } from 'antd-style';
 
-export default createStyles({
+export default createStyles(({ css, token }) => ({
   button: css`
     position: fixed;
     right: 24px;
@@ -11,7 +11,7 @@ export default createStyles({
     justify-content: center;
     width: 32px;
     height: 32px;
-    background: white;
+    background: ${token.colorBgElevated};
     border-radius: 16px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
     cursor: pointer;
@@ -20,4 +20,8 @@ export default createStyles({
     width: 20px;
     height: 20px;
   `,
-});
+  container: css`
+    height: 100vh;
+    background: ${token.colorBgLayout};
+  `,
+}));

@@ -1,9 +1,9 @@
 import { defineConfig } from '@umijs/max';
-import { resolve } from 'path';
 import { readJSONSync } from 'fs-extra';
+import { resolve } from 'path';
 import { LogType } from 'umi-plugin-electron-builder/lib/types';
 
-import { srcPath, handleLog } from './utils';
+import { handleLog, srcPath } from './utils';
 
 import ElectronBuilderOpts from './electronBuilderOpts';
 

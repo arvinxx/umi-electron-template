@@ -13,8 +13,8 @@
     "lint-staged": "lint-staged",
     "lint:fix": "max eslint --fix",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
-    "test": "jest",
     "start": "npm run dev",
+    "test": "jest",
     "test:coverage": "jest --coverage",
     "type-check": "tsc -p tsconfig-check.json"
   },
@@ -35,16 +35,14 @@
     "ahooks": "^3",
     "antd": "^5",
     "antd-style": "alpha",
-    "react": "18",
-    "react-dom": "18",
-    "react-layout-kit": "^1"
+    "react": "^18",
+    "react-dom": "^18",
+    "react-layout-kit": "^1",
+    "zustand": "^4"
   },
   "devDependencies": {
     "@testing-library/react": "^13",
-    "@types/classnames": "^2",
     "@types/jest": "^29",
-    "@types/js-yaml": "^4",
-    "@types/node": "^16.18.11",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@types/sinon": "^10",
