@@ -92,7 +92,7 @@
     "dotenv": "^10.0.0",
     "electron": "^11.3.0",
     "electron-builder": "^22.14.13",
-    "electron-builder-notarize": "^1.4.0",
+    "electron-builder-notarize": "^1.5.1",
     "electron-debug": "^3.2.0",
     "electron-devtools-installer": "^3.2.0",
     "electron-is": "^3.0.0",
