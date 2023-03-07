@@ -54,7 +54,7 @@
   "dependencies": {
     "@arvinxu/macos-traffic-light": "^3.0.0",
     "electron-updater": "^4.6.5",
-    "log4js": "^6.4.1",
+    "log4js": "^6.9.0",
     "os-name": "^5.0.1",
     "reflect-metadata": "^0.1.13",
     "robotjs": "^0.6.0",
