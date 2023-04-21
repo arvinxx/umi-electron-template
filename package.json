@@ -8,7 +8,7 @@
   "scripts": {
     "build:mac-zip": "ts-node scripts/buildMacZip.ts",
     "clean": "rm -rf dist release .eslintcache",
-    "dev:main": "npm run start --prefix=packages/main",
+    "dev:main": "npm run start --prefix=packages/electron",
     "dev:renderer": "npm run start --prefix=packages/renderer",
     "devtools": "react-devtools",
     "lint": "pnpm run lint-eslint",
@@ -50,7 +50,7 @@
     "prettier-plugin-organize-imports": "^3",
     "prettier-plugin-packagejson": "^2",
     "react-devtools": "^4",
-    "semantic-release": "^19",
+    "semantic-release": "^20",
     "semantic-release-config-gitmoji": "^1",
     "sinon": "^9",
     "ts-jest": "^29",

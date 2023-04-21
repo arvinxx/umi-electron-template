@@ -34,7 +34,7 @@
     "@umijs/max": "^4",
     "ahooks": "^3",
     "antd": "^5",
-    "antd-style": "alpha",
+    "antd-style": "^3",
     "react": "^18",
     "react-dom": "^18",
     "react-layout-kit": "^1",

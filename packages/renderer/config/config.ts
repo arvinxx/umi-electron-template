@@ -14,7 +14,4 @@ export default defineConfig({
   outputPath: releasePath,
 
   monorepoRedirect: {},
-  alias: {
-    theme: resolve(__dirname, '../src/theme'), // less 全局样式文件
-  },
 });
