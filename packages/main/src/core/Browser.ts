@@ -1,10 +1,12 @@
-import EventEmitter from 'events';
+import type { MainEvents } from '@umi-electron-template/common';
+import { BrowserWindowsIdentifier } from '@umi-electron-template/common';
 import type { BrowserWindowConstructorOptions } from 'electron';
 import { app, BrowserWindow, protocol } from 'electron';
 import { dev } from 'electron-is';
-import type { App } from '@/core/App';
-import { createProtocol } from '@/utils';
-import type { MainEvents } from '@umi-electron-template/common';
+import EventEmitter from 'events';
+
+import type { App } from './App';
+import { createProtocol } from '../utils';
 
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } },
@@ -14,7 +16,7 @@ export interface BrowserWindowOpts extends BrowserWindowConstructorOptions {
   /**
    * URL
    */
-  identifier: Main.WindowName;
+  identifier: BrowserWindowsIdentifier;
   title?: string;
   width?: number;
   height?: number;
@@ -74,7 +76,7 @@ export default class Browser extends EventEmitter {
    * 加载地址路径
    * @param name 在 renderer 中的路径名称
    */
-  loadUrl = (name: Main.WindowName) => {
+  loadUrl = (name: BrowserWindowsIdentifier) => {
     if (dev()) {
       this.browserWindow.loadURL(`http://localhost:7777/${name}`);
     } else {
@@ -91,11 +93,6 @@ export default class Browser extends EventEmitter {
     if (!(dev() || process.env.DEBUG === '1')) return;
 
     app.whenReady().then(() => {
-      // TODO 集成 devton
-      // devton 已经 N 年没更新了
-      // 有人在重构 https://github.com/electron-userland/devtron/pull/221
-      // 等重构完了再补
-
       const {
         default: installExtension,
         // React Dev tools 暂时没法修复 (Electron 版本 >= 9.0)
@@ -144,8 +141,7 @@ export default class Browser extends EventEmitter {
       return this._browserWindow;
     }
 
-    const { identifier, title, width, height, devTools, remote, ...res } =
-      this.options;
+    const { identifier, title, width, height, devTools, ...res } = this.options;
 
     this._browserWindow = new BrowserWindow({
       ...res,

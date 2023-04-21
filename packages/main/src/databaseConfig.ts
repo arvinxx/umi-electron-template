@@ -1,8 +1,8 @@
-import type { ConnectionOptions } from 'typeorm';
 import { isDev, isTest } from '@umi-electron-template/common/src/utils';
-import path from 'path';
-import { User } from '@/models';
 import { app } from 'electron';
+import path from 'path';
+import type { ConnectionOptions } from 'typeorm';
+import { User } from './models';
 
 const entities = [User];
 

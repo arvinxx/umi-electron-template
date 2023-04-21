@@ -1,13 +1,13 @@
-import { EventEmitter } from 'events';
+import { createLogProxy, isDev } from '@umi-electron-template/common';
 import { app, ipcMain } from 'electron';
 import { dev, windows } from 'electron-is';
-import { createLogProxy, isDev } from '@umi-electron-template/common';
-import type { TServiceModule } from '@/services';
-import { createProtocol } from '@/utils';
+import { EventEmitter } from 'events';
+import type { TServiceModule } from '../services';
+import { createProtocol } from '../utils';
 
 import BrowserManager from './BrowserManager';
-import Logger from './Logger';
 import DataBase from './DataBase';
+import Logger from './Logger';
 import { ServiceStorage } from './ServiceStorage';
 
 import * as browserItems from '../browserItems';

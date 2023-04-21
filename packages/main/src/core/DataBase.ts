@@ -1,9 +1,9 @@
-import type { EntityTarget, Connection } from 'typeorm';
+import type { Connection, EntityTarget } from 'typeorm';
 import { createConnection } from 'typeorm';
 
-import Logger from '@/core/Logger';
-import connectConfig from '@/databaseConfig';
-import type { App } from '@/core/App';
+import connectConfig from '../databaseConfig';
+import type { App } from './App';
+import Logger from './Logger';
 
 export default class DataBase {
   private app: App;

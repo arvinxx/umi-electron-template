@@ -1,4 +1,4 @@
-import { logAfter, logBefore } from '@/core/Logger';
+import { logAfter, logBefore } from './Logger';
 
 /**
  * 存储插件中的 service

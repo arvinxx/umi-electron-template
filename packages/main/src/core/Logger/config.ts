@@ -1,8 +1,7 @@
+import { isDev } from '@umi-electron-template/common';
 import { app } from 'electron';
-import { join } from 'path';
-
 import type { Configuration, Layout } from 'log4js';
-import { isDev } from '@umi-electron-template/common/src/utils';
+import { join } from 'path';
 
 const logDir = join(app.getPath('userData'), 'Logs');
 

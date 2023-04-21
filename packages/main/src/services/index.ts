@@ -1,6 +1,7 @@
-import { ServiceStorage } from '@/core/ServiceStorage';
-import type { App } from '@/core/App';
-import type { RendererEvents } from '@umi-electron-template/commonƒ';
+import type { RendererEvents } from '@umi-electron-template/common';
+
+import type { App } from '../core/App';
+import { ServiceStorage } from '../core/ServiceStorage';
 
 const baseDecorator =
   (name: string, showLog = true) =>
