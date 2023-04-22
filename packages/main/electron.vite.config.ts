@@ -8,8 +8,7 @@ const isDev = process.env.MODE !== 'development';
 const target = 'node18';
 
 const externalPlugin = externalizeDepsPlugin({
-  exclude: ['@umi-electron-template/common'],
-  include: ['builder-util-runtime'],
+  include: ['builder-util-runtime', 'umi-request'],
 });
 
 export default defineConfig({

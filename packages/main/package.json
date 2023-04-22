@@ -29,7 +29,8 @@
     "log4js": "^6.4.1",
     "os-name": "^4",
     "reflect-metadata": "^0.1.13",
-    "source-map-support": "^0.5.21"
+    "source-map-support": "^0.5.21",
+    "umi-request": "^1"
   },
   "devDependencies": {
     "@types/fs-extra": "^9",
