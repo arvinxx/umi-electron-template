@@ -35,7 +35,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
@@ -60,7 +60,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Semantic Release with dryRun
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         id: semantic
         with:
           dry_run: true
@@ -82,7 +82,7 @@ jobs:
       - name: Install pnpm
         uses: pnpm/action-setup@v2
         with:
-          version: 7
+          version: 8
 
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
@@ -112,11 +112,11 @@ jobs:
       # 所以需要手动完成 zip 包的制作
       - name: Build zip artifact on macOS
         if: runner.os == 'macOS'
-        run: yarn build:mac-zip
+        run: pnpm run build:mac-zip
 
       - name: Build artifact on other Platform
         if: runner.os != 'macOS'
-        run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
+        run: pnpm run build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
@@ -171,7 +171,7 @@ jobs:
         run: ls -al release
 
       - name: Release
-        uses: cycjimmy/semantic-release-action@v2
+        uses: cycjimmy/semantic-release-action@v3
         with:
           extra_plugins: semantic-release-config-gitmoji
         env:
