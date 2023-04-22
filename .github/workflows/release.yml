@@ -97,7 +97,7 @@ jobs:
 
       - name: Build artifact on macOS
         if: runner.os == 'macOS'
-        run: yarn build --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
+        run: pnpm run build -- --publish never # 不使用发包配置 https://www.electron.build/configuration/publish#how-to-publish
         env:
           # 导入证书环境 有了签名可以保证 electron 在需要授权时使用的是同一个身份 id
           # Ref https://www.electron.build/code-signing
