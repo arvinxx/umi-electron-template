@@ -7,11 +7,17 @@ const isDev = process.env.MODE !== 'development';
 // electron 24 版本使用 node18
 const target = 'node18';
 
+const externalPlugin = externalizeDepsPlugin({
+  exclude: ['@umi-electron-template/common'],
+  include: ['builder-util-runtime'],
+});
+
 export default defineConfig({
   main: {
     resolve: {
       alias: {
         '@': join(__dirname, 'src/'),
+        '@umi-electron-template/common': join(__dirname, '../common/src'),
       },
     },
     build: {
@@ -25,7 +31,7 @@ export default defineConfig({
       outDir: 'dist/main',
       emptyOutDir: true,
     },
-    plugins: [externalizeDepsPlugin()],
+    plugins: [externalPlugin],
   },
   preload: {
     build: {
@@ -39,7 +45,7 @@ export default defineConfig({
       outDir: 'dist/preload',
       emptyOutDir: true,
     },
-    plugins: [preload.vite(), externalizeDepsPlugin()],
+    plugins: [preload.vite(), externalPlugin],
   },
 
   // 忽略 renderer 的构建

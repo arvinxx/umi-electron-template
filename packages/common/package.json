@@ -6,6 +6,8 @@
   "author": "Arvin Xu<arvinx@foxmail.com>",
   "main": "src/index.ts",
   "scripts": {
+    "build": "father build",
+    "postinstall": "npm run build",
     "lint-eslint": "max eslint",
     "lint-staged": "lint-staged",
     "lint:fix": "max eslint --fix",

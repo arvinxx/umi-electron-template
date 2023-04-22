@@ -1,6 +1,6 @@
 import { extend } from 'umi-request';
-import { isDev, isTest } from './is';
 import { PORT } from './env';
+import { isDev, isTest } from './is';
 
 /**
  * request 网络请求工具
@@ -53,6 +53,7 @@ const getBaseUrl = () => {
   // 在这里替换 生产端 URL
   return 'https://product.url';
 };
+
 /**
  * 配置request请求时的默认参数
  */

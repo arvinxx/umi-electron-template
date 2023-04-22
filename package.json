@@ -41,6 +41,7 @@
     "dotenv": "^10",
     "electron": "^24",
     "eslint": "^8",
+    "father": "^4",
     "husky": "^8",
     "js-yaml": "^4",
     "lint-staged": "^10",

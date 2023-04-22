@@ -23,7 +23,12 @@ module.exports = {
    * APPLE_ID_PASSWORD= app-specific 密码 可以在 appleid.apple.com 创建
    *
    */
-  afterSign: 'electron-builder-notarize',
+  afterSign:
+    process.env.NOTARIZE === 'false'
+      ? () => {
+          console.log('Skip notarize...');
+        }
+      : 'electron-builder-notarize',
 
   /**
    * win 配置项

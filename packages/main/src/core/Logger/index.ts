@@ -1,9 +1,9 @@
+import { isDev } from '@umi-electron-template/common';
 import chalk from 'chalk';
+import { app } from 'electron';
 import { arch, cpus, platform, release, totalmem } from 'os';
 import osName from 'os-name';
-import { app } from 'electron';
 
-import { isDev } from '@umi-electron-template/common/src/utils';
 import { getLogger } from './customLogger';
 
 interface LogInfo {
@@ -17,7 +17,7 @@ interface WithLogParams {
   after?: LogInfo | Function;
 }
 
-export { logBefore, logAfter } from './logDecorator';
+export { logAfter, logBefore } from './logDecorator';
 
 export default class Logger {
   private logger: Main.Logger = getLogger('main');
