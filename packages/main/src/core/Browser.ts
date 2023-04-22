@@ -1,12 +1,11 @@
 import type { MainEvents } from '@umi-electron-template/common';
-import { BrowserWindowsIdentifier } from '@umi-electron-template/common';
+import { BrowserWindowsIdentifier, isDev } from '@umi-electron-template/common';
 import type { BrowserWindowConstructorOptions } from 'electron';
 import { app, BrowserWindow, protocol } from 'electron';
 import { dev } from 'electron-is';
 import EventEmitter from 'events';
 
 import type { App } from './App';
-import { createProtocol } from '../utils';
 
 protocol.registerSchemesAsPrivileged([
   { scheme: 'app', privileges: { secure: true, standard: true } },
@@ -77,11 +76,10 @@ export default class Browser extends EventEmitter {
    * @param name 在 renderer 中的路径名称
    */
   loadUrl = (name: BrowserWindowsIdentifier) => {
-    if (dev()) {
-      this.browserWindow.loadURL(`http://localhost:7777/${name}`);
+    if (isDev) {
+      this.browserWindow.loadURL(`http://localhost:7777/${name}.html`);
     } else {
-      createProtocol('app');
-      this.browserWindow.loadURL(`app://./webview/${name}/index.html`);
+      this.browserWindow.loadURL(`app://./${name}.html`);
     }
   };
 

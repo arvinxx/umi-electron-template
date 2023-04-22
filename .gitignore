@@ -32,7 +32,6 @@ dist
 
 release
 .env*
-static/dictionary.mdx
 coverage
 /.eslintcache
-/packages/renderer/src/theme/override.less
+.electron-vendors.cache.json

@@ -1,10 +1,11 @@
 import { execSync } from 'child_process';
-import yaml from 'js-yaml';
 import fs from 'fs';
+import yaml from 'js-yaml';
 import { join } from 'path';
 
 import { name as appName, version } from '../package.json';
-import options from '../packages/renderer/config/electronBuilderOpts';
+// @ts-ignore
+import options from '../packages/main/electron-builder.config';
 
 const dir = join(__dirname, '../release');
 

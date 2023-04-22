@@ -1,18 +1,17 @@
-import { createLogProxy, isDev } from '@umi-electron-template/common';
+import type { TServiceModule } from '@/services';
+import { createProtocol } from '@/utils';
+import { createLogProxy } from '@umi-electron-template/common';
 import { app, ipcMain } from 'electron';
 import { dev, windows } from 'electron-is';
 import { EventEmitter } from 'events';
-import type { TServiceModule } from '../services';
-import { createProtocol } from '../utils';
 
 import BrowserManager from './BrowserManager';
-import DataBase from './DataBase';
 import Logger from './Logger';
 import { ServiceStorage } from './ServiceStorage';
 
 import * as browserItems from '../browserItems';
 
-const importAll = (r: any) => r.keys().map((k: any) => r(k).default);
+const importAll = (r: any) => Object.values(r).map((v: any) => v.default);
 
 export type ServiceMap = Map<string, any>;
 
@@ -30,11 +29,6 @@ export class App extends EventEmitter {
   logger: Logger;
 
   /**
-   * 数据库服务
-   */
-  database: DataBase;
-
-  /**
    * 承接 webview fetch 的事件表
    */
   serviceEventMap: ServiceMap = new Map();
@@ -45,8 +39,9 @@ export class App extends EventEmitter {
     // 载入 services
     const services: TServiceModule[] = importAll(
       // @ts-ignore
-      require.context('../services', false, /.+Service\.ts$/),
+      import.meta.globEager('../services/*Service.ts'),
     );
+
     services.forEach((service) => this.addService(service));
 
     // 批量注册 service 中 event 事件 供 webview 消费
@@ -73,9 +68,6 @@ export class App extends EventEmitter {
     // 启动窗口管理器
     this.browserManager = new BrowserManager(this);
 
-    // 数据库
-    this.database = new DataBase(this);
-
     // 日志系统
     this.logger = new Logger();
   }
@@ -90,10 +82,6 @@ export class App extends EventEmitter {
    * 启动 app
    */
   bootstrap = () => {
-    // 注册协议
-    if (!isDev) {
-      createProtocol('app');
-    }
     // protocol.registerSchemesAsPrivileged([
     //   { scheme: 'app', privileges: { secure: true, standard: true } },
     // ]);
@@ -105,13 +93,13 @@ export class App extends EventEmitter {
     }
 
     app.whenReady().then(() => {
+      // 注册 app 协议
+      createProtocol('app');
+
       this.logger.logSystemInfo();
 
       // 载入 browsers
       this.initBrowsers();
-
-      // 载入数据库
-      this.database.connect();
 
       this.logger.info('app 初始化完毕!');
       this.logger.divider('🎉');

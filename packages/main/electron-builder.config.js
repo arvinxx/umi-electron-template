@@ -1,6 +1,13 @@
-/* eslint-disable no-template-curly-in-string */
+module.exports = {
+  directories: {
+    output: '../../release',
+    buildResources: 'build',
+  },
+  files: ['dist'],
+  extraMetadata: {
+    version: process.env.npm_package_version,
+  },
 
-export default {
   /**
    *  app 基础信息
    */

@@ -1,13 +1,12 @@
 import { useThemeStore } from '@/store/theme';
-import { Outlet } from '@umijs/max';
 import { App } from 'antd';
 import { ThemeProvider } from 'antd-style';
 import 'antd/dist/reset.css';
-import type { FC } from 'react';
+import type { FC, PropsWithChildren } from 'react';
 
 import useStyles from './style';
 
-const BaseLayout: FC = () => {
+const BasicLayout: FC<PropsWithChildren> = ({ children }) => {
   const { themeMode } = useThemeStore();
 
   const { styles } = useStyles();
@@ -19,7 +18,7 @@ const BaseLayout: FC = () => {
   };
   return (
     <App className={styles.container}>
-      <Outlet />
+      {children}
       <div className={styles.button} onClick={switchDarkMode}>
         <img
           src={
@@ -35,12 +34,12 @@ const BaseLayout: FC = () => {
   );
 };
 
-export default () => {
+export default ({ children }: PropsWithChildren) => {
   const { themeMode } = useThemeStore();
 
   return (
     <ThemeProvider themeMode={themeMode}>
-      <BaseLayout />
+      <BasicLayout>{children}</BasicLayout>
     </ThemeProvider>
   );
 };

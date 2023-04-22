@@ -16,8 +16,5 @@
   "dependencies": {
     "electron-is": "^3",
     "umi-request": "^1"
-  },
-  "devDependencies": {
-    "typescript": "^4"
   }
 }

@@ -13,6 +13,10 @@
     "test:coverage": "jest --coverage --passWithNoTests"
   },
   "dependencies": {
-    "electron": "^22"
+    "@electron-toolkit/preload": "^1.0.3",
+    "electron": "^24"
+  },
+  "devDependencies": {
+    "vite": "^4"
   }
 }
