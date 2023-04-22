@@ -5,22 +5,25 @@ import { arch, cpus, platform, release, totalmem } from 'os';
 import osName from 'os-name';
 
 import { getLogger } from './customLogger';
+import { LogLevel, LogScope } from './types';
 
 interface LogInfo {
-  level: Main.LogLevel;
+  level: LogLevel;
   message: string;
-  key: Main.LogScope;
+  key: LogScope;
 }
 
 interface WithLogParams {
+  // eslint-disable-next-line @typescript-eslint/ban-types
   before?: LogInfo | Function;
+  // eslint-disable-next-line @typescript-eslint/ban-types
   after?: LogInfo | Function;
 }
 
 export { logAfter, logBefore } from './logDecorator';
 
 export default class Logger {
-  private logger: Main.Logger = getLogger('main');
+  private logger = getLogger('main');
 
   /**
    * 记录系统日志
@@ -49,6 +52,7 @@ export default class Logger {
    */
   static withLog =
     ({ before, after }: WithLogParams) =>
+    // eslint-disable-next-line @typescript-eslint/ban-types
     (func: Function) => {
       if (before) {
         if (typeof before === 'function') {
@@ -81,12 +85,12 @@ export default class Logger {
 
   static getLogger = getLogger;
 
-  trace(...arg: any[]) {
-    this.logger.trace(...arg);
+  trace(msg: any, ...arg: any[]) {
+    this.logger.trace(msg, ...arg);
   }
 
-  error(...arg: any[]) {
-    this.logger.error(...arg);
+  error(msg: any, ...arg: any[]) {
+    this.logger.error(msg, ...arg);
   }
 
   /**

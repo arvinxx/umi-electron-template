@@ -12,7 +12,7 @@
     "dev:renderer": "npm run start --prefix=packages/renderer",
     "devtools": "react-devtools",
     "postinstall": "cross-env ELECTRON_RUN_AS_NODE=1 electron scripts/update-electron-vendors.mjs",
-    "lint": "pnpm run lint-eslint",
+    "lint": "pnpm --filter=\"./packages/**\" run lint-eslint",
     "lint-staged": "lint-staged",
     "lint:fix": "max eslint --fix",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",

@@ -1,9 +1,10 @@
 import { logger } from './customLogger';
+import { LogLevel, LogScope } from './types';
 
 const log = (propertyName: string, params: string | LogParams) => {
   // 如果是 纯文本 直接输出
   if (typeof params === 'string') {
-    logger.infoWithScope(propertyName, params);
+    logger.infoWithScope(propertyName as LogScope, params);
   } else {
     // 如果是对象 必须传入三个参数 然后输出
     const { level, message, scope } = params;
@@ -13,8 +14,8 @@ const log = (propertyName: string, params: string | LogParams) => {
 
 interface LogParams {
   message: string;
-  scope: Main.LogScope;
-  level: Main.LogLevel;
+  scope: LogScope;
+  level: LogLevel;
 }
 
 /**
@@ -22,7 +23,7 @@ interface LogParams {
  */
 export const logBefore =
   (params: string | LogParams) =>
-  (target: Object, propertyName: string, descriptor: PropertyDescriptor) => {
+  (target: object, propertyName: string, descriptor: PropertyDescriptor) => {
     const method = descriptor.value;
 
     descriptor.value = function (...args: any[]) {
@@ -36,7 +37,7 @@ export const logBefore =
  */
 export const logAfter =
   (params: string | LogParams) =>
-  (target: Object, propertyName: string, descriptor: PropertyDescriptor) => {
+  (target: object, propertyName: string, descriptor: PropertyDescriptor) => {
     const method = descriptor.value;
 
     descriptor.value = function (...args: any[]) {

@@ -9,23 +9,13 @@
     "build": "max build",
     "dev": "PORT=7777 max dev",
     "postinstall": "max setup",
-    "lint-eslint": "max eslint",
-    "lint-staged": "lint-staged",
+    "lint-eslint": "max lint",
     "lint:fix": "max eslint --fix",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
     "start": "npm run dev",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "type-check": "tsc -p tsconfig-check.json"
-  },
-  "lint-staged": {
-    "*.{js,jsx,less,md,json}": [
-      "prettier --write"
-    ],
-    "*.ts?(x)": [
-      "prettier --parser=typescript --write",
-      "pnpm run lint:fix"
-    ]
   },
   "dependencies": {
     "@ant-design/icons": "^5",

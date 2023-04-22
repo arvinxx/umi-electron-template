@@ -1,18 +1,24 @@
-import type { Logger } from 'log4js';
-
 import log4js from 'log4js';
+
 import config from './config';
+import { GetLogger, LogLevel, LogScope, LogWithScope } from './types';
 
 declare module 'log4js' {
   // 为 Logger 补充自定义方法
   export interface Logger {
     divider(symbol?: string, length?: number): void;
-    logWithScope(newScope: Main.LogScope, ...args: any[]): void;
-    infoWithScope(newScope: Main.LogScope, ...args: any[]): void;
-    errorWithScope(newScope: Main.LogScope, ...args: any[]): void;
-    traceWithScope(newScope: Main.LogScope, ...args: any[]): void;
-    warnWithScope(newScope: Main.LogScope, ...args: any[]): void;
-    debugWithScope(newScope: Main.LogScope, ...args: any[]): void;
+
+    logWithScope(newScope: LogScope, ...args: any[]): void;
+
+    infoWithScope(newScope: LogScope, ...args: any[]): void;
+
+    errorWithScope(newScope: LogScope, ...args: any[]): void;
+
+    traceWithScope(newScope: LogScope, ...args: any[]): void;
+
+    warnWithScope(newScope: LogScope, ...args: any[]): void;
+
+    debugWithScope(newScope: LogScope, ...args: any[]): void;
   }
 }
 
@@ -22,14 +28,14 @@ log4js.configure(config);
  * 创建 withScope logger 代理
  * @param logLevel
  */
-const withScopeFactory = (logLevel: Main.LogLevel): Main.LogWithScope => {
-  return (newScope: Main.LogScope, message: any, ...args: any[]) => {
+const withScopeFactory = (logLevel: LogLevel): LogWithScope => {
+  return (newScope: LogScope, message: any, ...args: any[]) => {
     const logger = log4js.getLogger(newScope);
     logger[logLevel](message, ...args);
   };
 };
 
-export const getLogger: Main.GetLogger = (scope) => {
+export const getLogger: GetLogger = (scope) => {
   const logger = log4js.getLogger(scope);
   // 添加 divider 方法
 
@@ -52,17 +58,3 @@ export const getLogger: Main.GetLogger = (scope) => {
 };
 
 export const logger = getLogger();
-
-/** 将 logger 方法注入全局 * */
-
-declare global {
-  namespace NodeJS {
-    interface Global {
-      logger: Logger;
-      getLogger: Main.GetLogger;
-    }
-  }
-}
-
-global.logger = logger;
-global.getLogger = getLogger;

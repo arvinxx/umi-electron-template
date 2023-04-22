@@ -15,6 +15,7 @@
     "electron:build:win": "npm run electron:build --win",
     "electron:mac-zip": "ts-node scripts/buildMacZip.ts",
     "postinstall": "electron-builder install-app-deps",
+    "lint-eslint": "max lint",
     "prebuild": "electron-vite build",
     "preview": "electron-vite preview",
     "test": "vitest --passWithNoTests",

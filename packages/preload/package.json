@@ -5,7 +5,7 @@
   "description": "max electron template",
   "author": "Arvin Xu<arvinx@foxmail.com>",
   "scripts": {
-    "lint-eslint": "max eslint",
+    "lint-eslint": "max lint",
     "lint-staged": "lint-staged",
     "lint:fix": "max eslint --fix",
     "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
