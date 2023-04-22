@@ -1,0 +1,22 @@
+{
+  "name": "@umi-electron-template/preload",
+  "version": "2.0.0",
+  "private": true,
+  "description": "max electron template",
+  "author": "Arvin Xu<arvinx@foxmail.com>",
+  "scripts": {
+    "lint-eslint": "max lint",
+    "lint-staged": "lint-staged",
+    "lint:fix": "max eslint --fix",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "test": "jest --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests"
+  },
+  "dependencies": {
+    "@electron-toolkit/preload": "^1.0.3",
+    "electron": "^24"
+  },
+  "devDependencies": {
+    "vite": "^4"
+  }
+}

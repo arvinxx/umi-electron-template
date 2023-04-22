@@ -1,0 +1,38 @@
+{
+  "name": "@umi-electron-template/renderer",
+  "version": "2.0.0",
+  "private": true,
+  "description": "max electron template",
+  "author": "Arvin Xu<arvinx@foxmail.com>",
+  "main": "main.js",
+  "scripts": {
+    "build": "max build",
+    "dev": "PORT=7777 max dev",
+    "postinstall": "max setup",
+    "lint-eslint": "max lint",
+    "lint:fix": "max eslint --fix",
+    "prettier": "prettier --write '**/*.{js,jsx,tsx,ts,less,md,json}'",
+    "start": "npm run dev",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
+    "type-check": "tsc -p tsconfig-check.json"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5",
+    "@arvinxu/macos-traffic-light": "^3",
+    "@umi-electron-template/common": "2.0.0",
+    "@umijs/max": "^4",
+    "ahooks": "^3",
+    "antd": "^5",
+    "antd-style": "^3",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-layout-kit": "^1",
+    "zustand": "^4"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^13",
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  }
+}
