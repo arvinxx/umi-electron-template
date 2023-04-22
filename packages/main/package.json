@@ -7,7 +7,7 @@
   "main": "dist/main/index.js",
   "scripts": {
     "prebuild": "electron-vite build",
-    "build": "npm run prebuild && electron-builder build --config electron-builder.config.js",
+    "build": "electron-builder build --config electron-builder.config.js",
     "clean": "rm -rf dist release .eslintcache ./src/.umi",
     "dev": "electron-vite dev -w",
     "electron:build-local": "NOTARIZE=false npm run build -- --dir --config.asar=false",
