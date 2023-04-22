@@ -1,6 +1,5 @@
 import type { TServiceModule } from '@/services';
-import { createProtocol } from '@/utils';
-import { createLogProxy } from '@umi-electron-template/common';
+import { createLogProxy, createProtocol } from '@/utils';
 import { app, ipcMain } from 'electron';
 import { dev, windows } from 'electron-is';
 import { EventEmitter } from 'events';
